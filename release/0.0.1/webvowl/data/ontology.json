@@ -1,44 +1,38 @@
 {
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
-    "baseIris" : [ "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html" ],
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://github.com/Ja98/ues/ontology.ttl" ],
     "iri" : "https://github.com/Ja98/ues/ontology.ttl"
   },
   "namespace" : [ ],
   "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Thing"
+  }, {
     "id" : "2",
     "type" : "owl:Class"
   }, {
     "id" : "3",
     "type" : "owl:Class"
   }, {
-    "id" : "1",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "7",
-    "type" : "owl:Class"
-  }, {
-    "id" : "8",
+    "id" : "4",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
-    "iri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#BuildingUsageProfile",
-    "baseIri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html",
+    "iri" : "https://github.com/Ja98/ues/ontology.ttl#AbsoluteTimeSeries",
+    "baseIri" : "https://github.com/Ja98/ues/ontology.ttl",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "BuildingUsageProfile"
+      "IRI-based" : "AbsoluteTimeSeries"
     },
-    "attributes" : [ "external" ],
-    "id" : "2"
-  }, {
-    "iri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#RelativeTimeSeries",
-    "baseIri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "RelativeTimeSeries"
+    "comment" : {
+      "undefined" : "An absolute time series"
     },
-    "attributes" : [ "external" ],
-    "id" : "3"
+    "id" : "0"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
@@ -47,78 +41,65 @@
       "undefined" : "Thing"
     }
   }, {
-    "iri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#GenericArchetype",
-    "baseIri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html",
+    "iri" : "https://github.com/Ja98/ues/ontology.ttl#GenericArchetype",
+    "baseIri" : "https://github.com/Ja98/ues/ontology.ttl",
     "instances" : 0,
     "label" : {
       "IRI-based" : "GenericArchetype"
     },
-    "attributes" : [ "external" ],
-    "id" : "7"
+    "comment" : {
+      "undefined" : "a generic archetype"
+    },
+    "id" : "2"
   }, {
-    "iri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#OccupancyProfile",
-    "baseIri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html",
+    "iri" : "https://github.com/Ja98/ues/ontology.ttl#RelativeTimeSeries",
+    "baseIri" : "https://github.com/Ja98/ues/ontology.ttl",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "OccupancyProfile"
+      "IRI-based" : "RelativeTimeSeries"
     },
-    "attributes" : [ "external" ],
-    "id" : "8"
+    "comment" : {
+      "undefined" : "A relative time series"
+    },
+    "id" : "3"
+  }, {
+    "iri" : "https://github.com/Ja98/ues/ontology.ttl#SimParam",
+    "baseIri" : "https://github.com/Ja98/ues/ontology.ttl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SimParam"
+    },
+    "comment" : {
+      "undefined" : "A simulation parameter"
+    },
+    "id" : "4"
   } ],
   "property" : [ {
-    "id" : "0",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "4",
+    "id" : "5",
     "type" : "owl:objectProperty"
   }, {
     "id" : "6",
     "type" : "owl:objectProperty"
-  }, {
-    "id" : "5",
-    "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
-    "iri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#hasValue",
-    "baseIri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html",
+    "iri" : "https://github.com/Ja98/ues/ontology.ttl#hasParameter",
+    "baseIri" : "https://github.com/Ja98/ues/ontology.ttl",
     "range" : "1",
     "label" : {
-      "IRI-based" : "hasValue"
+      "IRI-based" : "hasParameter"
     },
     "domain" : "1",
-    "attributes" : [ "external", "object" ],
-    "id" : "0"
+    "attributes" : [ "object" ],
+    "id" : "5"
   }, {
-    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
-    "baseIri" : "http://www.w3.org/2002/07/owl",
-    "range" : "1",
-    "label" : {
-      "IRI-based" : "topObjectProperty"
-    },
-    "domain" : "1",
-    "subproperty" : [ "5" ],
-    "attributes" : [ "external", "object" ],
-    "id" : "4"
-  }, {
-    "iri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#hasCategory",
-    "baseIri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html",
+    "iri" : "https://github.com/Ja98/ues/ontology.ttl#hasCategory",
+    "baseIri" : "https://github.com/Ja98/ues/ontology.ttl",
     "range" : "1",
     "label" : {
       "IRI-based" : "hasCategory"
     },
     "domain" : "1",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object" ],
     "id" : "6"
-  }, {
-    "iri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#containedWithin",
-    "baseIri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html",
-    "range" : "1",
-    "label" : {
-      "IRI-based" : "containedWithin"
-    },
-    "superproperty" : [ "4" ],
-    "domain" : "1",
-    "attributes" : [ "external", "object" ],
-    "id" : "5"
   } ]
 }

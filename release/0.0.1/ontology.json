@@ -1,31 +1,37 @@
 [ {
-  "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#BuildingUsageProfile",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#GenericArchetype",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#OccupancyProfile",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#RelativeTimeSeries",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#containedWithin",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
-  } ]
-}, {
-  "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#hasCategory",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#hasValue",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
   "@id" : "https://github.com/Ja98/ues/ontology.ttl",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
     "@id" : "https://github.com/Ja98/ues/tree/master/release/0.0.1/ontology.ttl"
   } ]
+}, {
+  "@id" : "https://github.com/Ja98/ues/ontology.ttl#AbsoluteTimeSeries",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An absolute time series"
+  } ]
+}, {
+  "@id" : "https://github.com/Ja98/ues/ontology.ttl#GenericArchetype",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a generic archetype"
+  } ]
+}, {
+  "@id" : "https://github.com/Ja98/ues/ontology.ttl#RelativeTimeSeries",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A relative time series"
+  } ]
+}, {
+  "@id" : "https://github.com/Ja98/ues/ontology.ttl#SimParam",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A simulation parameter"
+  } ]
+}, {
+  "@id" : "https://github.com/Ja98/ues/ontology.ttl#hasCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://github.com/Ja98/ues/ontology.ttl#hasParameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 } ]

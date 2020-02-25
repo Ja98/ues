@@ -24,26 +24,17 @@
     
 
 
-    <!-- https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#containedWithin -->
+    <!-- https://github.com/Ja98/ues/ontology.ttl#hasCategory -->
 
 
-    <owl:ObjectProperty rdf:about="https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#containedWithin">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="https://github.com/Ja98/ues/ontology.ttl#hasCategory"/>
     
 
 
-    <!-- https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#hasCategory -->
+    <!-- https://github.com/Ja98/ues/ontology.ttl#hasParameter -->
 
 
-    <owl:ObjectProperty rdf:about="https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#hasCategory"/>
-    
-
-
-    <!-- https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#hasValue -->
-
-
-    <owl:ObjectProperty rdf:about="https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#hasValue"/>
+    <owl:ObjectProperty rdf:about="https://github.com/Ja98/ues/ontology.ttl#hasParameter"/>
     
 
 
@@ -59,31 +50,39 @@
     
 
 
-    <!-- https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#BuildingUsageProfile -->
+    <!-- https://github.com/Ja98/ues/ontology.ttl#AbsoluteTimeSeries -->
 
 
-    <owl:Class rdf:about="https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#BuildingUsageProfile"/>
+    <owl:Class rdf:about="https://github.com/Ja98/ues/ontology.ttl#AbsoluteTimeSeries">
+        <rdfs:comment>An absolute time series</rdfs:comment>
+    </owl:Class>
     
 
 
-    <!-- https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#GenericArchetype -->
+    <!-- https://github.com/Ja98/ues/ontology.ttl#GenericArchetype -->
 
 
-    <owl:Class rdf:about="https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#GenericArchetype"/>
+    <owl:Class rdf:about="https://github.com/Ja98/ues/ontology.ttl#GenericArchetype">
+        <rdfs:comment>a generic archetype</rdfs:comment>
+    </owl:Class>
     
 
 
-    <!-- https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#OccupancyProfile -->
+    <!-- https://github.com/Ja98/ues/ontology.ttl#RelativeTimeSeries -->
 
 
-    <owl:Class rdf:about="https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#OccupancyProfile"/>
+    <owl:Class rdf:about="https://github.com/Ja98/ues/ontology.ttl#RelativeTimeSeries">
+        <rdfs:comment>A relative time series</rdfs:comment>
+    </owl:Class>
     
 
 
-    <!-- https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#RelativeTimeSeries -->
+    <!-- https://github.com/Ja98/ues/ontology.ttl#SimParam -->
 
 
-    <owl:Class rdf:about="https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#RelativeTimeSeries"/>
+    <owl:Class rdf:about="https://github.com/Ja98/ues/ontology.ttl#SimParam">
+        <rdfs:comment>A simulation parameter</rdfs:comment>
+    </owl:Class>
 </rdf:RDF>
 
 
