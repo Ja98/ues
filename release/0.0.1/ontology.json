@@ -30,8 +30,14 @@
   } ]
 }, {
   "@id" : "https://github.com/Ja98/ues/ontology.ttl#hasCategory",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "the category that applies to the archetype"
+  } ]
 }, {
   "@id" : "https://github.com/Ja98/ues/ontology.ttl#hasParameter",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "a parameter that can be used directly in the simulation"
+  } ]
 } ]

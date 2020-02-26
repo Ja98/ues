@@ -11,9 +11,11 @@
 # 
 # https://github.com/Ja98/ues/ontology.ttl#hasCategory
 <https://github.com/Ja98/ues/ontology.ttl#hasCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/Ja98/ues/ontology.ttl#hasCategory> <http://www.w3.org/2000/01/rdf-schema#label> "the category that applies to the archetype" .
 # 
 # https://github.com/Ja98/ues/ontology.ttl#hasParameter
 <https://github.com/Ja98/ues/ontology.ttl#hasParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/Ja98/ues/ontology.ttl#hasParameter> <http://www.w3.org/2000/01/rdf-schema#label> "a parameter that can be used directly in the simulation" .
 # 
 # 
 # 

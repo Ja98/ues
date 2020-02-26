@@ -86,7 +86,8 @@
     "baseIri" : "https://github.com/Ja98/ues/ontology.ttl",
     "range" : "1",
     "label" : {
-      "IRI-based" : "hasParameter"
+      "IRI-based" : "hasParameter",
+      "undefined" : "a parameter that can be used directly in the simulation"
     },
     "domain" : "1",
     "attributes" : [ "object" ],
@@ -96,7 +97,8 @@
     "baseIri" : "https://github.com/Ja98/ues/ontology.ttl",
     "range" : "1",
     "label" : {
-      "IRI-based" : "hasCategory"
+      "IRI-based" : "hasCategory",
+      "undefined" : "the category that applies to the archetype"
     },
     "domain" : "1",
     "attributes" : [ "object" ],

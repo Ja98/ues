@@ -27,14 +27,18 @@
     <!-- https://github.com/Ja98/ues/ontology.ttl#hasCategory -->
 
 
-    <owl:ObjectProperty rdf:about="https://github.com/Ja98/ues/ontology.ttl#hasCategory"/>
+    <owl:ObjectProperty rdf:about="https://github.com/Ja98/ues/ontology.ttl#hasCategory">
+        <rdfs:label>the category that applies to the archetype</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
     <!-- https://github.com/Ja98/ues/ontology.ttl#hasParameter -->
 
 
-    <owl:ObjectProperty rdf:about="https://github.com/Ja98/ues/ontology.ttl#hasParameter"/>
+    <owl:ObjectProperty rdf:about="https://github.com/Ja98/ues/ontology.ttl#hasParameter">
+        <rdfs:label>a parameter that can be used directly in the simulation</rdfs:label>
+    </owl:ObjectProperty>
     
 
 

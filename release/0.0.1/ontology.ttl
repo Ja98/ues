@@ -14,11 +14,13 @@
 #################################################################
 
 ###  https://github.com/Ja98/ues/ontology.ttl#hasCategory
-:hasCategory rdf:type owl:ObjectProperty .
+:hasCategory rdf:type owl:ObjectProperty ;
+             rdfs:label "the category that applies to the archetype" .
 
 
 ###  https://github.com/Ja98/ues/ontology.ttl#hasParameter
-:hasParameter rdf:type owl:ObjectProperty .
+:hasParameter rdf:type owl:ObjectProperty ;
+              rdfs:label "a parameter that can be used directly in the simulation" .
 
 
 #################################################################
