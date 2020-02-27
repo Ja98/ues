@@ -5,25 +5,86 @@ This section provides details for each class and property defined by [Ontology N
    <ul class="hlist">
       <li>
          <a href="#AbsoluteTimeSeries"
-            title="https://github.com/Ja98/ues/ontology.ttl#AbsoluteTimeSeries">
+            title="https://ja98.github.io/ues/release/0.0.1/index-en.html#AbsoluteTimeSeries">
             <span>absolute time series</span>
          </a>
       </li>
       <li>
+         <a href="#AgeOfConstructionRange"
+            title="https://ja98.github.io/ues/release/0.0.1/index-en.html#AgeOfConstructionRange">
+            <span>age of construction range</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ArchetypeCategory"
+            title="https://ja98.github.io/ues/release/0.0.1/index-en.html#ArchetypeCategory">
+            <span>archetype category</span>
+         </a>
+      </li>
+      <li>
+         <a href="#BuildingUse"
+            title="https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingUse">
+            <span>building use</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ExternalWall"
+            title="https://ja98.github.io/ues/release/0.0.1/index-en.html#ExternalWall">
+            <span>external wall</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Floor"
+            title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Floor">
+            <span>floor</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Fuel"
+            title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Fuel">
+            <span>fuel</span>
+         </a>
+      </li>
+      <li>
          <a href="#GenericArchetype"
-            title="https://github.com/Ja98/ues/ontology.ttl#GenericArchetype">
+            title="https://ja98.github.io/ues/release/0.0.1/index-en.html#GenericArchetype">
             <span>generic archetype</span>
          </a>
       </li>
       <li>
+         <a href="#InternalCeiling"
+            title="https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling">
+            <span>internal ceiling</span>
+         </a>
+      </li>
+      <li>
+         <a href="#InternalWall"
+            title="https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall">
+            <span>internal wall</span>
+         </a>
+      </li>
+      <li>
          <a href="#RelativeTimeSeries"
-            title="https://github.com/Ja98/ues/ontology.ttl#RelativeTimeSeries">
+            title="https://ja98.github.io/ues/release/0.0.1/index-en.html#RelativeTimeSeries">
             <span>relative time series</span>
          </a>
       </li>
       <li>
-         <a href="#SimParam" title="https://github.com/Ja98/ues/ontology.ttl#SimParam">
-            <span>sim param</span>
+         <a href="#Roof"
+            title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof">
+            <span>roof</span>
+         </a>
+      </li>
+      <li>
+         <a href="#SimulationApplication"
+            title="https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationApplication">
+            <span>simulation application</span>
+         </a>
+      </li>
+      <li>
+         <a href="#SimulationParam"
+            title="https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParam">
+            <span>simulation param</span>
          </a>
       </li>
    </ul>
@@ -33,10 +94,170 @@ This section provides details for each class and property defined by [Ontology N
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://github.com/Ja98/ues/ontology.ttl#AbsoluteTimeSeries</p>
+         <strong>IRI:</strong> https://ja98.github.io/ues/release/0.0.1/index-en.html#AbsoluteTimeSeries</p>
       <div class="comment">
          <span class="markdown">An absolute time series</span>
       </div>
+   </div>
+   <div class="entity" id="AgeOfConstructionRange">
+      <h3>age of construction range<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ja98.github.io/ues/release/0.0.1/index-en.html#AgeOfConstructionRange</p>
+      <div class="comment">
+         <span class="markdown">The age range that applies to an archetype</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#ArchetypeCategory"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#ArchetypeCategory">archetype category</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#BuildingUse"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingUse">building use</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ArchetypeCategory">
+      <h3>archetype category<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ja98.github.io/ues/release/0.0.1/index-en.html#ArchetypeCategory</p>
+      <div class="comment">
+         <span class="markdown">categories that can be used to represent the dataset using archetypes</span>
+      </div>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#AgeOfConstructionRange"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#AgeOfConstructionRange">age of construction range</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#BuildingUse"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingUse">building use</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="BuildingUse">
+      <h3>building use<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingUse</p>
+      <div class="comment">
+         <span class="markdown">Indicates the building use. As there are multiple ways to express this, it is dataset dependent and up to the user to define usage categories that best represent the data.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#ArchetypeCategory"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#ArchetypeCategory">archetype category</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#buildingUse"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#buildingUse">buildingUse</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#AgeOfConstructionRange"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#AgeOfConstructionRange">age of construction range</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ExternalWall">
+      <h3>external wall<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ja98.github.io/ues/release/0.0.1/index-en.html#ExternalWall</p>
+      <div class="comment">
+         <span class="markdown">A vertical surface of a building in contact with the external environment</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted"
+                  title="https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface">building surface</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Floor"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Floor">floor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#InternalCeiling"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling">internal ceiling</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#InternalWall"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall">internal wall</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Roof"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof">roof</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Floor">
+      <h3>floor<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ja98.github.io/ues/release/0.0.1/index-en.html#Floor</p>
+      <div class="comment">
+         <span class="markdown">A building surface in contact with the ground</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted"
+                  title="https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface">building surface</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#ExternalWall"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#ExternalWall">external wall</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#InternalCeiling"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling">internal ceiling</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#InternalWall"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall">internal wall</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Roof"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof">roof</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Fuel">
+      <h3>fuel<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ja98.github.io/ues/release/0.0.1/index-en.html#Fuel</p>
+      <div class="comment">
+         <span class="markdown">An energy carrier used to supply heat or electricity</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#heatingFuel"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#heatingFuel">heating fuel</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hotWaterFuel"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#hotWaterFuel">hot water fuel</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
    </div>
    <div class="entity" id="GenericArchetype">
       <h3>generic archetype<sup class="type-c" title="class">c</sup>
@@ -44,10 +265,82 @@ This section provides details for each class and property defined by [Ontology N
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://github.com/Ja98/ues/ontology.ttl#GenericArchetype</p>
+         <strong>IRI:</strong> https://ja98.github.io/ues/release/0.0.1/index-en.html#GenericArchetype</p>
       <div class="comment">
-         <span class="markdown">a generic archetype</span>
+         <span class="markdown">an archetype object with categories and parameters for building simulation</span>
       </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasCategory"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasCategory">hasCategory</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasParameter"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter">hasParameter</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="InternalCeiling">
+      <h3>internal ceiling<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling</p>
+      <div class="comment">
+         <span class="markdown">A horizontal surface separating two conditioned spaces or buildings</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted"
+                  title="https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface">building surface</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#ExternalWall"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#ExternalWall">external wall</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Floor"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Floor">floor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#InternalWall"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall">internal wall</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Roof"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof">roof</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="InternalWall">
+      <h3>internal wall<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall</p>
+      <div class="comment">
+         <span class="markdown">A vertical surface separating two conditioned spaces or buildings</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted"
+                  title="https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface">building surface</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#ExternalWall"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#ExternalWall">external wall</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Floor"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Floor">floor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#InternalCeiling"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling">internal ceiling</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Roof"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof">roof</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
    </div>
    <div class="entity" id="RelativeTimeSeries">
       <h3>relative time series<sup class="type-c" title="class">c</sup>
@@ -55,49 +348,414 @@ This section provides details for each class and property defined by [Ontology N
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://github.com/Ja98/ues/ontology.ttl#RelativeTimeSeries</p>
+         <strong>IRI:</strong> https://ja98.github.io/ues/release/0.0.1/index-en.html#RelativeTimeSeries</p>
       <div class="comment">
          <span class="markdown">A relative time series</span>
       </div>
    </div>
-   <div class="entity" id="SimParam">
-      <h3>sim param<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="Roof">
+      <h3>roof<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://github.com/Ja98/ues/ontology.ttl#SimParam</p>
+         <strong>IRI:</strong> https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof</p>
       <div class="comment">
-         <span class="markdown">A simulation parameter</span>
+         <span class="markdown">An inclined or horizontal surface of a building in contact with the external environment</span>
       </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted"
+                  title="https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface">building surface</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#ExternalWall"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#ExternalWall">external wall</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Floor"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Floor">floor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#InternalCeiling"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling">internal ceiling</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#InternalWall"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall">internal wall</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="SimulationApplication">
+      <h3>simulation application<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationApplication</p>
+      <div class="comment">
+         <span class="markdown">An application used to simulate building energy performance</span>
+      </div>
+      <dl class="description">
+         <dt>has members</dt>
+         <dd>
+            <a href="#CESAR"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#CESAR">c e s a r</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#EnergyPlus"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#EnergyPlus">energy plus</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="SimulationParam">
+      <h3>simulation param<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParam</p>
+      <div class="comment">
+         <span class="markdown">A parameter used as an input for a Simulation Application</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#inputFor"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#inputFor">inputFor</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#GlazingRatio"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#GlazingRatio">glazing ratio</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
    </div>
 </div><div id="objectproperties">
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
-         <a href="#hasParameter"
-            title="https://github.com/Ja98/ues/ontology.ttl#hasParameter">a parameter that can be used directly in the simulation</a>
+         <a href="#buildingUse"
+            title="https://ja98.github.io/ues/release/0.0.1/index-en.html#buildingUse">buildingUse</a>
       </li>
       <li>
          <a href="#hasCategory"
-            title="https://github.com/Ja98/ues/ontology.ttl#hasCategory">the category that applies to the archetype</a>
+            title="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasCategory">hasCategory</a>
+      </li>
+      <li>
+         <a href="#hasParameter"
+            title="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter">hasParameter</a>
+      </li>
+      <li>
+         <a href="#heatingFuel"
+            title="https://ja98.github.io/ues/release/0.0.1/index-en.html#heatingFuel">
+            <span>heating fuel</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hotWaterFuel"
+            title="https://ja98.github.io/ues/release/0.0.1/index-en.html#hotWaterFuel">
+            <span>hot water fuel</span>
+         </a>
+      </li>
+      <li>
+         <a href="#inputFor"
+            title="https://ja98.github.io/ues/release/0.0.1/index-en.html#inputFor">inputFor</a>
       </li>
    </ul>
-   <div class="entity" id="hasParameter">
-      <h3>a parameter that can be used directly in the simulation<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="buildingUse">
+      <h3>buildingUse<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://github.com/Ja98/ues/ontology.ttl#hasParameter</p>
+         <strong>IRI:</strong> https://ja98.github.io/ues/release/0.0.1/index-en.html#buildingUse</p>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="#BuildingUse"
+                  title="https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingUse">building use</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
    </div>
    <div class="entity" id="hasCategory">
-      <h3>the category that applies to the archetype<sup class="type-op" title="object property">op</sup>
+      <h3>hasCategory<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://github.com/Ja98/ues/ontology.ttl#hasCategory</p>
+         <strong>IRI:</strong> https://ja98.github.io/ues/release/0.0.1/index-en.html#hasCategory</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#GenericArchetype"
+                  title="https://ja98.github.io/ues/release/0.0.1/index-en.html#GenericArchetype">generic archetype</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasParameter">
+      <h3>hasParameter<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter</p>
+      <div class="comment">
+         <span class="markdown">a parameter of an archetype</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#GenericArchetype"
+                  title="https://ja98.github.io/ues/release/0.0.1/index-en.html#GenericArchetype">generic archetype</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="heatingFuel">
+      <h3>heating fuel<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ja98.github.io/ues/release/0.0.1/index-en.html#heatingFuel</p>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Fuel"
+                  title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Fuel">fuel</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hotWaterFuel">
+      <h3>hot water fuel<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ja98.github.io/ues/release/0.0.1/index-en.html#hotWaterFuel</p>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Fuel"
+                  title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Fuel">fuel</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="inputFor">
+      <h3>inputFor<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ja98.github.io/ues/release/0.0.1/index-en.html#inputFor</p>
+      <div class="comment">
+         <span class="markdown">the input for an application or simulation</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#SimulationParam"
+                  title="https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParam">simulation param</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#hasCRS"
+            title="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasCRS">
+            <span>has c r s</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasVertices"
+            title="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasVertices">
+            <span>has vertices</span>
+         </a>
+      </li>
+      <li>
+         <a href="#layerThickness"
+            title="https://ja98.github.io/ues/release/0.0.1/index-en.html#layerThickness">
+            <span>layer thickness</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://cui.unige.ch/citygml/2.0/measuredHeight" title="http://cui.unige.ch/citygml/2.0/measuredHeight">
+            <span>measured height</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="hasCRS">
+      <h3>has c r s<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ja98.github.io/ues/release/0.0.1/index-en.html#hasCRS</p>
+      <div class="comment">
+         <span class="markdown">the coordinate reference system used to define the building geometry</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="https://ja98.github.io/ues/release/0.0.1/index-en.html#crs">crs</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasVertices">
+      <h3>has vertices<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ja98.github.io/ues/release/0.0.1/index-en.html#hasVertices</p>
+      <div class="comment">
+         <span class="markdown">A list of coordinates defining the surface boundary. Detailed in the GML schema.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://schemas.opengis.net/gml/3.2.1/geometryBasic0d1d.xsd#posLis">pos lis</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="layerThickness">
+      <h3>layer thickness<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ja98.github.io/ues/release/0.0.1/index-en.html#layerThickness</p>
+      <div class="comment">
+         <span class="markdown">The thickness of a material layer</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum">ucum</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://cui.unige.ch/citygml/2.0/measuredHeight">
+      <h3>measured height<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://cui.unige.ch/citygml/2.0/measuredHeight</p>
+      <div class="comment">
+         <span class="markdown">The measured height of the building as defined in CityGML</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum">ucum</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="namedindividuals">
+   <h3 id="namedindividuals" class="list">Named Individuals</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#CESAR"
+            title="https://ja98.github.io/ues/release/0.0.1/index-en.html#CESAR">
+            <span>c e s a r</span>
+         </a>
+      </li>
+      <li>
+         <a href="#EnergyPlus"
+            title="https://ja98.github.io/ues/release/0.0.1/index-en.html#EnergyPlus">
+            <span>energy plus</span>
+         </a>
+      </li>
+      <li>
+         <a href="#GlazingRatio"
+            title="https://ja98.github.io/ues/release/0.0.1/index-en.html#GlazingRatio">
+            <span>glazing ratio</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="CESAR">
+      <h3>c e s a r<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ja98.github.io/ues/release/0.0.1/index-en.html#CESAR</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#SimulationApplication"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationApplication">simulation application</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="EnergyPlus">
+      <h3>energy plus<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ja98.github.io/ues/release/0.0.1/index-en.html#EnergyPlus</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#SimulationApplication"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationApplication">simulation application</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="GlazingRatio">
+      <h3>glazing ratio<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ja98.github.io/ues/release/0.0.1/index-en.html#GlazingRatio</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#SimulationParam"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParam">simulation param</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
    </div>
 </div><div id="legend">
 <h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>

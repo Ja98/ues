@@ -1,43 +1,259 @@
 [ {
-  "@id" : "https://github.com/Ja98/ues/ontology.ttl",
+  "@id" : "http://cui.unige.ch/citygml/2.0/measuredHeight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The measured height of the building as defined in CityGML"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ]
+}, {
+  "@id" : "http://schemas.opengis.net/gml/3.2.1/geometryBasic0d1d.xsd#posLis",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Defines the vertices that make up a building surface."
+  } ]
+}, {
+  "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
     "@id" : "https://github.com/Ja98/ues/tree/master/release/0.0.1/ontology.ttl"
   } ]
 }, {
-  "@id" : "https://github.com/Ja98/ues/ontology.ttl#AbsoluteTimeSeries",
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#AbsoluteTimeSeries",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An absolute time series"
   } ]
 }, {
-  "@id" : "https://github.com/Ja98/ues/ontology.ttl#GenericArchetype",
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#AgeOfConstructionRange",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "a generic archetype"
+    "@value" : "The age range that applies to an archetype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#ArchetypeCategory"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingUse"
   } ]
 }, {
-  "@id" : "https://github.com/Ja98/ues/ontology.ttl#RelativeTimeSeries",
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#ArchetypeCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "categories that can be used to represent the dataset using archetypes"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingUse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates the building use. As there are multiple ways to express this, it is dataset dependent and up to the user to define usage categories that best represent the data."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#ArchetypeCategory"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#CESAR",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationApplication" ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#EnergyPlus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationApplication" ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#ExternalWall",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A vertical surface of a building in contact with the external environment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Floor"
+  }, {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling"
+  }, {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall"
+  }, {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Floor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A building surface in contact with the ground"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling"
+  }, {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall"
+  }, {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Fuel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An energy carrier used to supply heat or electricity"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#GenericArchetype",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "an archetype object with categories and parameters for building simulation"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#GlazingRatio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParam" ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A horizontal surface separating two conditioned spaces or buildings"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall"
+  }, {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A vertical surface separating two conditioned spaces or buildings"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#RelativeTimeSeries",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A relative time series"
   } ]
 }, {
-  "@id" : "https://github.com/Ja98/ues/ontology.ttl#SimParam",
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A simulation parameter"
+    "@value" : "An inclined or horizontal surface of a building in contact with the external environment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface"
   } ]
 }, {
-  "@id" : "https://github.com/Ja98/ues/ontology.ttl#hasCategory",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "the category that applies to the archetype"
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationApplication",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An application used to simulate building energy performance"
   } ]
 }, {
-  "@id" : "https://github.com/Ja98/ues/ontology.ttl#hasParameter",
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParam",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A parameter used as an input for a Simulation Application"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#buildingUse",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "a parameter that can be used directly in the simulation"
+    "@value" : "buildingUse"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingUse"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#crs",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The coordinate reference system used to define the geometry"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasCRS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "the coordinate reference system used to define the building geometry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#crs"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#GenericArchetype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasCategory"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a parameter of an archetype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#GenericArchetype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasParameter"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasVertices",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A list of coordinates defining the surface boundary. Detailed in the GML schema."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://schemas.opengis.net/gml/3.2.1/geometryBasic0d1d.xsd#posLis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#heatingFuel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Fuel"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hotWaterFuel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Fuel"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#inputFor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "the input for an application or simulation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParam"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "inputFor"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#layerThickness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The thickness of a material layer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
   } ]
 } ]

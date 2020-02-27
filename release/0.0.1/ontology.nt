@@ -1,5 +1,25 @@
-<https://github.com/Ja98/ues/ontology.ttl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://github.com/Ja98/ues/ontology.ttl> <http://www.w3.org/2002/07/owl#versionIRI> <https://github.com/Ja98/ues/tree/master/release/0.0.1/ontology.ttl> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html> <http://www.w3.org/2002/07/owl#versionIRI> <https://github.com/Ja98/ues/tree/master/release/0.0.1/ontology.ttl> .
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://schemas.opengis.net/gml/3.2.1/geometryBasic0d1d.xsd#posLis
+<http://schemas.opengis.net/gml/3.2.1/geometryBasic0d1d.xsd#posLis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://schemas.opengis.net/gml/3.2.1/geometryBasic0d1d.xsd#posLis> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines the vertices that make up a building surface." .
+# 
+# https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum
+<https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#crs
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#crs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#crs> <http://www.w3.org/2000/01/rdf-schema#comment> "The coordinate reference system used to define the geometry" .
+# 
 # 
 # 
 # #################################################################
@@ -9,13 +29,65 @@
 # #################################################################
 # 
 # 
-# https://github.com/Ja98/ues/ontology.ttl#hasCategory
-<https://github.com/Ja98/ues/ontology.ttl#hasCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/Ja98/ues/ontology.ttl#hasCategory> <http://www.w3.org/2000/01/rdf-schema#label> "the category that applies to the archetype" .
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#buildingUse
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#buildingUse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#buildingUse> <http://www.w3.org/2000/01/rdf-schema#range> <https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingUse> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#buildingUse> <http://www.w3.org/2000/01/rdf-schema#label> "buildingUse" .
 # 
-# https://github.com/Ja98/ues/ontology.ttl#hasParameter
-<https://github.com/Ja98/ues/ontology.ttl#hasParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://github.com/Ja98/ues/ontology.ttl#hasParameter> <http://www.w3.org/2000/01/rdf-schema#label> "a parameter that can be used directly in the simulation" .
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#hasCategory
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#hasCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#hasCategory> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ja98.github.io/ues/release/0.0.1/index-en.html#GenericArchetype> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#hasCategory> <http://www.w3.org/2000/01/rdf-schema#label> "hasCategory" .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ja98.github.io/ues/release/0.0.1/index-en.html#GenericArchetype> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter> <http://www.w3.org/2000/01/rdf-schema#comment> "a parameter of an archetype" .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter> <http://www.w3.org/2000/01/rdf-schema#label> "hasParameter" .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#heatingFuel
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#heatingFuel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#heatingFuel> <http://www.w3.org/2000/01/rdf-schema#range> <https://ja98.github.io/ues/release/0.0.1/index-en.html#Fuel> .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#hotWaterFuel
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#hotWaterFuel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#hotWaterFuel> <http://www.w3.org/2000/01/rdf-schema#range> <https://ja98.github.io/ues/release/0.0.1/index-en.html#Fuel> .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#inputFor
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#inputFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#inputFor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParam> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#inputFor> <http://www.w3.org/2000/01/rdf-schema#comment> "the input for an application or simulation" .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#inputFor> <http://www.w3.org/2000/01/rdf-schema#label> "inputFor" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://cui.unige.ch/citygml/2.0/measuredHeight
+<http://cui.unige.ch/citygml/2.0/measuredHeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://cui.unige.ch/citygml/2.0/measuredHeight> <http://www.w3.org/2000/01/rdf-schema#range> <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> .
+<http://cui.unige.ch/citygml/2.0/measuredHeight> <http://www.w3.org/2000/01/rdf-schema#comment> "The measured height of the building as defined in CityGML" .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#hasCRS
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#hasCRS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#hasCRS> <http://www.w3.org/2000/01/rdf-schema#range> <https://ja98.github.io/ues/release/0.0.1/index-en.html#crs> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#hasCRS> <http://www.w3.org/2000/01/rdf-schema#comment> "the coordinate reference system used to define the building geometry" .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#hasVertices
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#hasVertices> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#hasVertices> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#hasVertices> <http://www.w3.org/2000/01/rdf-schema#range> <http://schemas.opengis.net/gml/3.2.1/geometryBasic0d1d.xsd#posLis> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#hasVertices> <http://www.w3.org/2000/01/rdf-schema#comment> "A list of coordinates defining the surface boundary. Detailed in the GML schema." .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#layerThickness
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#layerThickness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#layerThickness> <http://www.w3.org/2000/01/rdf-schema#range> <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#layerThickness> <http://www.w3.org/2000/01/rdf-schema#comment> "The thickness of a material layer" .
 # 
 # 
 # 
@@ -26,20 +98,102 @@
 # #################################################################
 # 
 # 
-# https://github.com/Ja98/ues/ontology.ttl#AbsoluteTimeSeries
-<https://github.com/Ja98/ues/ontology.ttl#AbsoluteTimeSeries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/Ja98/ues/ontology.ttl#AbsoluteTimeSeries> <http://www.w3.org/2000/01/rdf-schema#comment> "An absolute time series" .
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#AbsoluteTimeSeries
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#AbsoluteTimeSeries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#AbsoluteTimeSeries> <http://www.w3.org/2000/01/rdf-schema#comment> "An absolute time series" .
 # 
-# https://github.com/Ja98/ues/ontology.ttl#GenericArchetype
-<https://github.com/Ja98/ues/ontology.ttl#GenericArchetype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/Ja98/ues/ontology.ttl#GenericArchetype> <http://www.w3.org/2000/01/rdf-schema#comment> "a generic archetype" .
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#AgeOfConstructionRange
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#AgeOfConstructionRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#AgeOfConstructionRange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#ArchetypeCategory> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#AgeOfConstructionRange> <http://www.w3.org/2002/07/owl#disjointWith> <https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingUse> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#AgeOfConstructionRange> <http://www.w3.org/2000/01/rdf-schema#comment> "The age range that applies to an archetype" .
 # 
-# https://github.com/Ja98/ues/ontology.ttl#RelativeTimeSeries
-<https://github.com/Ja98/ues/ontology.ttl#RelativeTimeSeries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/Ja98/ues/ontology.ttl#RelativeTimeSeries> <http://www.w3.org/2000/01/rdf-schema#comment> "A relative time series" .
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#ArchetypeCategory
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#ArchetypeCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#ArchetypeCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "categories that can be used to represent the dataset using archetypes" .
 # 
-# https://github.com/Ja98/ues/ontology.ttl#SimParam
-<https://github.com/Ja98/ues/ontology.ttl#SimParam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://github.com/Ja98/ues/ontology.ttl#SimParam> <http://www.w3.org/2000/01/rdf-schema#comment> "A simulation parameter" .
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingUse
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingUse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#ArchetypeCategory> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingUse> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the building use. As there are multiple ways to express this, it is dataset dependent and up to the user to define usage categories that best represent the data." .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#ExternalWall
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#ExternalWall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#ExternalWall> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#ExternalWall> <http://www.w3.org/2002/07/owl#disjointWith> <https://ja98.github.io/ues/release/0.0.1/index-en.html#Floor> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#ExternalWall> <http://www.w3.org/2002/07/owl#disjointWith> <https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#ExternalWall> <http://www.w3.org/2002/07/owl#disjointWith> <https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#ExternalWall> <http://www.w3.org/2002/07/owl#disjointWith> <https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#ExternalWall> <http://www.w3.org/2000/01/rdf-schema#comment> "A vertical surface of a building in contact with the external environment" .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#Floor
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#Floor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#Floor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#Floor> <http://www.w3.org/2002/07/owl#disjointWith> <https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#Floor> <http://www.w3.org/2002/07/owl#disjointWith> <https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#Floor> <http://www.w3.org/2002/07/owl#disjointWith> <https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#Floor> <http://www.w3.org/2000/01/rdf-schema#comment> "A building surface in contact with the ground" .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#Fuel
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#Fuel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#Fuel> <http://www.w3.org/2000/01/rdf-schema#comment> "An energy carrier used to supply heat or electricity" .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#GenericArchetype
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#GenericArchetype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#GenericArchetype> <http://www.w3.org/2000/01/rdf-schema#comment> "an archetype object with categories and parameters for building simulation" .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling> <http://www.w3.org/2002/07/owl#disjointWith> <https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling> <http://www.w3.org/2002/07/owl#disjointWith> <https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling> <http://www.w3.org/2000/01/rdf-schema#comment> "A horizontal surface separating two conditioned spaces or buildings" .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall> <http://www.w3.org/2002/07/owl#disjointWith> <https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall> <http://www.w3.org/2000/01/rdf-schema#comment> "A vertical surface separating two conditioned spaces or buildings" .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#RelativeTimeSeries
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#RelativeTimeSeries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#RelativeTimeSeries> <http://www.w3.org/2000/01/rdf-schema#comment> "A relative time series" .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof> <http://www.w3.org/2000/01/rdf-schema#comment> "An inclined or horizontal surface of a building in contact with the external environment" .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationApplication
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationApplication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationApplication> <http://www.w3.org/2000/01/rdf-schema#comment> "An application used to simulate building energy performance" .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParam
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParam> <http://www.w3.org/2000/01/rdf-schema#comment> "A parameter used as an input for a Simulation Application" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#CESAR
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#CESAR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#CESAR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationApplication> .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#EnergyPlus
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#EnergyPlus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#EnergyPlus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationApplication> .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#GlazingRatio
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#GlazingRatio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#GlazingRatio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParam> .
 # 
 # Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
