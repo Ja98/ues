@@ -18,13 +18,33 @@
                                                                     rdfs:comment "Defines the vertices that make up a building surface." .
 
 
+###  http://www.w3.org/2001/XMLSchema#gYear
+xsd:gYear rdf:type rdfs:Datatype .
+
+
 ###  https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum
-<https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> rdf:type rdfs:Datatype .
+<https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> rdf:type rdfs:Datatype ;
+                                                                    rdfs:comment "a string following the unified code for units of measure" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#absoluteTimeSeries
+:absoluteTimeSeries rdf:type rdfs:Datatype ;
+                    rdfs:comment "A time series with absolute values at each timestep" .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#crs
 :crs rdf:type rdfs:Datatype ;
-     rdfs:comment "The coordinate reference system used to define the geometry" .
+     rdfs:comment "the coordinate system used to define a geometry" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#relativeTimeSeries
+:relativeTimeSeries rdf:type rdfs:Datatype ;
+                    rdfs:comment "A time series of relative values that, when multiplied by a base value, gives the absolute value for each timestep" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#yearRange
+:yearRange rdf:type rdfs:Datatype ;
+           rdfs:comment "A range of years, format: YYYY-YYYY" .
 
 
 #################################################################
@@ -33,38 +53,135 @@
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#buildingUse
 :buildingUse rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :hasCategory ;
+             rdfs:domain :Archetype ;
              rdfs:range :BuildingUse ;
-             rdfs:label "buildingUse" .
+             rdfs:comment "the building use represented by an archetype" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#constructedIn
+:constructedIn rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :hasParameter ;
+               rdfs:comment "The year a building or archetype was constructed in" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#constructionYearRange
+:constructionYearRange rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf :hasCategory ;
+                       rdfs:domain :Archetype ;
+                       rdfs:range :AgeOfConstructionRange ;
+                       rdfs:comment "the range of years represented by an archetype" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#enclosedBy
+:enclosedBy rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :hasParameter ;
+            rdfs:domain <https://w3id.org/bot#Zone> ;
+            rdfs:range :BuildingSurface ;
+            rdfs:comment "identifies the surfaces that enclose an instance of a zone" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#glazingRatio
+:glazingRatio rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :hasParameter ;
+              rdfs:comment "the glazing ratio of a building or wall" .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#hasCategory
 :hasCategory rdf:type owl:ObjectProperty ;
-             rdfs:domain :GenericArchetype ;
-             rdfs:label "hasCategory" .
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:comment "categorical assignment either to a data record or archetype" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#hasDistributionObject
+:hasDistributionObject rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf :hasParameter ;
+                       rdfs:comment "distribution object to be used to generate a time series" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#hasExternalWall
+:hasExternalWall rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :hasSurface ;
+                 rdfs:domain :Archetype ;
+                 rdfs:range :ExternalWall ;
+                 rdfs:comment "external wall" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#hasFloor
+:hasFloor rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :hasSurface ;
+          rdfs:domain :ConstructionArchetype ;
+          rdfs:range :Floor ;
+          rdfs:comment "external floor in contact with the ground" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#hasInternalCeiling
+:hasInternalCeiling rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :hasSurface ;
+                    rdfs:domain :ConstructionArchetype ;
+                    rdfs:range :InternalCeiling ;
+                    rdfs:comment "an internal ceiling separating two conditioned zones" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#hasInternalWall
+:hasInternalWall rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :hasSurface ;
+                 rdfs:domain :ConstructionArchetype ;
+                 rdfs:range :InternalWall ;
+                 rdfs:comment "an internal wall separating two conditioned spaces" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#hasLayer
+:hasLayer rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :hasParameter ;
+          rdfs:comment "defines the layer of a wall" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#hasMaterial
+:hasMaterial rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :hasParameter ;
+             rdfs:domain :MaterialLayer ;
+             rdfs:range :Material ;
+             rdfs:comment "defines the material of a construction layer" .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter
 :hasParameter rdf:type owl:ObjectProperty ;
-              rdfs:domain :GenericArchetype ;
-              rdfs:comment "a parameter of an archetype" ;
-              rdfs:label "hasParameter" .
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:comment "parameters for simulation either in a data record or from an archetype" .
 
 
-###  https://ja98.github.io/ues/release/0.0.1/index-en.html#heatingFuel
-:heatingFuel rdf:type owl:ObjectProperty ;
-             rdfs:range :Fuel .
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#hasRoof
+:hasRoof rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :hasSurface ;
+         rdfs:domain :ConstructionArchetype ;
+         rdfs:range :Roof ;
+         rdfs:comment "an exterior roof" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#hasSurface
+:hasSurface rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :hasParameter ;
+            rdfs:comment "presence of building surfaces used to define the building model" .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#hotWaterFuel
 :hotWaterFuel rdf:type owl:ObjectProperty ;
-              rdfs:range :Fuel .
+              rdfs:subPropertyOf :hasParameter ;
+              rdfs:range :Fuel ;
+              rdfs:comment "the fuel used to supply hot water" .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#inputFor
 :inputFor rdf:type owl:ObjectProperty ;
-          rdfs:domain :SimulationParam ;
-          rdfs:comment "the input for an application or simulation" ;
-          rdfs:label "inputFor" .
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdfs:comment "indicates the application the parameter can be used with" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#spaceHeatingFuel
+:spaceHeatingFuel rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :hasParameter ;
+                  rdfs:comment "the fuel used for space heating" .
 
 
 #################################################################
@@ -73,14 +190,66 @@
 
 ###  http://cui.unige.ch/citygml/2.0/measuredHeight
 <http://cui.unige.ch/citygml/2.0/measuredHeight> rdf:type owl:DatatypeProperty ;
+                                                 rdfs:subPropertyOf :GeometricDataProperties ;
                                                  rdfs:range <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> ;
-                                                 rdfs:comment "The measured height of the building as defined in CityGML" .
+                                                 rdfs:comment "the meaured height as detailed in CityGML" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#GeometricDataProperties
+:GeometricDataProperties rdf:type owl:DatatypeProperty .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#appliesTo
+:appliesTo rdf:type owl:DatatypeProperty ;
+           rdfs:comment "indicates the range of values the archetype category applies to" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#density
+:density rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf :materialProperty ;
+         rdfs:range <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> ;
+         rdfs:comment "density of the material" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#dist
+:dist rdf:type owl:DatatypeProperty ;
+      rdfs:subPropertyOf :parameterDataProperty ;
+      rdfs:comment "distribution of the parameter" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#hasBaseValue
+:hasBaseValue rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf :parameterDataProperty ;
+              rdfs:range <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> ;
+              rdfs:comment "the base value is multiplied by the relative values in a relative timeseries to determine the absolute values at each timestep" .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#hasCRS
 :hasCRS rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf :GeometricDataProperties ;
         rdfs:range :crs ;
-        rdfs:comment "the coordinate reference system used to define the building geometry" .
+        rdfs:comment "The coordinate reference system used to define the property" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#hasMaxValue
+:hasMaxValue rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf :parameterDataProperty ;
+             rdfs:range <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> ;
+             rdfs:comment "the maximum value of the parameter represented by the archetype" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#hasMinValue
+:hasMinValue rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf :parameterDataProperty ;
+             rdfs:range <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> ;
+             rdfs:comment "the minimum value of the parameter represented by the archetype" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#hasValue
+:hasValue rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf :parameterDataProperty ;
+          rdfs:range <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> ;
+          rdfs:comment "A value that can be used directly by the simulation" .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#hasVertices
@@ -96,13 +265,77 @@
                 rdfs:comment "The thickness of a material layer" .
 
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty
+:materialProperty rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:domain :Material .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#parameterDataProperty
+:parameterDataProperty rdf:type owl:DatatypeProperty ;
+                       rdfs:comment "attributes used to define the usage of a simulation parameter defined in an archetype" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#probOccur
+:probOccur rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf :parameterDataProperty ;
+           rdfs:range <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> ;
+           rdfs:comment "probability of occurrence of the parameter" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#roughness
+:roughness rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf :materialProperty ;
+           rdfs:range <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> ;
+           rdfs:comment "the surface roughness of the material" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#solarAbsorptance
+:solarAbsorptance rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :materialProperty ;
+                  rdfs:range <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> ;
+                  rdfs:comment "the fraction of solar radiation absorbed by the material" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#specificHeat
+:specificHeat rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf :materialProperty ;
+              rdfs:range <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> ;
+              rdfs:comment "specific heat of the material" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#themalConductivity
+:themalConductivity rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :materialProperty ;
+                    rdfs:range <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> ;
+                    rdfs:comment "the thermal conductivity of the material" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#visualAbsorptance
+:visualAbsorptance rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf :materialProperty ;
+                   rdfs:range <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> ;
+                   rdfs:comment "the fraction of the visual spectrum absorbed by the material" .
+
+
 #################################################################
 #    Classes
 #################################################################
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#AbsoluteTimeSeries
 :AbsoluteTimeSeries rdf:type owl:Class ;
+                    rdfs:subClassOf :TimeSeries ;
                     rdfs:comment "An absolute time series" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#AbstractBuilding
+:AbstractBuilding rdf:type owl:Class ;
+                  rdfs:comment "An abstract building indicating the instance of a building with no attached or assumed information" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#AgeOfConstruction
+:AgeOfConstruction rdf:type owl:Class ;
+                   rdfs:comment "The age of construction of a building" .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#AgeOfConstructionRange
@@ -112,19 +345,41 @@
                         rdfs:comment "The age range that applies to an archetype" .
 
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Archetype
+:Archetype rdf:type owl:Class ;
+           rdfs:comment "an archetype object with categories and parameters for building simulation" .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#ArchetypeCategory
 :ArchetypeCategory rdf:type owl:Class ;
                    rdfs:comment "categories that can be used to represent the dataset using archetypes" .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface
-:BuildingSurface rdf:type owl:Class .
+:BuildingSurface rdf:type owl:Class ;
+                 rdfs:comment "building surfaces that define a building" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingUsage
+:BuildingUsage rdf:type owl:Class ;
+               rdfs:comment "The specific usage of a building or zone" .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingUse
 :BuildingUse rdf:type owl:Class ;
              rdfs:subClassOf :ArchetypeCategory ;
              rdfs:comment "Indicates the building use. As there are multiple ways to express this, it is dataset dependent and up to the user to define usage categories that best represent the data." .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#ConstructionArchetype
+:ConstructionArchetype rdf:type owl:Class ;
+                       rdfs:subClassOf :Archetype ;
+                       rdfs:comment "An archetype specific to construction attributes" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Distribution
+:Distribution rdf:type owl:Class ;
+              rdfs:comment "Distibution class used to generate time series and profiles" .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#ExternalWall
@@ -151,9 +406,9 @@
       rdfs:comment "An energy carrier used to supply heat or electricity" .
 
 
-###  https://ja98.github.io/ues/release/0.0.1/index-en.html#GenericArchetype
-:GenericArchetype rdf:type owl:Class ;
-                  rdfs:comment "an archetype object with categories and parameters for building simulation" .
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#GlazingRatio
+:GlazingRatio rdf:type owl:Class ;
+              rdfs:subClassOf :SimulationParameter .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling
@@ -171,8 +426,19 @@
               rdfs:comment "A vertical surface separating two conditioned spaces or buildings" .
 
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Material
+:Material rdf:type owl:Class ;
+          rdfs:comment "A material" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#MaterialLayer
+:MaterialLayer rdf:type owl:Class ;
+               rdfs:comment "A material layer of a construction" .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#RelativeTimeSeries
 :RelativeTimeSeries rdf:type owl:Class ;
+                    rdfs:subClassOf :TimeSeries ;
                     rdfs:comment "A relative time series" .
 
 
@@ -182,14 +448,30 @@
       rdfs:comment "An inclined or horizontal surface of a building in contact with the external environment" .
 
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#SchedulingArchetype
+:SchedulingArchetype rdf:type owl:Class ;
+                     rdfs:subClassOf :Archetype ;
+                     rdfs:comment "An archetype specific to internal scheduling" .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationApplication
 :SimulationApplication rdf:type owl:Class ;
                        rdfs:comment "An application used to simulate building energy performance" .
 
 
-###  https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParam
-:SimulationParam rdf:type owl:Class ;
-                 rdfs:comment "A parameter used as an input for a Simulation Application" .
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParameter
+:SimulationParameter rdf:type owl:Class ;
+                     rdfs:comment "A parameter used as an input for a Simulation Application" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries
+:TimeSeries rdf:type owl:Class ;
+            rdfs:subClassOf :SimulationParameter .
+
+
+###  https://w3id.org/bot#Zone
+<https://w3id.org/bot#Zone> rdf:type owl:Class ;
+                            rdfs:comment "a bot zone as detailed in the BOT ontology" .
 
 
 #################################################################
@@ -201,14 +483,63 @@
                 :SimulationApplication .
 
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#CoolingSetPoint
+:CoolingSetPoint rdf:type owl:NamedIndividual ,
+                          :TimeSeries .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#DomesticHotWater
+:DomesticHotWater rdf:type owl:NamedIndividual .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Electricity
+:Electricity rdf:type owl:NamedIndividual ,
+                      :Fuel .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#EnergyPlus
 :EnergyPlus rdf:type owl:NamedIndividual ,
                      :SimulationApplication .
 
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Gas
+:Gas rdf:type owl:NamedIndividual ,
+              :Fuel .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#GlazingRatio
 :GlazingRatio rdf:type owl:NamedIndividual ,
-                       :SimulationParam .
+                       :SimulationParameter .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#HeatingSetPoint
+:HeatingSetPoint rdf:type owl:NamedIndividual ,
+                          :TimeSeries .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Lighting
+:Lighting rdf:type owl:NamedIndividual ,
+                   :TimeSeries .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#MultiFamilyHome
+:MultiFamilyHome rdf:type owl:NamedIndividual ,
+                          :BuildingUsage .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Occupancy
+:Occupancy rdf:type owl:NamedIndividual ,
+                    :TimeSeries .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#SingleFamilyHome
+:SingleFamilyHome rdf:type owl:NamedIndividual ,
+                           :BuildingUsage .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Ventilation
+:Ventilation rdf:type owl:NamedIndividual ,
+                      :TimeSeries .
 
 
 ###  Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/

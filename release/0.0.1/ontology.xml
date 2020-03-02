@@ -33,10 +33,28 @@
     
 
 
+    <!-- http://www.w3.org/2001/XMLSchema#gYear -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gYear"/>
+    
+
+
     <!-- https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum -->
 
 
-    <rdfs:Datatype rdf:about="https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"/>
+    <rdfs:Datatype rdf:about="https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum">
+        <rdfs:comment>a string following the unified code for units of measure</rdfs:comment>
+    </rdfs:Datatype>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#absoluteTimeSeries -->
+
+
+    <rdfs:Datatype rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#absoluteTimeSeries">
+        <rdfs:comment>A time series with absolute values at each timestep</rdfs:comment>
+    </rdfs:Datatype>
     
 
 
@@ -44,7 +62,25 @@
 
 
     <rdfs:Datatype rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#crs">
-        <rdfs:comment>The coordinate reference system used to define the geometry</rdfs:comment>
+        <rdfs:comment>the coordinate system used to define a geometry</rdfs:comment>
+    </rdfs:Datatype>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#relativeTimeSeries -->
+
+
+    <rdfs:Datatype rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#relativeTimeSeries">
+        <rdfs:comment>A time series of relative values that, when multiplied by a base value, gives the absolute value for each timestep</rdfs:comment>
+    </rdfs:Datatype>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#yearRange -->
+
+
+    <rdfs:Datatype rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#yearRange">
+        <rdfs:comment>A range of years, format: YYYY-YYYY</rdfs:comment>
     </rdfs:Datatype>
     
 
@@ -65,8 +101,54 @@
 
 
     <owl:ObjectProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#buildingUse">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasCategory"/>
+        <rdfs:domain rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Archetype"/>
         <rdfs:range rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingUse"/>
-        <rdfs:label>buildingUse</rdfs:label>
+        <rdfs:comment>the building use represented by an archetype</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#constructedIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#constructedIn">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter"/>
+        <rdfs:comment>The year a building or archetype was constructed in</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#constructionYearRange -->
+
+
+    <owl:ObjectProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#constructionYearRange">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasCategory"/>
+        <rdfs:domain rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Archetype"/>
+        <rdfs:range rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#AgeOfConstructionRange"/>
+        <rdfs:comment>the range of years represented by an archetype</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#enclosedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#enclosedBy">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter"/>
+        <rdfs:domain rdf:resource="https://w3id.org/bot#Zone"/>
+        <rdfs:range rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface"/>
+        <rdfs:comment>identifies the surfaces that enclose an instance of a zone</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#glazingRatio -->
+
+
+    <owl:ObjectProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#glazingRatio">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter"/>
+        <rdfs:comment>the glazing ratio of a building or wall</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -75,8 +157,88 @@
 
 
     <owl:ObjectProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasCategory">
-        <rdfs:domain rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#GenericArchetype"/>
-        <rdfs:label>hasCategory</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment>categorical assignment either to a data record or archetype</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#hasDistributionObject -->
+
+
+    <owl:ObjectProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasDistributionObject">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter"/>
+        <rdfs:comment>distribution object to be used to generate a time series</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#hasExternalWall -->
+
+
+    <owl:ObjectProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasExternalWall">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasSurface"/>
+        <rdfs:domain rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Archetype"/>
+        <rdfs:range rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#ExternalWall"/>
+        <rdfs:comment>external wall</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#hasFloor -->
+
+
+    <owl:ObjectProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasFloor">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasSurface"/>
+        <rdfs:domain rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#ConstructionArchetype"/>
+        <rdfs:range rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Floor"/>
+        <rdfs:comment>external floor in contact with the ground</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#hasInternalCeiling -->
+
+
+    <owl:ObjectProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasInternalCeiling">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasSurface"/>
+        <rdfs:domain rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#ConstructionArchetype"/>
+        <rdfs:range rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling"/>
+        <rdfs:comment>an internal ceiling separating two conditioned zones</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#hasInternalWall -->
+
+
+    <owl:ObjectProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasInternalWall">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasSurface"/>
+        <rdfs:domain rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#ConstructionArchetype"/>
+        <rdfs:range rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall"/>
+        <rdfs:comment>an internal wall separating two conditioned spaces</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#hasLayer -->
+
+
+    <owl:ObjectProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasLayer">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter"/>
+        <rdfs:comment>defines the layer of a wall</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#hasMaterial -->
+
+
+    <owl:ObjectProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasMaterial">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter"/>
+        <rdfs:domain rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#MaterialLayer"/>
+        <rdfs:range rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Material"/>
+        <rdfs:comment>defines the material of a construction layer</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -85,18 +247,30 @@
 
 
     <owl:ObjectProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter">
-        <rdfs:domain rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#GenericArchetype"/>
-        <rdfs:comment>a parameter of an archetype</rdfs:comment>
-        <rdfs:label>hasParameter</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment>parameters for simulation either in a data record or from an archetype</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#heatingFuel -->
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#hasRoof -->
 
 
-    <owl:ObjectProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#heatingFuel">
-        <rdfs:range rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Fuel"/>
+    <owl:ObjectProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasRoof">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasSurface"/>
+        <rdfs:domain rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#ConstructionArchetype"/>
+        <rdfs:range rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof"/>
+        <rdfs:comment>an exterior roof</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#hasSurface -->
+
+
+    <owl:ObjectProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasSurface">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter"/>
+        <rdfs:comment>presence of building surfaces used to define the building model</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -105,7 +279,9 @@
 
 
     <owl:ObjectProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#hotWaterFuel">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter"/>
         <rdfs:range rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Fuel"/>
+        <rdfs:comment>the fuel used to supply hot water</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -114,9 +290,18 @@
 
 
     <owl:ObjectProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#inputFor">
-        <rdfs:domain rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParam"/>
-        <rdfs:comment>the input for an application or simulation</rdfs:comment>
-        <rdfs:label>inputFor</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment>indicates the application the parameter can be used with</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#spaceHeatingFuel -->
+
+
+    <owl:ObjectProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#spaceHeatingFuel">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter"/>
+        <rdfs:comment>the fuel used for space heating</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -137,8 +322,57 @@
 
 
     <owl:DatatypeProperty rdf:about="http://cui.unige.ch/citygml/2.0/measuredHeight">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#GeometricDataProperties"/>
         <rdfs:range rdf:resource="https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"/>
-        <rdfs:comment>The measured height of the building as defined in CityGML</rdfs:comment>
+        <rdfs:comment>the meaured height as detailed in CityGML</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#GeometricDataProperties -->
+
+
+    <owl:DatatypeProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#GeometricDataProperties"/>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#appliesTo -->
+
+
+    <owl:DatatypeProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#appliesTo">
+        <rdfs:comment>indicates the range of values the archetype category applies to</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#density -->
+
+
+    <owl:DatatypeProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#density">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"/>
+        <rdfs:range rdf:resource="https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"/>
+        <rdfs:comment>density of the material</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#dist -->
+
+
+    <owl:DatatypeProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#dist">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#parameterDataProperty"/>
+        <rdfs:comment>distribution of the parameter</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#hasBaseValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasBaseValue">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#parameterDataProperty"/>
+        <rdfs:range rdf:resource="https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"/>
+        <rdfs:comment>the base value is multiplied by the relative values in a relative timeseries to determine the absolute values at each timestep</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -147,8 +381,42 @@
 
 
     <owl:DatatypeProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasCRS">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#GeometricDataProperties"/>
         <rdfs:range rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#crs"/>
-        <rdfs:comment>the coordinate reference system used to define the building geometry</rdfs:comment>
+        <rdfs:comment>The coordinate reference system used to define the property</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#hasMaxValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasMaxValue">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#parameterDataProperty"/>
+        <rdfs:range rdf:resource="https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"/>
+        <rdfs:comment>the maximum value of the parameter represented by the archetype</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#hasMinValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasMinValue">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#parameterDataProperty"/>
+        <rdfs:range rdf:resource="https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"/>
+        <rdfs:comment>the minimum value of the parameter represented by the archetype</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#hasValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasValue">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#parameterDataProperty"/>
+        <rdfs:range rdf:resource="https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"/>
+        <rdfs:comment>A value that can be used directly by the simulation</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -174,6 +442,91 @@
     
 
 
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty -->
+
+
+    <owl:DatatypeProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Material"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#parameterDataProperty -->
+
+
+    <owl:DatatypeProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#parameterDataProperty">
+        <rdfs:comment>attributes used to define the usage of a simulation parameter defined in an archetype</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#probOccur -->
+
+
+    <owl:DatatypeProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#probOccur">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#parameterDataProperty"/>
+        <rdfs:range rdf:resource="https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"/>
+        <rdfs:comment>probability of occurrence of the parameter</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#roughness -->
+
+
+    <owl:DatatypeProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#roughness">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"/>
+        <rdfs:range rdf:resource="https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"/>
+        <rdfs:comment>the surface roughness of the material</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#solarAbsorptance -->
+
+
+    <owl:DatatypeProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#solarAbsorptance">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"/>
+        <rdfs:range rdf:resource="https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"/>
+        <rdfs:comment>the fraction of solar radiation absorbed by the material</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#specificHeat -->
+
+
+    <owl:DatatypeProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#specificHeat">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"/>
+        <rdfs:range rdf:resource="https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"/>
+        <rdfs:comment>specific heat of the material</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#themalConductivity -->
+
+
+    <owl:DatatypeProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#themalConductivity">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"/>
+        <rdfs:range rdf:resource="https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"/>
+        <rdfs:comment>the thermal conductivity of the material</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#visualAbsorptance -->
+
+
+    <owl:DatatypeProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#visualAbsorptance">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"/>
+        <rdfs:range rdf:resource="https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"/>
+        <rdfs:comment>the fraction of the visual spectrum absorbed by the material</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -190,7 +543,26 @@
 
 
     <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#AbsoluteTimeSeries">
+        <rdfs:subClassOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries"/>
         <rdfs:comment>An absolute time series</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#AbstractBuilding -->
+
+
+    <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#AbstractBuilding">
+        <rdfs:comment>An abstract building indicating the instance of a building with no attached or assumed information</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#AgeOfConstruction -->
+
+
+    <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#AgeOfConstruction">
+        <rdfs:comment>The age of construction of a building</rdfs:comment>
     </owl:Class>
     
 
@@ -202,6 +574,15 @@
         <rdfs:subClassOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#ArchetypeCategory"/>
         <owl:disjointWith rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingUse"/>
         <rdfs:comment>The age range that applies to an archetype</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#Archetype -->
+
+
+    <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#Archetype">
+        <rdfs:comment>an archetype object with categories and parameters for building simulation</rdfs:comment>
     </owl:Class>
     
 
@@ -218,7 +599,18 @@
     <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface -->
 
 
-    <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface"/>
+    <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface">
+        <rdfs:comment>building surfaces that define a building</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingUsage -->
+
+
+    <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingUsage">
+        <rdfs:comment>The specific usage of a building or zone</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -228,6 +620,25 @@
     <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingUse">
         <rdfs:subClassOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#ArchetypeCategory"/>
         <rdfs:comment>Indicates the building use. As there are multiple ways to express this, it is dataset dependent and up to the user to define usage categories that best represent the data.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#ConstructionArchetype -->
+
+
+    <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#ConstructionArchetype">
+        <rdfs:subClassOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Archetype"/>
+        <rdfs:comment>An archetype specific to construction attributes</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#Distribution -->
+
+
+    <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#Distribution">
+        <rdfs:comment>Distibution class used to generate time series and profiles</rdfs:comment>
     </owl:Class>
     
 
@@ -268,11 +679,11 @@
     
 
 
-    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#GenericArchetype -->
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#GlazingRatio -->
 
 
-    <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#GenericArchetype">
-        <rdfs:comment>an archetype object with categories and parameters for building simulation</rdfs:comment>
+    <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#GlazingRatio">
+        <rdfs:subClassOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParameter"/>
     </owl:Class>
     
 
@@ -300,10 +711,29 @@
     
 
 
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#Material -->
+
+
+    <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#Material">
+        <rdfs:comment>A material</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#MaterialLayer -->
+
+
+    <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#MaterialLayer">
+        <rdfs:comment>A material layer of a construction</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#RelativeTimeSeries -->
 
 
     <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#RelativeTimeSeries">
+        <rdfs:subClassOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries"/>
         <rdfs:comment>A relative time series</rdfs:comment>
     </owl:Class>
     
@@ -319,6 +749,16 @@
     
 
 
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#SchedulingArchetype -->
+
+
+    <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#SchedulingArchetype">
+        <rdfs:subClassOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Archetype"/>
+        <rdfs:comment>An archetype specific to internal scheduling</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationApplication -->
 
 
@@ -328,11 +768,29 @@
     
 
 
-    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParam -->
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParameter -->
 
 
-    <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParam">
+    <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParameter">
         <rdfs:comment>A parameter used as an input for a Simulation Application</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries -->
+
+
+    <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries">
+        <rdfs:subClassOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParameter"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bot#Zone -->
+
+
+    <owl:Class rdf:about="https://w3id.org/bot#Zone">
+        <rdfs:comment>a bot zone as detailed in the BOT ontology</rdfs:comment>
     </owl:Class>
     
 
@@ -358,6 +816,31 @@
     
 
 
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#CoolingSetPoint -->
+
+
+    <owl:NamedIndividual rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#CoolingSetPoint">
+        <rdf:type rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#DomesticHotWater -->
+
+
+    <owl:NamedIndividual rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#DomesticHotWater"/>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#Electricity -->
+
+
+    <owl:NamedIndividual rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#Electricity">
+        <rdf:type rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Fuel"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#EnergyPlus -->
 
 
@@ -367,11 +850,74 @@
     
 
 
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#Gas -->
+
+
+    <owl:NamedIndividual rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#Gas">
+        <rdf:type rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Fuel"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#GlazingRatio -->
 
 
     <owl:NamedIndividual rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#GlazingRatio">
-        <rdf:type rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParam"/>
+        <rdf:type rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParameter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#HeatingSetPoint -->
+
+
+    <owl:NamedIndividual rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#HeatingSetPoint">
+        <rdf:type rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#Lighting -->
+
+
+    <owl:NamedIndividual rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#Lighting">
+        <rdf:type rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#MultiFamilyHome -->
+
+
+    <owl:NamedIndividual rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#MultiFamilyHome">
+        <rdf:type rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingUsage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#Occupancy -->
+
+
+    <owl:NamedIndividual rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#Occupancy">
+        <rdf:type rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#SingleFamilyHome -->
+
+
+    <owl:NamedIndividual rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#SingleFamilyHome">
+        <rdf:type rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingUsage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#Ventilation -->
+
+
+    <owl:NamedIndividual rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#Ventilation">
+        <rdf:type rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
