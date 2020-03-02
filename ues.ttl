@@ -1,4 +1,5 @@
 @prefix : <https://ja98.github.io/ues/release/0.0.1/index-en.html#> .
+@prefix bot: <https://w3id.org/bot#> .
 @prefix cdt: <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -39,6 +40,12 @@ ues:crs rdf:type rdfs:Datatype ;
 ues:buildingUse rdf:type owl:ObjectProperty ;
                 rdfs:range ues:BuildingUse ;
                 rdfs:label "buildingUse" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#enclosedBy
+ues:enclosedBy rdf:type owl:ObjectProperty ;
+               rdfs:domain bot:Zone ;
+               rdfs:range ues:BuildingSurface .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#hasCategory
@@ -194,6 +201,10 @@ ues:SimulationApplication rdf:type owl:Class ;
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParam
 ues:SimulationParam rdf:type owl:Class ;
                     rdfs:comment "A parameter used as an input for a Simulation Application" .
+
+
+###  https://w3id.org/bot#Zone
+bot:Zone rdf:type owl:Class .
 
 
 #################################################################
