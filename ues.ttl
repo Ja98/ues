@@ -56,6 +56,12 @@ ues:yearRange rdf:type rdfs:Datatype ;
 #    Object Properties
 #################################################################
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#buildingInstance
+ues:buildingInstance rdf:type owl:ObjectProperty ;
+                     rdfs:range ues:AbstractBuilding ;
+                     rdfs:comment "Links the instance of a building record to an abstract building" .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#buildingUse
 ues:buildingUse rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf ues:hasCategory ;
@@ -115,15 +121,15 @@ ues:hasExternalWall rdf:type owl:ObjectProperty ;
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#hasFloor
 ues:hasFloor rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf ues:hasSurface ;
-             rdfs:domain ues:ConstructionArchetype ;
-             rdfs:range ues:Floor ;
+             rdfs:domain ues:Archetype ;
+             rdfs:range ues:GroundFloor ;
              rdfs:comment "external floor in contact with the ground" .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#hasInternalCeiling
 ues:hasInternalCeiling rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf ues:hasSurface ;
-                       rdfs:domain ues:ConstructionArchetype ;
+                       rdfs:domain ues:Archetype ;
                        rdfs:range ues:InternalCeiling ;
                        rdfs:comment "an internal ceiling separating two conditioned zones" .
 
@@ -131,7 +137,7 @@ ues:hasInternalCeiling rdf:type owl:ObjectProperty ;
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#hasInternalWall
 ues:hasInternalWall rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf ues:hasSurface ;
-                    rdfs:domain ues:ConstructionArchetype ;
+                    rdfs:domain ues:Archetype ;
                     rdfs:range ues:InternalWall ;
                     rdfs:comment "an internal wall separating two conditioned spaces" .
 
@@ -159,7 +165,7 @@ ues:hasParameter rdf:type owl:ObjectProperty ;
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#hasRoof
 ues:hasRoof rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf ues:hasSurface ;
-            rdfs:domain ues:ConstructionArchetype ;
+            rdfs:domain ues:Archetype ;
             rdfs:range ues:Roof ;
             rdfs:comment "an exterior roof" .
 
@@ -390,20 +396,11 @@ ues:Distribution rdf:type owl:Class ;
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#ExternalWall
 ues:ExternalWall rdf:type owl:Class ;
                  rdfs:subClassOf ues:BuildingSurface ;
-                 owl:disjointWith ues:Floor ,
+                 owl:disjointWith ues:GroundFloor ,
                                   ues:InternalCeiling ,
                                   ues:InternalWall ,
                                   ues:Roof ;
                  rdfs:comment "A vertical surface of a building in contact with the external environment" .
-
-
-###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Floor
-ues:Floor rdf:type owl:Class ;
-          rdfs:subClassOf ues:BuildingSurface ;
-          owl:disjointWith ues:InternalCeiling ,
-                           ues:InternalWall ,
-                           ues:Roof ;
-          rdfs:comment "A building surface in contact with the ground" .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Fuel
@@ -414,6 +411,15 @@ ues:Fuel rdf:type owl:Class ;
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#GlazingRatio
 ues:GlazingRatio rdf:type owl:Class ;
                  rdfs:subClassOf ues:SimulationParameter .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#GroundFloor
+ues:GroundFloor rdf:type owl:Class ;
+                rdfs:subClassOf ues:BuildingSurface ;
+                owl:disjointWith ues:InternalCeiling ,
+                                 ues:InternalWall ,
+                                 ues:Roof ;
+                rdfs:comment "A building surface in contact with the ground" .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling
@@ -439,6 +445,11 @@ ues:Material rdf:type owl:Class ;
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#MaterialLayer
 ues:MaterialLayer rdf:type owl:Class ;
                   rdfs:comment "A material layer of a construction" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#MeasuredData
+ues:MeasuredData rdf:type owl:Class ;
+                 rdfs:comment "A measured or monitored data record" .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#RelativeTimeSeries
