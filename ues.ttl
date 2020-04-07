@@ -189,6 +189,18 @@ ues:inputFor rdf:type owl:ObjectProperty ;
              rdfs:comment "indicates the application the parameter can be used with" .
 
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#meetsRegulation
+ues:meetsRegulation rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf owl:topObjectProperty ;
+                    rdfs:range ues:Regulation ;
+                    rdfs:comment "specifies adherence to a regulation" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#retrofitOf
+ues:retrofitOf rdf:type owl:ObjectProperty ;
+               rdfs:comment "Used to link retrofit versions of constructions" .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#spaceHeatingFuel
 ues:spaceHeatingFuel rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf ues:hasParameter ;
@@ -297,6 +309,7 @@ ues:probOccur rdf:type owl:DatatypeProperty ;
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#roughness
 ues:roughness rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf ues:materialProperty ;
+              rdfs:domain ues:Material ;
               rdfs:range cdt:ucum ;
               rdfs:comment "the surface roughness of the material"^^xsd:string .
 
@@ -452,6 +465,16 @@ ues:MeasuredData rdf:type owl:Class ;
                  rdfs:comment "A measured or monitored data record" .
 
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Opaque
+ues:Opaque rdf:type owl:Class ;
+           rdfs:subClassOf ues:Material .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Regulation
+ues:Regulation rdf:type owl:Class ;
+               rdfs:comment "anything that requires a particular construction performance" .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#RelativeTimeSeries
 ues:RelativeTimeSeries rdf:type owl:Class ;
                        rdfs:subClassOf ues:TimeSeries ;
@@ -483,6 +506,11 @@ ues:SimulationParameter rdf:type owl:Class ;
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries
 ues:TimeSeries rdf:type owl:Class ;
                rdfs:subClassOf ues:SimulationParameter .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Transparent
+ues:Transparent rdf:type owl:Class ;
+                rdfs:subClassOf ues:Material .
 
 
 ###  https://w3id.org/bot#Zone

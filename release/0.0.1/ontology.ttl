@@ -51,6 +51,12 @@ xsd:gYear rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#buildingInstance
+:buildingInstance rdf:type owl:ObjectProperty ;
+                  rdfs:range :AbstractBuilding ;
+                  rdfs:comment "Links the instance of a building record to an abstract building" .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#buildingUse
 :buildingUse rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf :hasCategory ;
@@ -110,15 +116,15 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#hasFloor
 :hasFloor rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf :hasSurface ;
-          rdfs:domain :ConstructionArchetype ;
-          rdfs:range :Floor ;
+          rdfs:domain :Archetype ;
+          rdfs:range :GroundFloor ;
           rdfs:comment "external floor in contact with the ground" .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#hasInternalCeiling
 :hasInternalCeiling rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf :hasSurface ;
-                    rdfs:domain :ConstructionArchetype ;
+                    rdfs:domain :Archetype ;
                     rdfs:range :InternalCeiling ;
                     rdfs:comment "an internal ceiling separating two conditioned zones" .
 
@@ -126,7 +132,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#hasInternalWall
 :hasInternalWall rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf :hasSurface ;
-                 rdfs:domain :ConstructionArchetype ;
+                 rdfs:domain :Archetype ;
                  rdfs:range :InternalWall ;
                  rdfs:comment "an internal wall separating two conditioned spaces" .
 
@@ -154,7 +160,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#hasRoof
 :hasRoof rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :hasSurface ;
-         rdfs:domain :ConstructionArchetype ;
+         rdfs:domain :Archetype ;
          rdfs:range :Roof ;
          rdfs:comment "an exterior roof" .
 
@@ -176,6 +182,18 @@ xsd:gYear rdf:type rdfs:Datatype .
 :inputFor rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf owl:topObjectProperty ;
           rdfs:comment "indicates the application the parameter can be used with" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#meetsRegulation
+:meetsRegulation rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
+                 rdfs:range :Regulation ;
+                 rdfs:comment "specifies adherence to a regulation" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#retrofitOf
+:retrofitOf rdf:type owl:ObjectProperty ;
+            rdfs:comment "Used to link retrofit versions of constructions" .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#spaceHeatingFuel
@@ -286,6 +304,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#roughness
 :roughness rdf:type owl:DatatypeProperty ;
            rdfs:subPropertyOf :materialProperty ;
+           rdfs:domain :Material ;
            rdfs:range <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> ;
            rdfs:comment "the surface roughness of the material" .
 
@@ -385,20 +404,11 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#ExternalWall
 :ExternalWall rdf:type owl:Class ;
               rdfs:subClassOf :BuildingSurface ;
-              owl:disjointWith :Floor ,
+              owl:disjointWith :GroundFloor ,
                                :InternalCeiling ,
                                :InternalWall ,
                                :Roof ;
               rdfs:comment "A vertical surface of a building in contact with the external environment" .
-
-
-###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Floor
-:Floor rdf:type owl:Class ;
-       rdfs:subClassOf :BuildingSurface ;
-       owl:disjointWith :InternalCeiling ,
-                        :InternalWall ,
-                        :Roof ;
-       rdfs:comment "A building surface in contact with the ground" .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Fuel
@@ -409,6 +419,15 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#GlazingRatio
 :GlazingRatio rdf:type owl:Class ;
               rdfs:subClassOf :SimulationParameter .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#GroundFloor
+:GroundFloor rdf:type owl:Class ;
+             rdfs:subClassOf :BuildingSurface ;
+             owl:disjointWith :InternalCeiling ,
+                              :InternalWall ,
+                              :Roof ;
+             rdfs:comment "A building surface in contact with the ground" .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling
@@ -434,6 +453,21 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#MaterialLayer
 :MaterialLayer rdf:type owl:Class ;
                rdfs:comment "A material layer of a construction" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#MeasuredData
+:MeasuredData rdf:type owl:Class ;
+              rdfs:comment "A measured or monitored data record" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Opaque
+:Opaque rdf:type owl:Class ;
+        rdfs:subClassOf :Material .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Regulation
+:Regulation rdf:type owl:Class ;
+            rdfs:comment "anything that requires a particular construction performance" .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#RelativeTimeSeries
@@ -467,6 +501,11 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries
 :TimeSeries rdf:type owl:Class ;
             rdfs:subClassOf :SimulationParameter .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Transparent
+:Transparent rdf:type owl:Class ;
+             rdfs:subClassOf :Material .
 
 
 ###  https://w3id.org/bot#Zone

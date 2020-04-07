@@ -1,0 +1,3 @@
+1. Use protege to update the ues.ttl file
+2. Use Wideco to create new documentation in the ues/release/0.0.1 folder of the respository
+3. Commit and push changes and the new website should be visible

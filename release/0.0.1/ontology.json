@@ -137,24 +137,8 @@
     "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Floor"
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#GroundFloor"
   }, {
-    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling"
-  }, {
-    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall"
-  }, {
-    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof"
-  } ]
-}, {
-  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Floor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A building surface in contact with the ground"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface"
-  } ],
-  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling"
   }, {
     "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall"
@@ -178,6 +162,22 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParameter" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParameter"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#GroundFloor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A building surface in contact with the ground"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling"
+  }, {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall"
+  }, {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof"
   } ]
 }, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#HeatingSetPoint",
@@ -224,11 +224,29 @@
     "@value" : "A material layer of a construction"
   } ]
 }, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#MeasuredData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A measured or monitored data record"
+  } ]
+}, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#MultiFamilyHome",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingUsage" ]
 }, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Occupancy",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries" ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Opaque",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Material"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Regulation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "anything that requires a particular construction performance"
+  } ]
 }, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#RelativeTimeSeries",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -278,6 +296,12 @@
     "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParameter"
   } ]
 }, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Transparent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Material"
+  } ]
+}, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Ventilation",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries" ]
 }, {
@@ -291,6 +315,15 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "indicates the range of values the archetype category applies to"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#buildingInstance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links the instance of a building record to an abstract building"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#AbstractBuilding"
   } ]
 }, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#buildingUse",
@@ -446,10 +479,10 @@
     "@value" : "external floor in contact with the ground"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#ConstructionArchetype"
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Archetype"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Floor"
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#GroundFloor"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasSurface"
@@ -461,7 +494,7 @@
     "@value" : "an internal ceiling separating two conditioned zones"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#ConstructionArchetype"
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Archetype"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling"
@@ -476,7 +509,7 @@
     "@value" : "an internal wall separating two conditioned spaces"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#ConstructionArchetype"
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Archetype"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall"
@@ -548,7 +581,7 @@
     "@value" : "an exterior roof"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#ConstructionArchetype"
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Archetype"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof"
@@ -629,6 +662,18 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#meetsRegulation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "specifies adherence to a regulation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Regulation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#parameterDataProperty",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -653,10 +698,19 @@
     "@value" : "A time series of relative values that, when multiplied by a base value, gives the absolute value for each timestep"
   } ]
 }, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#retrofitOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Used to link retrofit versions of constructions"
+  } ]
+}, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#roughness",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "the surface roughness of the material"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Material"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"

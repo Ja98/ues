@@ -97,6 +97,16 @@
     
 
 
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#buildingInstance -->
+
+
+    <owl:ObjectProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#buildingInstance">
+        <rdfs:range rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#AbstractBuilding"/>
+        <rdfs:comment>Links the instance of a building record to an abstract building</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#buildingUse -->
 
 
@@ -190,8 +200,8 @@
 
     <owl:ObjectProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasFloor">
         <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasSurface"/>
-        <rdfs:domain rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#ConstructionArchetype"/>
-        <rdfs:range rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Floor"/>
+        <rdfs:domain rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Archetype"/>
+        <rdfs:range rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#GroundFloor"/>
         <rdfs:comment>external floor in contact with the ground</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -202,7 +212,7 @@
 
     <owl:ObjectProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasInternalCeiling">
         <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasSurface"/>
-        <rdfs:domain rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#ConstructionArchetype"/>
+        <rdfs:domain rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Archetype"/>
         <rdfs:range rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling"/>
         <rdfs:comment>an internal ceiling separating two conditioned zones</rdfs:comment>
     </owl:ObjectProperty>
@@ -214,7 +224,7 @@
 
     <owl:ObjectProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasInternalWall">
         <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasSurface"/>
-        <rdfs:domain rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#ConstructionArchetype"/>
+        <rdfs:domain rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Archetype"/>
         <rdfs:range rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall"/>
         <rdfs:comment>an internal wall separating two conditioned spaces</rdfs:comment>
     </owl:ObjectProperty>
@@ -258,7 +268,7 @@
 
     <owl:ObjectProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasRoof">
         <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasSurface"/>
-        <rdfs:domain rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#ConstructionArchetype"/>
+        <rdfs:domain rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Archetype"/>
         <rdfs:range rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof"/>
         <rdfs:comment>an exterior roof</rdfs:comment>
     </owl:ObjectProperty>
@@ -292,6 +302,26 @@
     <owl:ObjectProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#inputFor">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:comment>indicates the application the parameter can be used with</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#meetsRegulation -->
+
+
+    <owl:ObjectProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#meetsRegulation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:range rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Regulation"/>
+        <rdfs:comment>specifies adherence to a regulation</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#retrofitOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#retrofitOf">
+        <rdfs:comment>Used to link retrofit versions of constructions</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -477,6 +507,7 @@
 
     <owl:DatatypeProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#roughness">
         <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"/>
+        <rdfs:domain rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Material"/>
         <rdfs:range rdf:resource="https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"/>
         <rdfs:comment>the surface roughness of the material</rdfs:comment>
     </owl:DatatypeProperty>
@@ -648,24 +679,11 @@
 
     <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#ExternalWall">
         <rdfs:subClassOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface"/>
-        <owl:disjointWith rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Floor"/>
+        <owl:disjointWith rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#GroundFloor"/>
         <owl:disjointWith rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling"/>
         <owl:disjointWith rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall"/>
         <owl:disjointWith rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof"/>
         <rdfs:comment>A vertical surface of a building in contact with the external environment</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#Floor -->
-
-
-    <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#Floor">
-        <rdfs:subClassOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface"/>
-        <owl:disjointWith rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling"/>
-        <owl:disjointWith rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall"/>
-        <owl:disjointWith rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof"/>
-        <rdfs:comment>A building surface in contact with the ground</rdfs:comment>
     </owl:Class>
     
 
@@ -684,6 +702,19 @@
 
     <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#GlazingRatio">
         <rdfs:subClassOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParameter"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#GroundFloor -->
+
+
+    <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#GroundFloor">
+        <rdfs:subClassOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface"/>
+        <owl:disjointWith rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling"/>
+        <owl:disjointWith rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall"/>
+        <owl:disjointWith rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof"/>
+        <rdfs:comment>A building surface in contact with the ground</rdfs:comment>
     </owl:Class>
     
 
@@ -725,6 +756,33 @@
 
     <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#MaterialLayer">
         <rdfs:comment>A material layer of a construction</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#MeasuredData -->
+
+
+    <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#MeasuredData">
+        <rdfs:comment>A measured or monitored data record</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#Opaque -->
+
+
+    <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#Opaque">
+        <rdfs:subClassOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Material"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#Regulation -->
+
+
+    <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#Regulation">
+        <rdfs:comment>anything that requires a particular construction performance</rdfs:comment>
     </owl:Class>
     
 
@@ -782,6 +840,15 @@
 
     <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries">
         <rdfs:subClassOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParameter"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#Transparent -->
+
+
+    <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#Transparent">
+        <rdfs:subClassOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Material"/>
     </owl:Class>
     
 

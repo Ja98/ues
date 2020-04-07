@@ -76,12 +76,6 @@ This section provides details for each class and property defined by [Ontology N
          </a>
       </li>
       <li>
-         <a href="#Floor"
-            title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Floor">
-            <span>floor</span>
-         </a>
-      </li>
-      <li>
          <a href="#Fuel"
             title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Fuel">
             <span>fuel</span>
@@ -91,6 +85,12 @@ This section provides details for each class and property defined by [Ontology N
          <a href="#GlazingRatio"
             title="https://ja98.github.io/ues/release/0.0.1/index-en.html#GlazingRatio">
             <span>glazing ratio</span>
+         </a>
+      </li>
+      <li>
+         <a href="#GroundFloor"
+            title="https://ja98.github.io/ues/release/0.0.1/index-en.html#GroundFloor">
+            <span>ground floor</span>
          </a>
       </li>
       <li>
@@ -115,6 +115,24 @@ This section provides details for each class and property defined by [Ontology N
          <a href="#MaterialLayer"
             title="https://ja98.github.io/ues/release/0.0.1/index-en.html#MaterialLayer">
             <span>material layer</span>
+         </a>
+      </li>
+      <li>
+         <a href="#MeasuredData"
+            title="https://ja98.github.io/ues/release/0.0.1/index-en.html#MeasuredData">
+            <span>measured data</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Opaque"
+            title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Opaque">
+            <span>opaque</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Regulation"
+            title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Regulation">
+            <span>regulation</span>
          </a>
       </li>
       <li>
@@ -154,6 +172,12 @@ This section provides details for each class and property defined by [Ontology N
          </a>
       </li>
       <li>
+         <a href="#Transparent"
+            title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Transparent">
+            <span>transparent</span>
+         </a>
+      </li>
+      <li>
          <a href="#https://w3id.org/bot#Zone" title="https://w3id.org/bot#Zone">
             <span>zone</span>
          </a>
@@ -188,6 +212,14 @@ This section provides details for each class and property defined by [Ontology N
       <div class="comment">
          <span class="markdown">An abstract building indicating the instance of a building with no attached or assumed information</span>
       </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#buildingInstance"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#buildingInstance">building instance</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
    </div>
    <div class="entity" id="AgeOfConstruction">
       <h3>age of construction<sup class="type-c" title="class">c</sup>
@@ -258,6 +290,14 @@ This section provides details for each class and property defined by [Ontology N
                title="https://ja98.github.io/ues/release/0.0.1/index-en.html#constructionYearRange">construction year range</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasExternalWall"
                title="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasExternalWall">has external wall</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasFloor"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasFloor">has floor</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasInternalCeiling"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasInternalCeiling">has internal ceiling</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasInternalWall"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasInternalWall">has internal wall</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasRoof"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasRoof">has roof</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -298,8 +338,8 @@ This section provides details for each class and property defined by [Ontology N
          <dd>
             <a href="#ExternalWall"
                title="https://ja98.github.io/ues/release/0.0.1/index-en.html#ExternalWall">external wall</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Floor"
-               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Floor">floor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#GroundFloor"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#GroundFloor">ground floor</a>
             <sup class="type-c" title="class">c</sup>, <a href="#InternalCeiling"
                title="https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling">internal ceiling</a>
             <sup class="type-c" title="class">c</sup>, <a href="#InternalWall"
@@ -385,18 +425,6 @@ This section provides details for each class and property defined by [Ontology N
                title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Archetype">archetype</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#hasFloor"
-               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasFloor">has floor</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasInternalCeiling"
-               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasInternalCeiling">has internal ceiling</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasInternalWall"
-               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasInternalWall">has internal wall</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasRoof"
-               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasRoof">has roof</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
       </dl>
    </div>
    <div class="entity" id="Distribution">
@@ -435,45 +463,8 @@ This section provides details for each class and property defined by [Ontology N
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#Floor"
-               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Floor">floor</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#InternalCeiling"
-               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling">internal ceiling</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#InternalWall"
-               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall">internal wall</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Roof"
-               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof">roof</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="Floor">
-      <h3>floor<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://ja98.github.io/ues/release/0.0.1/index-en.html#Floor</p>
-      <div class="comment">
-         <span class="markdown">A building surface in contact with the ground</span>
-      </div>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#BuildingSurface"
-               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface">building surface</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#hasFloor"
-               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasFloor">has floor</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is disjoint with</dt>
-         <dd>
-            <a href="#ExternalWall"
-               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#ExternalWall">external wall</a>
+            <a href="#GroundFloor"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#GroundFloor">ground floor</a>
             <sup class="type-c" title="class">c</sup>, <a href="#InternalCeiling"
                title="https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling">internal ceiling</a>
             <sup class="type-c" title="class">c</sup>, <a href="#InternalWall"
@@ -531,6 +522,43 @@ This section provides details for each class and property defined by [Ontology N
          </dd>
       </dl>
    </div>
+   <div class="entity" id="GroundFloor">
+      <h3>ground floor<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ja98.github.io/ues/release/0.0.1/index-en.html#GroundFloor</p>
+      <div class="comment">
+         <span class="markdown">A building surface in contact with the ground</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#BuildingSurface"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface">building surface</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasFloor"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasFloor">has floor</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#ExternalWall"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#ExternalWall">external wall</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#InternalCeiling"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling">internal ceiling</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#InternalWall"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall">internal wall</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Roof"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof">roof</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="InternalCeiling">
       <h3>internal ceiling<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -558,8 +586,8 @@ This section provides details for each class and property defined by [Ontology N
          <dd>
             <a href="#ExternalWall"
                title="https://ja98.github.io/ues/release/0.0.1/index-en.html#ExternalWall">external wall</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Floor"
-               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Floor">floor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#GroundFloor"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#GroundFloor">ground floor</a>
             <sup class="type-c" title="class">c</sup>, <a href="#InternalWall"
                title="https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall">internal wall</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Roof"
@@ -595,8 +623,8 @@ This section provides details for each class and property defined by [Ontology N
          <dd>
             <a href="#ExternalWall"
                title="https://ja98.github.io/ues/release/0.0.1/index-en.html#ExternalWall">external wall</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Floor"
-               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Floor">floor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#GroundFloor"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#GroundFloor">ground floor</a>
             <sup class="type-c" title="class">c</sup>, <a href="#InternalCeiling"
                title="https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling">internal ceiling</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Roof"
@@ -616,10 +644,20 @@ This section provides details for each class and property defined by [Ontology N
          <span class="markdown">A material</span>
       </div>
       <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Opaque"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Opaque">opaque</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Transparent"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Transparent">transparent</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
          <dt>is in domain of</dt>
          <dd>
             <a href="#materialProperty"
                title="https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty">material property</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#roughness"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#roughness">roughness</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
@@ -645,6 +683,52 @@ This section provides details for each class and property defined by [Ontology N
          <dd>
             <a href="#hasMaterial"
                title="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasMaterial">has material</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="MeasuredData">
+      <h3>measured data<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ja98.github.io/ues/release/0.0.1/index-en.html#MeasuredData</p>
+      <div class="comment">
+         <span class="markdown">A measured or monitored data record</span>
+      </div>
+   </div>
+   <div class="entity" id="Opaque">
+      <h3>opaque<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ja98.github.io/ues/release/0.0.1/index-en.html#Opaque</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Material"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Material">material</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Regulation">
+      <h3>regulation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ja98.github.io/ues/release/0.0.1/index-en.html#Regulation</p>
+      <div class="comment">
+         <span class="markdown">anything that requires a particular construction performance</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#meetsRegulation"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#meetsRegulation">meets regulation</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -695,8 +779,8 @@ This section provides details for each class and property defined by [Ontology N
          <dd>
             <a href="#ExternalWall"
                title="https://ja98.github.io/ues/release/0.0.1/index-en.html#ExternalWall">external wall</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Floor"
-               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Floor">floor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#GroundFloor"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#GroundFloor">ground floor</a>
             <sup class="type-c" title="class">c</sup>, <a href="#InternalCeiling"
                title="https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling">internal ceiling</a>
             <sup class="type-c" title="class">c</sup>, <a href="#InternalWall"
@@ -810,6 +894,22 @@ This section provides details for each class and property defined by [Ontology N
          </dd>
       </dl>
    </div>
+   <div class="entity" id="Transparent">
+      <h3>transparent<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ja98.github.io/ues/release/0.0.1/index-en.html#Transparent</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Material"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Material">material</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="https://w3id.org/bot#Zone">
       <h3>zone<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -832,6 +932,12 @@ This section provides details for each class and property defined by [Ontology N
 </div><div id="objectproperties">
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
+      <li>
+         <a href="#buildingInstance"
+            title="https://ja98.github.io/ues/release/0.0.1/index-en.html#buildingInstance">
+            <span>building instance</span>
+         </a>
+      </li>
       <li>
          <a href="#buildingUse"
             title="https://ja98.github.io/ues/release/0.0.1/index-en.html#buildingUse">
@@ -941,12 +1047,45 @@ This section provides details for each class and property defined by [Ontology N
          </a>
       </li>
       <li>
+         <a href="#meetsRegulation"
+            title="https://ja98.github.io/ues/release/0.0.1/index-en.html#meetsRegulation">
+            <span>meets regulation</span>
+         </a>
+      </li>
+      <li>
+         <a href="#retrofitOf"
+            title="https://ja98.github.io/ues/release/0.0.1/index-en.html#retrofitOf">
+            <span>retrofit of</span>
+         </a>
+      </li>
+      <li>
          <a href="#spaceHeatingFuel"
             title="https://ja98.github.io/ues/release/0.0.1/index-en.html#spaceHeatingFuel">
             <span>space heating fuel</span>
          </a>
       </li>
    </ul>
+   <div class="entity" id="buildingInstance">
+      <h3>building instance<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ja98.github.io/ues/release/0.0.1/index-en.html#buildingInstance</p>
+      <div class="comment">
+         <span class="markdown">Links the instance of a building record to an abstract building</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="#AbstractBuilding"
+                  title="https://ja98.github.io/ues/release/0.0.1/index-en.html#AbstractBuilding">abstract building</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="buildingUse">
       <h3>building use<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1188,14 +1327,14 @@ This section provides details for each class and property defined by [Ontology N
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#ConstructionArchetype"
-                  title="https://ja98.github.io/ues/release/0.0.1/index-en.html#ConstructionArchetype">construction archetype</a>
+               <a href="#Archetype"
+                  title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Archetype">archetype</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Floor"
-                  title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Floor">floor</a>
+               <a href="#GroundFloor"
+                  title="https://ja98.github.io/ues/release/0.0.1/index-en.html#GroundFloor">ground floor</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1221,8 +1360,8 @@ This section provides details for each class and property defined by [Ontology N
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#ConstructionArchetype"
-                  title="https://ja98.github.io/ues/release/0.0.1/index-en.html#ConstructionArchetype">construction archetype</a>
+               <a href="#Archetype"
+                  title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Archetype">archetype</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1254,8 +1393,8 @@ This section provides details for each class and property defined by [Ontology N
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#ConstructionArchetype"
-                  title="https://ja98.github.io/ues/release/0.0.1/index-en.html#ConstructionArchetype">construction archetype</a>
+               <a href="#Archetype"
+                  title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Archetype">archetype</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1382,8 +1521,8 @@ This section provides details for each class and property defined by [Ontology N
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#ConstructionArchetype"
-                  title="https://ja98.github.io/ues/release/0.0.1/index-en.html#ConstructionArchetype">construction archetype</a>
+               <a href="#Archetype"
+                  title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Archetype">archetype</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1474,6 +1613,42 @@ This section provides details for each class and property defined by [Ontology N
                <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
             </dd>
          </dl>
+      </div>
+   </div>
+   <div class="entity" id="meetsRegulation">
+      <h3>meets regulation<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ja98.github.io/ues/release/0.0.1/index-en.html#meetsRegulation</p>
+      <div class="comment">
+         <span class="markdown">specifies adherence to a regulation</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Regulation"
+                  title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Regulation">regulation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="retrofitOf">
+      <h3>retrofit of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ja98.github.io/ues/release/0.0.1/index-en.html#retrofitOf</p>
+      <div class="comment">
+         <span class="markdown">Used to link retrofit versions of constructions</span>
       </div>
    </div>
    <div class="entity" id="spaceHeatingFuel">
@@ -1984,6 +2159,12 @@ This section provides details for each class and property defined by [Ontology N
                <a href="#materialProperty"
                   title="https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty">material property</a>
                <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Material"
+                  title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Material">material</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
