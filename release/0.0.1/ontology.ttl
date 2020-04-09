@@ -416,6 +416,11 @@ xsd:gYear rdf:type rdfs:Datatype .
       rdfs:comment "An energy carrier used to supply heat or electricity" .
 
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Gas
+:Gas rdf:type owl:Class ;
+     rdfs:subClassOf :Material .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#GlazingRatio
 :GlazingRatio rdf:type owl:Class ;
               rdfs:subClassOf :SimulationParameter .
@@ -445,6 +450,11 @@ xsd:gYear rdf:type rdfs:Datatype .
               rdfs:comment "A vertical surface separating two conditioned spaces or buildings" .
 
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Liquid
+:Liquid rdf:type owl:Class ;
+        rdfs:subClassOf :Material .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Material
 :Material rdf:type owl:Class ;
           rdfs:comment "A material" .
@@ -460,9 +470,14 @@ xsd:gYear rdf:type rdfs:Datatype .
               rdfs:comment "A measured or monitored data record" .
 
 
-###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Opaque
-:Opaque rdf:type owl:Class ;
-        rdfs:subClassOf :Material .
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#OpaqueLiquid
+:OpaqueLiquid rdf:type owl:Class ;
+              rdfs:subClassOf :Liquid .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#OpaqueSolid
+:OpaqueSolid rdf:type owl:Class ;
+             rdfs:subClassOf :Solid .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Regulation
@@ -498,14 +513,24 @@ xsd:gYear rdf:type rdfs:Datatype .
                      rdfs:comment "A parameter used as an input for a Simulation Application" .
 
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Solid
+:Solid rdf:type owl:Class ;
+       rdfs:subClassOf :Material .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries
 :TimeSeries rdf:type owl:Class ;
             rdfs:subClassOf :SimulationParameter .
 
 
-###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Transparent
-:Transparent rdf:type owl:Class ;
-             rdfs:subClassOf :Material .
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#TransparentLiquid
+:TransparentLiquid rdf:type owl:Class ;
+                   rdfs:subClassOf :Liquid .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#TransparentSolid
+:TransparentSolid rdf:type owl:Class ;
+                  rdfs:subClassOf :Solid .
 
 
 ###  https://w3id.org/bot#Zone

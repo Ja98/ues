@@ -153,7 +153,10 @@
   } ]
 }, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Gas",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#Fuel" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#Fuel" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Material"
+  } ]
 }, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#GeometricDataProperties",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
@@ -212,6 +215,12 @@
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Lighting",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries" ]
 }, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Liquid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Material"
+  } ]
+}, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Material",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -236,10 +245,16 @@
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Occupancy",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries" ]
 }, {
-  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Opaque",
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#OpaqueLiquid",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Material"
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Liquid"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#OpaqueSolid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Solid"
   } ]
 }, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Regulation",
@@ -290,16 +305,28 @@
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#SingleFamilyHome",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingUsage" ]
 }, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Solid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Material"
+  } ]
+}, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParameter"
   } ]
 }, {
-  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Transparent",
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#TransparentLiquid",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Material"
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Liquid"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#TransparentSolid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Solid"
   } ]
 }, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Ventilation",

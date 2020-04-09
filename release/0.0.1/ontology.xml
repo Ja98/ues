@@ -697,6 +697,15 @@
     
 
 
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#Gas -->
+
+
+    <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#Gas">
+        <rdfs:subClassOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Material"/>
+    </owl:Class>
+    
+
+
     <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#GlazingRatio -->
 
 
@@ -742,6 +751,15 @@
     
 
 
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#Liquid -->
+
+
+    <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#Liquid">
+        <rdfs:subClassOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Material"/>
+    </owl:Class>
+    
+
+
     <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#Material -->
 
 
@@ -769,11 +787,20 @@
     
 
 
-    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#Opaque -->
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#OpaqueLiquid -->
 
 
-    <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#Opaque">
-        <rdfs:subClassOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Material"/>
+    <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#OpaqueLiquid">
+        <rdfs:subClassOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Liquid"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#OpaqueSolid -->
+
+
+    <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#OpaqueSolid">
+        <rdfs:subClassOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Solid"/>
     </owl:Class>
     
 
@@ -835,6 +862,15 @@
     
 
 
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#Solid -->
+
+
+    <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#Solid">
+        <rdfs:subClassOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Material"/>
+    </owl:Class>
+    
+
+
     <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries -->
 
 
@@ -844,11 +880,20 @@
     
 
 
-    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#Transparent -->
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#TransparentLiquid -->
 
 
-    <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#Transparent">
-        <rdfs:subClassOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Material"/>
+    <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#TransparentLiquid">
+        <rdfs:subClassOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Liquid"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#TransparentSolid -->
+
+
+    <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#TransparentSolid">
+        <rdfs:subClassOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Solid"/>
     </owl:Class>
     
 

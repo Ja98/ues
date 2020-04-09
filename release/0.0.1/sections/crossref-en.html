@@ -82,6 +82,12 @@ This section provides details for each class and property defined by [Ontology N
          </a>
       </li>
       <li>
+         <a href="#Gas"
+            title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Gas">
+            <span>gas</span>
+         </a>
+      </li>
+      <li>
          <a href="#GlazingRatio"
             title="https://ja98.github.io/ues/release/0.0.1/index-en.html#GlazingRatio">
             <span>glazing ratio</span>
@@ -106,6 +112,12 @@ This section provides details for each class and property defined by [Ontology N
          </a>
       </li>
       <li>
+         <a href="#Liquid"
+            title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Liquid">
+            <span>liquid</span>
+         </a>
+      </li>
+      <li>
          <a href="#Material"
             title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Material">
             <span>material</span>
@@ -124,9 +136,15 @@ This section provides details for each class and property defined by [Ontology N
          </a>
       </li>
       <li>
-         <a href="#Opaque"
-            title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Opaque">
-            <span>opaque</span>
+         <a href="#OpaqueLiquid"
+            title="https://ja98.github.io/ues/release/0.0.1/index-en.html#OpaqueLiquid">
+            <span>opaque liquid</span>
+         </a>
+      </li>
+      <li>
+         <a href="#OpaqueSolid"
+            title="https://ja98.github.io/ues/release/0.0.1/index-en.html#OpaqueSolid">
+            <span>opaque solid</span>
          </a>
       </li>
       <li>
@@ -166,15 +184,27 @@ This section provides details for each class and property defined by [Ontology N
          </a>
       </li>
       <li>
+         <a href="#Solid"
+            title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Solid">
+            <span>solid</span>
+         </a>
+      </li>
+      <li>
          <a href="#TimeSeries"
             title="https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries">
             <span>time series</span>
          </a>
       </li>
       <li>
-         <a href="#Transparent"
-            title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Transparent">
-            <span>transparent</span>
+         <a href="#TransparentLiquid"
+            title="https://ja98.github.io/ues/release/0.0.1/index-en.html#TransparentLiquid">
+            <span>transparent liquid</span>
+         </a>
+      </li>
+      <li>
+         <a href="#TransparentSolid"
+            title="https://ja98.github.io/ues/release/0.0.1/index-en.html#TransparentSolid">
+            <span>transparent solid</span>
          </a>
       </li>
       <li>
@@ -502,6 +532,26 @@ This section provides details for each class and property defined by [Ontology N
          </dd>
       </dl>
    </div>
+   <div class="entity" id="Gas">
+      <h3>gas<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ja98.github.io/ues/release/0.0.1/index-en.html#Gas</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Material"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Material">material</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>
+            <a href="#Gas">named individual</a>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="GlazingRatio">
       <h3>glazing ratio<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -633,6 +683,30 @@ This section provides details for each class and property defined by [Ontology N
          </dd>
       </dl>
    </div>
+   <div class="entity" id="Liquid">
+      <h3>liquid<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ja98.github.io/ues/release/0.0.1/index-en.html#Liquid</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Material"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Material">material</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#OpaqueLiquid"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#OpaqueLiquid">opaque liquid</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#TransparentLiquid"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#TransparentLiquid">transparent liquid</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="Material">
       <h3>material<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -646,10 +720,12 @@ This section provides details for each class and property defined by [Ontology N
       <dl class="description">
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#Opaque"
-               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Opaque">opaque</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Transparent"
-               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Transparent">transparent</a>
+            <a href="#Gas"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Gas">gas</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Liquid"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Liquid">liquid</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Solid"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Solid">solid</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -698,18 +774,34 @@ This section provides details for each class and property defined by [Ontology N
          <span class="markdown">A measured or monitored data record</span>
       </div>
    </div>
-   <div class="entity" id="Opaque">
-      <h3>opaque<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="OpaqueLiquid">
+      <h3>opaque liquid<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://ja98.github.io/ues/release/0.0.1/index-en.html#Opaque</p>
+         <strong>IRI:</strong> https://ja98.github.io/ues/release/0.0.1/index-en.html#OpaqueLiquid</p>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#Material"
-               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Material">material</a>
+            <a href="#Liquid"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Liquid">liquid</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="OpaqueSolid">
+      <h3>opaque solid<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ja98.github.io/ues/release/0.0.1/index-en.html#OpaqueSolid</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Solid"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Solid">solid</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -856,6 +948,30 @@ This section provides details for each class and property defined by [Ontology N
          </dd>
       </dl>
    </div>
+   <div class="entity" id="Solid">
+      <h3>solid<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ja98.github.io/ues/release/0.0.1/index-en.html#Solid</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Material"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Material">material</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#OpaqueSolid"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#OpaqueSolid">opaque solid</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#TransparentSolid"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#TransparentSolid">transparent solid</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="TimeSeries">
       <h3>time series<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -894,18 +1010,34 @@ This section provides details for each class and property defined by [Ontology N
          </dd>
       </dl>
    </div>
-   <div class="entity" id="Transparent">
-      <h3>transparent<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="TransparentLiquid">
+      <h3>transparent liquid<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://ja98.github.io/ues/release/0.0.1/index-en.html#Transparent</p>
+         <strong>IRI:</strong> https://ja98.github.io/ues/release/0.0.1/index-en.html#TransparentLiquid</p>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#Material"
-               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Material">material</a>
+            <a href="#Liquid"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Liquid">liquid</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="TransparentSolid">
+      <h3>transparent solid<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ja98.github.io/ues/release/0.0.1/index-en.html#TransparentSolid</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Solid"
+               title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Solid">solid</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -2431,6 +2563,10 @@ This section provides details for each class and property defined by [Ontology N
             <a href="#Fuel"
                title="https://ja98.github.io/ues/release/0.0.1/index-en.html#Fuel">fuel</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>
+            <a href="#Gas">class</a>
          </dd>
       </dl>
    </div>

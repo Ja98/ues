@@ -8,7 +8,7 @@
   "namespace" : [ ],
   "class" : [ {
     "id" : "0",
-    "type" : "owl:Thing"
+    "type" : "rdfs:Literal"
   }, {
     "id" : "1",
     "type" : "owl:Class"
@@ -26,158 +26,173 @@
     "type" : "rdfs:Literal"
   }, {
     "id" : "9",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "18",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "19",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "11",
     "type" : "owl:Thing"
   }, {
-    "id" : "25",
+    "id" : "17",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "26",
+    "id" : "18",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "27",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "28",
-    "type" : "owl:Class"
-  }, {
-    "id" : "17",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "24",
+    "id" : "29",
     "type" : "owl:Class"
   }, {
-    "id" : "37",
+    "id" : "31",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "39",
+    "id" : "32",
     "type" : "owl:Class"
   }, {
-    "id" : "30",
+    "id" : "16",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "45",
+    "id" : "23",
     "type" : "owl:Class"
   }, {
-    "id" : "46",
+    "id" : "41",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "47",
-    "type" : "rdfs:Datatype"
+    "type" : "owl:Class"
   }, {
-    "id" : "21",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "48",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "44",
+    "id" : "50",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "51",
     "type" : "rdfs:Datatype"
   }, {
+    "id" : "20",
+    "type" : "rdfs:Datatype"
+  }, {
     "id" : "52",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "40",
+    "id" : "46",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "43",
     "type" : "owl:Class"
   }, {
-    "id" : "34",
+    "id" : "73",
     "type" : "owl:Class"
   }, {
-    "id" : "83",
+    "id" : "87",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
     "type" : "owl:Class"
   }, {
     "id" : "6",
     "type" : "owl:Class"
   }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
     "id" : "3",
     "type" : "owl:Class"
   }, {
-    "id" : "94",
+    "id" : "96",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "89",
     "type" : "owl:Thing"
   }, {
-    "id" : "93",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "79",
+    "id" : "77",
     "type" : "owl:Class"
   }, {
-    "id" : "42",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "35",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "85",
+    "id" : "98",
     "type" : "owl:Thing"
   }, {
-    "id" : "56",
+    "id" : "39",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "86",
+    "id" : "99",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "26",
     "type" : "owl:Class"
   }, {
-    "id" : "23",
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "106",
     "type" : "owl:Class"
   }, {
     "id" : "54",
     "type" : "owl:Class"
   }, {
-    "id" : "50",
-    "type" : "owl:Class"
-  }, {
-    "id" : "103",
+    "id" : "108",
     "type" : "owl:Class"
   }, {
     "id" : "4",
     "type" : "owl:Class"
   }, {
-    "id" : "77",
-    "type" : "owl:Class"
-  }, {
-    "id" : "59",
-    "type" : "owl:Class"
-  }, {
-    "id" : "32",
-    "type" : "owl:Class"
-  }, {
-    "id" : "115",
-    "type" : "owl:Class"
-  }, {
-    "id" : "72",
-    "type" : "owl:Class"
-  }, {
-    "id" : "122",
+    "id" : "104",
     "type" : "owl:Class"
   }, {
     "id" : "58",
     "type" : "owl:Class"
   }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "126",
+    "type" : "owl:Class"
+  }, {
     "id" : "82",
     "type" : "owl:Class"
   }, {
-    "id" : "81",
+    "id" : "133",
     "type" : "owl:Class"
   }, {
-    "id" : "68",
+    "id" : "112",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "id" : "0",
     "label" : {
-      "undefined" : "Thing"
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
     }
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#MaterialLayer",
@@ -233,11 +248,18 @@
       "undefined" : "Literal"
     }
   }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
     "id" : "9",
     "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum",
+    "baseIri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html",
+    "id" : "17",
+    "label" : {
+      "IRI-based" : "ucum"
     }
   }, {
     "iri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum",
@@ -249,35 +271,30 @@
   }, {
     "iri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum",
     "baseIri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html",
-    "id" : "19",
-    "label" : {
-      "IRI-based" : "ucum"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "11",
-    "label" : {
-      "undefined" : "Thing"
-    }
-  }, {
-    "iri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum",
-    "baseIri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html",
-    "id" : "25",
-    "label" : {
-      "IRI-based" : "ucum"
-    }
-  }, {
-    "iri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum",
-    "baseIri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html",
-    "id" : "26",
-    "label" : {
-      "IRI-based" : "ucum"
-    }
-  }, {
-    "iri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum",
-    "baseIri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html",
     "id" : "27",
+    "label" : {
+      "IRI-based" : "ucum"
+    }
+  }, {
+    "iri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum",
+    "baseIri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "ucum"
+    }
+  }, {
+    "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#TransparentLiquid",
+    "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TransparentLiquid"
+    },
+    "id" : "29",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum",
+    "baseIri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html",
+    "id" : "31",
     "label" : {
       "IRI-based" : "ucum"
     }
@@ -291,11 +308,11 @@
     "comment" : {
       "undefined" : "An abstract building indicating the instance of a building with no attached or assumed information"
     },
-    "id" : "28"
+    "id" : "32"
   }, {
     "iri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum",
     "baseIri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html",
-    "id" : "17",
+    "id" : "16",
     "label" : {
       "IRI-based" : "ucum"
     }
@@ -306,12 +323,12 @@
     "label" : {
       "IRI-based" : "GlazingRatio"
     },
-    "id" : "24",
-    "superClasses" : [ "23" ]
+    "id" : "23",
+    "superClasses" : [ "22" ]
   }, {
     "iri" : "http://schemas.opengis.net/gml/3.2.1/geometryBasic0d1d.xsd#posLis",
     "baseIri" : "http://schemas.opengis.net/gml/3.2.1/geometryBasic0d1d.xsd",
-    "id" : "37",
+    "id" : "41",
     "label" : {
       "IRI-based" : "posLis"
     }
@@ -325,12 +342,12 @@
     "comment" : {
       "undefined" : "An absolute time series"
     },
-    "id" : "39",
-    "superClasses" : [ "40" ]
+    "id" : "42",
+    "superClasses" : [ "43" ]
   }, {
     "iri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum",
     "baseIri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html",
-    "id" : "30",
+    "id" : "34",
     "label" : {
       "IRI-based" : "ucum"
     }
@@ -344,7 +361,35 @@
     "comment" : {
       "undefined" : "Distibution class used to generate time series and profiles"
     },
-    "id" : "45"
+    "id" : "47"
+  }, {
+    "iri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum",
+    "baseIri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html",
+    "id" : "50",
+    "label" : {
+      "IRI-based" : "ucum"
+    }
+  }, {
+    "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#crs",
+    "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
+    "id" : "51",
+    "label" : {
+      "IRI-based" : "crs"
+    }
+  }, {
+    "iri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum",
+    "baseIri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html",
+    "id" : "20",
+    "label" : {
+      "IRI-based" : "ucum"
+    }
+  }, {
+    "iri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum",
+    "baseIri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html",
+    "id" : "52",
+    "label" : {
+      "IRI-based" : "ucum"
+    }
   }, {
     "iri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum",
     "baseIri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html",
@@ -353,44 +398,16 @@
       "IRI-based" : "ucum"
     }
   }, {
-    "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#crs",
-    "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
-    "id" : "47",
-    "label" : {
-      "IRI-based" : "crs"
-    }
-  }, {
     "iri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum",
     "baseIri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html",
-    "id" : "21",
+    "id" : "55",
     "label" : {
       "IRI-based" : "ucum"
     }
   }, {
     "iri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum",
     "baseIri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html",
-    "id" : "48",
-    "label" : {
-      "IRI-based" : "ucum"
-    }
-  }, {
-    "iri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum",
-    "baseIri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html",
-    "id" : "44",
-    "label" : {
-      "IRI-based" : "ucum"
-    }
-  }, {
-    "iri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum",
-    "baseIri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html",
-    "id" : "51",
-    "label" : {
-      "IRI-based" : "ucum"
-    }
-  }, {
-    "iri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum",
-    "baseIri" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html",
-    "id" : "52",
+    "id" : "56",
     "label" : {
       "IRI-based" : "ucum"
     }
@@ -432,21 +449,18 @@
         "IRI-based" : "Lighting"
       }
     } ],
-    "subClasses" : [ "39", "59" ],
-    "id" : "40",
-    "superClasses" : [ "23" ]
+    "subClasses" : [ "42", "63" ],
+    "id" : "43",
+    "superClasses" : [ "22" ]
   }, {
-    "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Material",
+    "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#TransparentSolid",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Material"
+      "IRI-based" : "TransparentSolid"
     },
-    "subClasses" : [ "82", "77" ],
-    "comment" : {
-      "undefined" : "A material"
-    },
-    "id" : "34"
+    "id" : "73",
+    "superClasses" : [ "74" ]
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Regulation",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
@@ -457,7 +471,19 @@
     "comment" : {
       "undefined" : "anything that requires a particular construction performance"
     },
-    "id" : "83"
+    "id" : "87"
+  }, {
+    "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Material",
+    "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Material"
+    },
+    "subClasses" : [ "26", "30", "74" ],
+    "comment" : {
+      "undefined" : "A material"
+    },
+    "id" : "38"
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
@@ -465,11 +491,21 @@
     "label" : {
       "IRI-based" : "BuildingSurface"
     },
-    "subClasses" : [ "50", "81", "79", "72", "5" ],
+    "subClasses" : [ "54", "79", "77", "82", "5" ],
     "comment" : {
       "undefined" : "building surfaces that define a building"
     },
     "id" : "6"
+  }, {
+    "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Liquid",
+    "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Liquid"
+    },
+    "subClasses" : [ "58", "29" ],
+    "id" : "30",
+    "superClasses" : [ "38" ]
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingUse",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
@@ -483,18 +519,18 @@
     "id" : "3",
     "superClasses" : [ "2" ]
   }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "94",
-    "label" : {
-      "undefined" : "Thing"
-    }
-  }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "93",
+    "id" : "96",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "89",
+    "label" : {
+      "undefined" : "Thing"
     }
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#GroundFloor",
@@ -506,18 +542,18 @@
     "comment" : {
       "undefined" : "A building surface in contact with the ground"
     },
-    "id" : "79",
+    "id" : "77",
     "superClasses" : [ "6" ]
   }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "42",
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "98",
     "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
+      "undefined" : "Thing"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "35",
+    "id" : "39",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -525,31 +561,41 @@
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "85",
+    "id" : "99",
     "label" : {
       "undefined" : "Thing"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "56",
+    "id" : "60",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
     }
   }, {
-    "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Fuel",
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "49",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Gas",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
     "instances" : 0,
+    "label" : {
+      "IRI-based" : "Gas"
+    },
+    "id" : "26",
+    "superClasses" : [ "38" ]
+  }, {
+    "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Fuel",
+    "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
+    "instances" : 1,
     "label" : {
       "IRI-based" : "Fuel"
     },
     "individuals" : [ {
-      "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Gas",
-      "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
-      "labels" : {
-        "IRI-based" : "Gas"
-      }
-    }, {
       "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Electricity",
       "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
       "labels" : {
@@ -559,7 +605,7 @@
     "comment" : {
       "undefined" : "An energy carrier used to supply heat or electricity"
     },
-    "id" : "86"
+    "id" : "25"
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParameter",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
@@ -567,11 +613,21 @@
     "label" : {
       "IRI-based" : "SimulationParameter"
     },
-    "subClasses" : [ "24", "40" ],
+    "subClasses" : [ "23", "43" ],
     "comment" : {
       "undefined" : "A parameter used as an input for a Simulation Application"
     },
-    "id" : "23"
+    "id" : "22"
+  }, {
+    "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Solid",
+    "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Solid"
+    },
+    "subClasses" : [ "104", "73" ],
+    "id" : "74",
+    "superClasses" : [ "38" ]
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#ConstructionArchetype",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
@@ -582,8 +638,8 @@
     "comment" : {
       "undefined" : "An archetype specific to construction attributes"
     },
-    "id" : "54",
-    "superClasses" : [ "32" ]
+    "id" : "106",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
@@ -594,7 +650,7 @@
     "comment" : {
       "undefined" : "An inclined or horizontal surface of a building in contact with the external environment"
     },
-    "id" : "50",
+    "id" : "54",
     "superClasses" : [ "6" ]
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingUsage",
@@ -619,7 +675,7 @@
     "comment" : {
       "undefined" : "The specific usage of a building or zone"
     },
-    "id" : "103"
+    "id" : "108"
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#AgeOfConstructionRange",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
@@ -633,14 +689,23 @@
     "id" : "4",
     "superClasses" : [ "2" ]
   }, {
-    "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Transparent",
+    "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#OpaqueSolid",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Transparent"
+      "IRI-based" : "OpaqueSolid"
     },
-    "id" : "77",
-    "superClasses" : [ "34" ]
+    "id" : "104",
+    "superClasses" : [ "74" ]
+  }, {
+    "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#OpaqueLiquid",
+    "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OpaqueLiquid"
+    },
+    "id" : "58",
+    "superClasses" : [ "30" ]
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#RelativeTimeSeries",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
@@ -651,8 +716,8 @@
     "comment" : {
       "undefined" : "A relative time series"
     },
-    "id" : "59",
-    "superClasses" : [ "40" ]
+    "id" : "63",
+    "superClasses" : [ "43" ]
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Archetype",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
@@ -660,11 +725,11 @@
     "label" : {
       "IRI-based" : "Archetype"
     },
-    "subClasses" : [ "54", "58" ],
+    "subClasses" : [ "106", "112" ],
     "comment" : {
       "undefined" : "an archetype object with categories and parameters for building simulation"
     },
-    "id" : "32"
+    "id" : "36"
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#MeasuredData",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
@@ -675,7 +740,7 @@
     "comment" : {
       "undefined" : "A measured or monitored data record"
     },
-    "id" : "115"
+    "id" : "126"
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
@@ -686,7 +751,7 @@
     "comment" : {
       "undefined" : "A horizontal surface separating two conditioned spaces or buildings"
     },
-    "id" : "72",
+    "id" : "82",
     "superClasses" : [ "6" ]
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationApplication",
@@ -711,7 +776,7 @@
     "comment" : {
       "undefined" : "An application used to simulate building energy performance"
     },
-    "id" : "122"
+    "id" : "133"
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#SchedulingArchetype",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
@@ -722,17 +787,8 @@
     "comment" : {
       "undefined" : "An archetype specific to internal scheduling"
     },
-    "id" : "58",
-    "superClasses" : [ "32" ]
-  }, {
-    "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Opaque",
-    "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Opaque"
-    },
-    "id" : "82",
-    "superClasses" : [ "34" ]
+    "id" : "112",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#ExternalWall",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
@@ -743,7 +799,7 @@
     "comment" : {
       "undefined" : "A vertical surface of a building in contact with the external environment"
     },
-    "id" : "81",
+    "id" : "79",
     "superClasses" : [ "6" ]
   }, {
     "iri" : "https://w3id.org/bot#Zone",
@@ -756,83 +812,74 @@
       "undefined" : "a bot zone as detailed in the BOT ontology"
     },
     "attributes" : [ "external" ],
-    "id" : "68"
+    "id" : "72"
   } ],
   "property" : [ {
     "id" : "10",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "16",
+    "id" : "15",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "20",
+    "id" : "19",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "22",
+    "id" : "21",
     "type" : "rdf:Property"
   }, {
-    "id" : "29",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "31",
-    "type" : "owl:objectProperty"
+    "id" : "24",
+    "type" : "rdf:Property"
   }, {
     "id" : "33",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "36",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "38",
+    "id" : "35",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "41",
+    "id" : "37",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "43",
+    "id" : "40",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "49",
-    "type" : "owl:disjointWith"
+    "id" : "44",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "53",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "55",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "57",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "13",
+    "id" : "59",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "75",
     "type" : "owl:objectProperty"
   }, {
     "id" : "67",
     "type" : "owl:objectProperty"
-  }, {
-    "id" : "61",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "69",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "63",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "70",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "71",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "73",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "74",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "75",
-    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "76",
     "type" : "rdfs:SubClassOf"
@@ -843,49 +890,52 @@
     "id" : "80",
     "type" : "rdfs:SubClassOf"
   }, {
+    "id" : "81",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:SubClassOf"
+  }, {
     "id" : "84",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "62",
-    "type" : "owl:objectProperty"
+    "id" : "85",
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "87",
+    "id" : "86",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "88",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "66",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "89",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "15",
-    "type" : "owl:objectProperty"
+    "id" : "90",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "91",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "92",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "95",
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "94",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "96",
-    "type" : "rdfs:SubClassOf"
+    "id" : "95",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "97",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "60",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "98",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "99",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "100",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "64",
     "type" : "owl:objectProperty"
   }, {
     "id" : "101",
@@ -894,125 +944,157 @@
     "id" : "102",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "104",
-    "type" : "owl:datatypeProperty"
+    "id" : "103",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "105",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "14",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "12",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "90",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "106",
-    "type" : "owl:datatypeProperty"
-  }, {
     "id" : "107",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "108",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "64",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "109",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "110",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "111",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "112",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "113",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "114",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "116",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "117",
+    "id" : "110",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "13",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "118",
+    "id" : "11",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "111",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "113",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "114",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "115",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "116",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "117",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "118",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "119",
     "type" : "owl:disjointWith"
   }, {
+    "id" : "68",
+    "type" : "owl:objectProperty"
+  }, {
     "id" : "120",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "65",
-    "type" : "owl:objectProperty"
+    "id" : "121",
+    "type" : "owl:disjointWith"
   }, {
-    "id" : "66",
-    "type" : "owl:objectProperty"
+    "id" : "122",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "123",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "124",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "121",
-    "type" : "owl:objectProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "125",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "127",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "128",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "129",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "130",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "131",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "69",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "134",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "135",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "132",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "136",
     "type" : "owl:datatypeProperty"
   } ],
   "propertyAttribute" : [ {
     "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
     "baseIri" : "http://www.w3.org/2002/07/owl",
-    "range" : "11",
+    "range" : "9",
     "label" : {
       "IRI-based" : "topObjectProperty"
     },
-    "domain" : "11",
-    "subproperty" : [ "12", "13", "14", "15" ],
+    "domain" : "9",
+    "subproperty" : [ "11", "12", "13", "14" ],
     "attributes" : [ "object", "external" ],
     "id" : "10"
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#solarAbsorptance",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
-    "range" : "17",
+    "range" : "16",
     "label" : {
       "IRI-based" : "solarAbsorptance"
     },
-    "domain" : "11",
+    "domain" : "9",
     "comment" : {
       "undefined" : "the fraction of solar radiation absorbed by the material"
     },
     "attributes" : [ "datatype" ],
-    "id" : "16"
+    "id" : "15"
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasBaseValue",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
-    "range" : "21",
+    "range" : "20",
     "label" : {
       "IRI-based" : "hasBaseValue"
     },
-    "domain" : "11",
+    "domain" : "9",
     "comment" : {
       "undefined" : "the base value is multiplied by the relative values in a relative timeseries to determine the absolute values at each timestep"
     },
     "attributes" : [ "datatype" ],
-    "id" : "20"
+    "id" : "19"
   }, {
-    "domain" : "23",
-    "range" : "24",
-    "id" : "22",
+    "domain" : "22",
+    "range" : "23",
+    "id" : "21",
+    "label" : {
+      "IRI-based" : "27",
+      "undefined" : "is a"
+    }
+  }, {
+    "domain" : "25",
+    "range" : "26",
+    "id" : "24",
     "label" : {
       "IRI-based" : "26",
       "undefined" : "is a"
@@ -1020,16 +1102,16 @@
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasValue",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
-    "range" : "30",
+    "range" : "34",
     "label" : {
       "IRI-based" : "hasValue"
     },
-    "domain" : "11",
+    "domain" : "9",
     "comment" : {
       "undefined" : "A value that can be used directly by the simulation"
     },
     "attributes" : [ "datatype" ],
-    "id" : "29"
+    "id" : "33"
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#constructionYearRange",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
@@ -1037,116 +1119,121 @@
     "label" : {
       "IRI-based" : "constructionYearRange"
     },
-    "superproperty" : [ "15" ],
-    "domain" : "32",
+    "superproperty" : [ "14" ],
+    "domain" : "36",
     "comment" : {
       "undefined" : "the range of years represented by an archetype"
     },
     "attributes" : [ "object" ],
-    "id" : "31"
+    "id" : "35"
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
-    "range" : "35",
+    "range" : "39",
     "label" : {
       "IRI-based" : "materialProperty"
     },
-    "domain" : "34",
+    "domain" : "38",
     "attributes" : [ "datatype" ],
-    "id" : "33"
+    "id" : "37"
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#themalConductivity",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
-    "range" : "19",
+    "range" : "18",
     "label" : {
       "IRI-based" : "themalConductivity"
     },
-    "domain" : "11",
+    "domain" : "9",
     "comment" : {
       "undefined" : "the thermal conductivity of the material"
     },
     "attributes" : [ "datatype" ],
-    "id" : "36"
+    "id" : "40"
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#glazingRatio",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
-    "range" : "11",
+    "range" : "9",
     "label" : {
       "IRI-based" : "glazingRatio"
     },
-    "superproperty" : [ "13" ],
-    "domain" : "11",
+    "superproperty" : [ "12" ],
+    "domain" : "9",
     "comment" : {
       "undefined" : "the glazing ratio of a building or wall"
     },
     "attributes" : [ "object" ],
-    "id" : "38"
-  }, {
-    "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#GeometricDataProperties",
-    "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
-    "range" : "42",
-    "label" : {
-      "IRI-based" : "GeometricDataProperties"
-    },
-    "domain" : "11",
-    "attributes" : [ "datatype" ],
-    "id" : "41"
+    "id" : "44"
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasMaxValue",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
-    "range" : "44",
+    "range" : "46",
     "label" : {
       "IRI-based" : "hasMaxValue"
     },
-    "domain" : "11",
+    "domain" : "9",
     "comment" : {
       "undefined" : "the maximum value of the parameter represented by the archetype"
     },
     "attributes" : [ "datatype" ],
-    "id" : "43"
+    "id" : "45"
   }, {
-    "range" : "50",
+    "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#GeometricDataProperties",
+    "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "GeometricDataProperties"
+    },
+    "domain" : "9",
+    "attributes" : [ "datatype" ],
+    "id" : "48"
+  }, {
+    "range" : "54",
     "domain" : "5",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "49"
-  }, {
-    "range" : "32",
-    "domain" : "54",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "53"
+  }, {
+    "range" : "30",
+    "domain" : "58",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "57"
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#dist",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
-    "range" : "56",
+    "range" : "60",
     "label" : {
       "IRI-based" : "dist"
     },
-    "domain" : "11",
+    "domain" : "9",
     "comment" : {
       "undefined" : "distribution of the parameter"
     },
     "attributes" : [ "datatype" ],
-    "id" : "55"
+    "id" : "59"
   }, {
-    "range" : "32",
-    "domain" : "58",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "57"
+    "range" : "22",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "61"
+  }, {
+    "range" : "30",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "62"
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
-    "range" : "11",
+    "range" : "9",
     "label" : {
       "IRI-based" : "hasParameter"
     },
     "superproperty" : [ "10" ],
-    "domain" : "11",
-    "subproperty" : [ "60", "61", "62", "38", "63", "64", "65", "66", "67" ],
+    "domain" : "9",
+    "subproperty" : [ "64", "65", "66", "44", "67", "68", "69", "70", "71" ],
     "comment" : {
       "undefined" : "parameters for simulation either in a data record or from an archetype"
     },
     "attributes" : [ "object" ],
-    "id" : "13"
+    "id" : "12"
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#enclosedBy",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
@@ -1154,119 +1241,119 @@
     "label" : {
       "IRI-based" : "enclosedBy"
     },
-    "superproperty" : [ "13" ],
-    "domain" : "68",
+    "superproperty" : [ "12" ],
+    "domain" : "72",
     "comment" : {
       "undefined" : "identifies the surfaces that enclose an instance of a zone"
     },
     "attributes" : [ "object" ],
-    "id" : "67"
+    "id" : "71"
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasDistributionObject",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
-    "range" : "11",
+    "range" : "9",
     "label" : {
       "IRI-based" : "hasDistributionObject"
     },
-    "superproperty" : [ "13" ],
-    "domain" : "11",
+    "superproperty" : [ "12" ],
+    "domain" : "9",
     "comment" : {
       "undefined" : "distribution object to be used to generate a time series"
     },
     "attributes" : [ "object" ],
-    "id" : "61"
+    "id" : "65"
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasRoof",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
-    "range" : "50",
+    "range" : "54",
     "label" : {
       "IRI-based" : "hasRoof"
     },
-    "superproperty" : [ "66" ],
-    "domain" : "32",
+    "superproperty" : [ "70" ],
+    "domain" : "36",
     "comment" : {
       "undefined" : "an exterior roof"
     },
     "attributes" : [ "object" ],
-    "id" : "69"
+    "id" : "75"
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasLayer",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
-    "range" : "11",
+    "range" : "9",
     "label" : {
       "IRI-based" : "hasLayer"
     },
-    "superproperty" : [ "13" ],
-    "domain" : "11",
+    "superproperty" : [ "12" ],
+    "domain" : "9",
     "comment" : {
       "undefined" : "defines the layer of a wall"
     },
     "attributes" : [ "object" ],
-    "id" : "63"
+    "id" : "67"
   }, {
     "range" : "6",
-    "domain" : "5",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "70"
-  }, {
-    "range" : "6",
-    "domain" : "72",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "71"
-  }, {
-    "range" : "23",
-    "domain" : "40",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "73"
-  }, {
-    "range" : "23",
-    "domain" : "24",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "74"
-  }, {
-    "range" : "6",
-    "domain" : "50",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "75"
-  }, {
-    "range" : "34",
     "domain" : "77",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "76"
   }, {
     "range" : "6",
     "domain" : "79",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "78"
   }, {
     "range" : "6",
-    "domain" : "81",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "80"
   }, {
-    "range" : "34",
+    "range" : "6",
     "domain" : "82",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "81"
+  }, {
+    "range" : "38",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "83"
+  }, {
+    "range" : "38",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "84"
+  }, {
+    "range" : "6",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "85"
+  }, {
+    "range" : "38",
+    "domain" : "74",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "86"
+  }, {
+    "range" : "43",
+    "domain" : "63",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "88"
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hotWaterFuel",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
-    "range" : "86",
+    "range" : "25",
     "label" : {
       "IRI-based" : "hotWaterFuel"
     },
-    "superproperty" : [ "13" ],
-    "domain" : "85",
+    "superproperty" : [ "12" ],
+    "domain" : "89",
     "comment" : {
       "undefined" : "the fuel used to supply hot water"
     },
     "attributes" : [ "object" ],
-    "id" : "62"
+    "id" : "66"
   }, {
-    "range" : "40",
-    "domain" : "59",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "87"
+    "range" : "43",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "90"
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasInternalWall",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
@@ -1274,213 +1361,208 @@
     "label" : {
       "IRI-based" : "hasInternalWall"
     },
-    "superproperty" : [ "66" ],
-    "domain" : "32",
+    "superproperty" : [ "70" ],
+    "domain" : "36",
     "comment" : {
       "undefined" : "an internal wall separating two conditioned spaces"
     },
     "attributes" : [ "object" ],
-    "id" : "88"
+    "id" : "91"
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasCRS",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
-    "range" : "47",
+    "range" : "51",
     "label" : {
       "IRI-based" : "hasCRS"
     },
-    "domain" : "11",
+    "domain" : "9",
     "comment" : {
       "undefined" : "The coordinate reference system used to define the property"
     },
     "attributes" : [ "datatype" ],
-    "id" : "89"
+    "id" : "92"
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasCategory",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
-    "range" : "11",
+    "range" : "9",
     "label" : {
       "IRI-based" : "hasCategory"
     },
     "superproperty" : [ "10" ],
-    "domain" : "11",
-    "subproperty" : [ "31", "90" ],
+    "domain" : "9",
+    "subproperty" : [ "35", "93" ],
     "comment" : {
       "undefined" : "categorical assignment either to a data record or archetype"
     },
     "attributes" : [ "object" ],
-    "id" : "15"
-  }, {
-    "range" : "40",
-    "domain" : "39",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "91"
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
-    "baseIri" : "http://www.w3.org/2002/07/owl",
-    "range" : "93",
-    "label" : {
-      "IRI-based" : "topDataProperty"
-    },
-    "domain" : "11",
-    "attributes" : [ "external", "datatype" ],
-    "id" : "92"
+    "id" : "14"
   }, {
     "range" : "2",
     "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "94"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "96",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "domain" : "9",
+    "attributes" : [ "external", "datatype" ],
     "id" : "95"
   }, {
     "range" : "2",
     "domain" : "3",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "96"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "97"
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#buildingInstance",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
-    "range" : "28",
+    "range" : "32",
     "label" : {
       "IRI-based" : "buildingInstance"
     },
-    "domain" : "94",
+    "domain" : "98",
     "comment" : {
       "undefined" : "Links the instance of a building record to an abstract building"
     },
     "attributes" : [ "object" ],
-    "id" : "97"
+    "id" : "100"
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasMaterial",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
-    "range" : "34",
+    "range" : "38",
     "label" : {
       "IRI-based" : "hasMaterial"
     },
-    "superproperty" : [ "13" ],
+    "superproperty" : [ "12" ],
     "domain" : "1",
     "comment" : {
       "undefined" : "defines the material of a construction layer"
     },
     "attributes" : [ "object" ],
-    "id" : "60"
+    "id" : "64"
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#appliesTo",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
-    "range" : "9",
+    "range" : "8",
     "label" : {
       "IRI-based" : "appliesTo"
     },
-    "domain" : "11",
+    "domain" : "9",
     "comment" : {
       "undefined" : "indicates the range of values the archetype category applies to"
     },
     "attributes" : [ "datatype" ],
-    "id" : "98"
+    "id" : "101"
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasMinValue",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
-    "range" : "48",
+    "range" : "52",
     "label" : {
       "IRI-based" : "hasMinValue"
     },
-    "domain" : "11",
+    "domain" : "9",
     "comment" : {
       "undefined" : "the minimum value of the parameter represented by the archetype"
     },
     "attributes" : [ "datatype" ],
-    "id" : "99"
+    "id" : "102"
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasExternalWall",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
-    "range" : "81",
+    "range" : "79",
     "label" : {
       "IRI-based" : "hasExternalWall"
     },
-    "superproperty" : [ "66" ],
-    "domain" : "32",
+    "superproperty" : [ "70" ],
+    "domain" : "36",
     "comment" : {
       "undefined" : "external wall"
     },
     "attributes" : [ "object" ],
-    "id" : "100"
+    "id" : "103"
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#parameterDataProperty",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
-    "range" : "8",
+    "range" : "0",
     "label" : {
       "IRI-based" : "parameterDataProperty"
     },
-    "domain" : "11",
+    "domain" : "9",
     "comment" : {
       "undefined" : "attributes used to define the usage of a simulation parameter defined in an archetype"
     },
     "attributes" : [ "datatype" ],
-    "id" : "101"
+    "id" : "105"
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#probOccur",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
-    "range" : "26",
+    "range" : "28",
     "label" : {
       "IRI-based" : "probOccur"
     },
-    "domain" : "11",
+    "domain" : "9",
     "comment" : {
       "undefined" : "probability of occurrence of the parameter"
     },
     "attributes" : [ "datatype" ],
-    "id" : "102"
+    "id" : "107"
   }, {
     "iri" : "http://cui.unige.ch/citygml/2.0/measuredHeight",
     "baseIri" : "http://cui.unige.ch/citygml/2.0",
-    "range" : "52",
+    "range" : "56",
     "label" : {
       "IRI-based" : "measuredHeight"
     },
-    "domain" : "11",
+    "domain" : "9",
     "comment" : {
       "undefined" : "the meaured height as detailed in CityGML"
     },
     "attributes" : [ "external", "datatype" ],
-    "id" : "104"
+    "id" : "109"
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#layerThickness",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
-    "range" : "46",
+    "range" : "50",
     "label" : {
       "IRI-based" : "layerThickness"
     },
-    "domain" : "11",
+    "domain" : "9",
     "comment" : {
       "undefined" : "The thickness of a material layer"
     },
     "attributes" : [ "datatype" ],
-    "id" : "105"
+    "id" : "110"
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#meetsRegulation",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
-    "range" : "83",
+    "range" : "87",
     "label" : {
       "IRI-based" : "meetsRegulation"
     },
     "superproperty" : [ "10" ],
-    "domain" : "0",
+    "domain" : "99",
     "comment" : {
       "undefined" : "specifies adherence to a regulation"
     },
     "attributes" : [ "object" ],
-    "id" : "14"
+    "id" : "13"
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#inputFor",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
-    "range" : "11",
+    "range" : "9",
     "label" : {
       "IRI-based" : "inputFor"
     },
     "superproperty" : [ "10" ],
-    "domain" : "11",
+    "domain" : "9",
     "comment" : {
       "undefined" : "indicates the application the parameter can be used with"
     },
     "attributes" : [ "object" ],
-    "id" : "12"
+    "id" : "11"
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#buildingUse",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
@@ -1488,211 +1570,236 @@
     "label" : {
       "IRI-based" : "buildingUse"
     },
-    "superproperty" : [ "15" ],
-    "domain" : "32",
+    "superproperty" : [ "14" ],
+    "domain" : "36",
     "comment" : {
       "undefined" : "the building use represented by an archetype"
     },
     "attributes" : [ "object" ],
-    "id" : "90"
+    "id" : "93"
+  }, {
+    "range" : "36",
+    "domain" : "112",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "111"
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasVertices",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
-    "range" : "37",
+    "range" : "41",
     "label" : {
       "IRI-based" : "hasVertices"
     },
-    "domain" : "11",
+    "domain" : "9",
     "comment" : {
       "undefined" : "A list of coordinates defining the surface boundary. Detailed in the GML schema."
     },
     "attributes" : [ "datatype" ],
-    "id" : "106"
+    "id" : "113"
+  }, {
+    "range" : "74",
+    "domain" : "104",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "114"
+  }, {
+    "range" : "22",
+    "domain" : "43",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "115"
+  }, {
+    "range" : "36",
+    "domain" : "106",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "116"
+  }, {
+    "range" : "74",
+    "domain" : "73",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "117"
+  }, {
+    "range" : "54",
+    "domain" : "79",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "118"
   }, {
     "range" : "5",
-    "domain" : "81",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "107"
-  }, {
-    "range" : "79",
-    "domain" : "81",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "108"
+    "domain" : "79",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "119"
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#constructedIn",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
-    "range" : "11",
+    "range" : "9",
     "label" : {
       "IRI-based" : "constructedIn"
     },
-    "superproperty" : [ "13" ],
-    "domain" : "11",
+    "superproperty" : [ "12" ],
+    "domain" : "9",
     "comment" : {
       "undefined" : "The year a building or archetype was constructed in"
     },
     "attributes" : [ "object" ],
-    "id" : "64"
+    "id" : "68"
   }, {
-    "range" : "50",
-    "domain" : "81",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "109"
+    "range" : "77",
+    "domain" : "79",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "120"
+  }, {
+    "range" : "54",
+    "domain" : "77",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "121"
   }, {
     "range" : "5",
-    "domain" : "79",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "110"
+    "domain" : "77",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "122"
   }, {
-    "range" : "50",
-    "domain" : "79",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "111"
+    "range" : "82",
+    "domain" : "77",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "123"
   }, {
-    "range" : "72",
-    "domain" : "79",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "112"
-  }, {
-    "range" : "50",
-    "domain" : "72",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "113"
+    "range" : "54",
+    "domain" : "82",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "124"
   }, {
     "range" : "5",
-    "domain" : "72",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "114"
+    "domain" : "82",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "125"
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#roughness",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
-    "range" : "25",
+    "range" : "27",
     "label" : {
       "IRI-based" : "roughness"
     },
-    "domain" : "34",
+    "domain" : "38",
     "comment" : {
       "undefined" : "the surface roughness of the material"
     },
     "attributes" : [ "datatype" ],
-    "id" : "116"
+    "id" : "127"
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#retrofitOf",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
-    "range" : "11",
+    "range" : "9",
     "label" : {
       "IRI-based" : "retrofitOf"
     },
-    "domain" : "11",
+    "domain" : "9",
     "comment" : {
       "undefined" : "Used to link retrofit versions of constructions"
     },
     "attributes" : [ "object" ],
-    "id" : "117"
+    "id" : "128"
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasInternalCeiling",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
-    "range" : "72",
+    "range" : "82",
     "label" : {
       "IRI-based" : "hasInternalCeiling"
     },
-    "superproperty" : [ "66" ],
-    "domain" : "32",
+    "superproperty" : [ "70" ],
+    "domain" : "36",
     "comment" : {
       "undefined" : "an internal ceiling separating two conditioned zones"
     },
     "attributes" : [ "object" ],
-    "id" : "118"
+    "id" : "129"
   }, {
     "range" : "3",
     "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "119"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "130"
   }, {
-    "range" : "72",
-    "domain" : "81",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "120"
+    "range" : "82",
+    "domain" : "79",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "131"
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#spaceHeatingFuel",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
-    "range" : "11",
+    "range" : "9",
     "label" : {
       "IRI-based" : "spaceHeatingFuel"
     },
-    "superproperty" : [ "13" ],
-    "domain" : "11",
+    "superproperty" : [ "12" ],
+    "domain" : "9",
     "comment" : {
       "undefined" : "the fuel used for space heating"
     },
     "attributes" : [ "object" ],
-    "id" : "65"
+    "id" : "69"
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasSurface",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
-    "range" : "11",
+    "range" : "9",
     "label" : {
       "IRI-based" : "hasSurface"
     },
-    "superproperty" : [ "13" ],
-    "domain" : "11",
-    "subproperty" : [ "100", "118", "69", "121", "88" ],
+    "superproperty" : [ "12" ],
+    "domain" : "9",
+    "subproperty" : [ "103", "129", "75", "132", "91" ],
     "comment" : {
       "undefined" : "presence of building surfaces used to define the building model"
     },
     "attributes" : [ "object" ],
-    "id" : "66"
+    "id" : "70"
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#density",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
-    "range" : "51",
+    "range" : "55",
     "label" : {
       "IRI-based" : "density"
     },
-    "domain" : "11",
+    "domain" : "9",
     "comment" : {
       "undefined" : "density of the material"
     },
     "attributes" : [ "datatype" ],
-    "id" : "123"
+    "id" : "134"
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#specificHeat",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
-    "range" : "27",
+    "range" : "31",
     "label" : {
       "IRI-based" : "specificHeat"
     },
-    "domain" : "11",
+    "domain" : "9",
     "comment" : {
       "undefined" : "specific heat of the material"
     },
     "attributes" : [ "datatype" ],
-    "id" : "124"
+    "id" : "135"
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasFloor",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
-    "range" : "79",
+    "range" : "77",
     "label" : {
       "IRI-based" : "hasFloor"
     },
-    "superproperty" : [ "66" ],
-    "domain" : "32",
+    "superproperty" : [ "70" ],
+    "domain" : "36",
     "comment" : {
       "undefined" : "external floor in contact with the ground"
     },
     "attributes" : [ "object" ],
-    "id" : "121"
+    "id" : "132"
   }, {
     "iri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#visualAbsorptance",
     "baseIri" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
-    "range" : "18",
+    "range" : "17",
     "label" : {
       "IRI-based" : "visualAbsorptance"
     },
-    "domain" : "11",
+    "domain" : "9",
     "comment" : {
       "undefined" : "the fraction of the visual spectrum absorbed by the material"
     },
     "attributes" : [ "datatype" ],
-    "id" : "125"
+    "id" : "136"
   } ]
 }

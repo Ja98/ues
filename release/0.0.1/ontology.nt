@@ -365,6 +365,10 @@
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#Fuel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#Fuel> <http://www.w3.org/2000/01/rdf-schema#comment> "An energy carrier used to supply heat or electricity" .
 # 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#Gas
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#Gas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#Gas> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#Material> .
+# 
 # https://ja98.github.io/ues/release/0.0.1/index-en.html#GlazingRatio
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#GlazingRatio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#GlazingRatio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParameter> .
@@ -390,6 +394,10 @@
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall> <http://www.w3.org/2002/07/owl#disjointWith> <https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall> <http://www.w3.org/2000/01/rdf-schema#comment> "A vertical surface separating two conditioned spaces or buildings" .
 # 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#Liquid
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#Liquid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#Liquid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#Material> .
+# 
 # https://ja98.github.io/ues/release/0.0.1/index-en.html#Material
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#Material> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#Material> <http://www.w3.org/2000/01/rdf-schema#comment> "A material" .
@@ -402,9 +410,13 @@
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#MeasuredData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#MeasuredData> <http://www.w3.org/2000/01/rdf-schema#comment> "A measured or monitored data record" .
 # 
-# https://ja98.github.io/ues/release/0.0.1/index-en.html#Opaque
-<https://ja98.github.io/ues/release/0.0.1/index-en.html#Opaque> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://ja98.github.io/ues/release/0.0.1/index-en.html#Opaque> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#Material> .
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#OpaqueLiquid
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#OpaqueLiquid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#OpaqueLiquid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#Liquid> .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#OpaqueSolid
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#OpaqueSolid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#OpaqueSolid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#Solid> .
 # 
 # https://ja98.github.io/ues/release/0.0.1/index-en.html#Regulation
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#Regulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -433,13 +445,21 @@
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParameter> <http://www.w3.org/2000/01/rdf-schema#comment> "A parameter used as an input for a Simulation Application" .
 # 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#Solid
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#Solid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#Solid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#Material> .
+# 
 # https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParameter> .
 # 
-# https://ja98.github.io/ues/release/0.0.1/index-en.html#Transparent
-<https://ja98.github.io/ues/release/0.0.1/index-en.html#Transparent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://ja98.github.io/ues/release/0.0.1/index-en.html#Transparent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#Material> .
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#TransparentLiquid
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#TransparentLiquid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#TransparentLiquid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#Liquid> .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#TransparentSolid
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#TransparentSolid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#TransparentSolid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#Solid> .
 # 
 # https://w3id.org/bot#Zone
 <https://w3id.org/bot#Zone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
