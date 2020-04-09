@@ -421,6 +421,11 @@ ues:Fuel rdf:type owl:Class ;
          rdfs:comment "An energy carrier used to supply heat or electricity" .
 
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Gas
+ues:Gas rdf:type owl:Class ;
+        rdfs:subClassOf ues:Material .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#GlazingRatio
 ues:GlazingRatio rdf:type owl:Class ;
                  rdfs:subClassOf ues:SimulationParameter .
@@ -450,6 +455,11 @@ ues:InternalWall rdf:type owl:Class ;
                  rdfs:comment "A vertical surface separating two conditioned spaces or buildings" .
 
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Liquid
+ues:Liquid rdf:type owl:Class ;
+           rdfs:subClassOf ues:Material .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Material
 ues:Material rdf:type owl:Class ;
              rdfs:comment "A material" .
@@ -465,9 +475,14 @@ ues:MeasuredData rdf:type owl:Class ;
                  rdfs:comment "A measured or monitored data record" .
 
 
-###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Opaque
-ues:Opaque rdf:type owl:Class ;
-           rdfs:subClassOf ues:Material .
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#OpaqueLiquid
+ues:OpaqueLiquid rdf:type owl:Class ;
+                 rdfs:subClassOf ues:Liquid .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#OpaqueSolid
+ues:OpaqueSolid rdf:type owl:Class ;
+                rdfs:subClassOf ues:Solid .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Regulation
@@ -503,14 +518,24 @@ ues:SimulationParameter rdf:type owl:Class ;
                         rdfs:comment "A parameter used as an input for a Simulation Application" .
 
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Solid
+ues:Solid rdf:type owl:Class ;
+          rdfs:subClassOf ues:Material .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries
 ues:TimeSeries rdf:type owl:Class ;
                rdfs:subClassOf ues:SimulationParameter .
 
 
-###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Transparent
-ues:Transparent rdf:type owl:Class ;
-                rdfs:subClassOf ues:Material .
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#TransparentLiquid
+ues:TransparentLiquid rdf:type owl:Class ;
+                      rdfs:subClassOf ues:Liquid .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#TransparentSolid
+ues:TransparentSolid rdf:type owl:Class ;
+                     rdfs:subClassOf ues:Solid .
 
 
 ###  https://w3id.org/bot#Zone
