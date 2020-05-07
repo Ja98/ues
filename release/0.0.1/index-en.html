@@ -6,7 +6,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://ja98.github.io/ues/release/0.0.1/index-en.html","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://ja98.github.io/ues/release/0.0.1/index-en.html","name":"The Urban Simulation Ontology (UES)", "headline":"The Urban Energy Simulation ontology is designed to facilitate the handling and organisation of heterogeneous data used in urban building energy modelling. The ontology contains a standardised vocabulary that, when implemented into a linked graph database, overcomes some of the main challenges regarding data availability, accuracy and traceability.", "datePublished":"Thu May 07 15:29:00 CEST 2020", "author":[{"@type":"Person","name":"James Allan"}], "contributor":[{"@type":"Person","name":"Aaron Bojarski"},{"@type":"Person","name":"Andrew Bollinger"},{"@type":"Person","name":"Kristina Orehounig"},{"@type":"Person","name":"Leonie Fierz"}]}</script>
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://ja98.github.io/ues/release/0.0.1/index-en.html","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://ja98.github.io/ues/release/0.0.1/index-en.html","name":"The Urban Simulation Ontology (UES)", "headline":"The Urban Energy Simulation ontology is designed to facilitate the handling and organisation of heterogeneous data used in urban building energy modelling. The ontology contains a standardised vocabulary that, when implemented into a linked graph database, overcomes some of the main challenges regarding data availability, accuracy and traceability.", "datePublished":"Thu May 07 15:34:37 CEST 2020", "author":[{"@type":"Person","name":"James Allan"}], "contributor":[{"@type":"Person","name":"Aaron Bojarski"},{"@type":"Person","name":"Andrew Bollinger"},{"@type":"Person","name":"Kristina Orehounig"},{"@type":"Person","name":"Leonie Fierz"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -45,6 +45,11 @@ function loadTOC(){
  $.fn.ignore = function(sel){
         return this.clone().find(sel||">*").remove().end();
  };    $(function(){
+      $("#abstract").load("sections/abstract-en.html"); 
+      $("#introduction").load("sections/introduction-en.html"); 
+      $("#overview").load("sections/overview-en.html"); 
+      $("#description").load("sections/description-en.html"); 
+      $("#references").load("sections/references-en.html"); 
       $("#crossref").load("sections/crossref-en.html", null, loadHash); 
     });
     </script> 
@@ -78,7 +83,12 @@ function loadTOC(){
 <div>
 <span>Ontology Specification Draft</span>
 </div>
-</div><div id="toc"></div>     <div id="crossref"></div>
+</div>     <div id="abstract"></div>
+<div id="toc"></div>     <div id="introduction"></div>
+     <div id="overview"></div>
+     <div id="description"></div>
+     <div id="crossref"></div>
+     <div id="references"></div>
 <div id="acknowledgements">
 <h2 id="ack" class="list">Acknowledgements <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <p>
