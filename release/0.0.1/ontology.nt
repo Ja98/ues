@@ -1,5 +1,41 @@
 <https://ja98.github.io/ues/release/0.0.1/index-en.html> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html> <http://www.w3.org/2002/07/owl#versionIRI> <https://github.com/Ja98/ues/tree/master/release/0.0.1/ontology.ttl> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html> <http://purl.org/dc/terms/contributor> "Aaron Bojarski" .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html> <http://purl.org/dc/terms/contributor> "Andrew Bollinger" .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html> <http://purl.org/dc/terms/contributor> "Kristina Orehounig" .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html> <http://purl.org/dc/terms/contributor> "Leonie Fierz" .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html> <http://purl.org/dc/terms/creator> "James Allan" .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html> <http://purl.org/dc/terms/description> "The Urban Energy Simulation ontology is designed to facilitate the handling and organisation of heterogeneous data used in urban building energy modelling. The ontology contains a standardised vocabulary that, when implemented into a linked graph database, overcomes some of the main challenges regarding data availability, accuracy and traceability."@en .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html> <http://purl.org/dc/terms/title> "The Urban Simulation Ontology (UES)"@en .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html> <http://purl.org/vocab/vann/preferredNamespacePrefix> "ues" .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://ja98.github.io/ues" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # 
 # 
 # #################################################################

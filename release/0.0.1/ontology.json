@@ -11,6 +11,24 @@
     "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#GeometricDataProperties"
   } ]
 }, {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://schemas.opengis.net/gml/3.2.1/geometryBasic0d1d.xsd#posLis",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -28,6 +46,32 @@
 }, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "Aaron Bojarski"
+  }, {
+    "@value" : "Andrew Bollinger"
+  }, {
+    "@value" : "Kristina Orehounig"
+  }, {
+    "@value" : "Leonie Fierz"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "James Allan"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "The Urban Energy Simulation ontology is designed to facilitate the handling and organisation of heterogeneous data used in urban building energy modelling. The ontology contains a standardised vocabulary that, when implemented into a linked graph database, overcomes some of the main challenges regarding data availability, accuracy and traceability."
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "The Urban Simulation Ontology (UES)"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "ues"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "https://ja98.github.io/ues"
+  } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
     "@id" : "https://github.com/Ja98/ues/tree/master/release/0.0.1/ontology.ttl"
   } ]

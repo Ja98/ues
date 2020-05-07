@@ -5,10 +5,75 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html">
         <owl:versionIRI rdf:resource="https://github.com/Ja98/ues/tree/master/release/0.0.1/ontology.ttl"/>
+        <terms:contributor>Aaron Bojarski</terms:contributor>
+        <terms:contributor>Andrew Bollinger</terms:contributor>
+        <terms:contributor>Kristina Orehounig</terms:contributor>
+        <terms:contributor>Leonie Fierz</terms:contributor>
+        <terms:creator>James Allan</terms:creator>
+        <terms:description xml:lang="en">The Urban Energy Simulation ontology is designed to facilitate the handling and organisation of heterogeneous data used in urban building energy modelling. The ontology contains a standardised vocabulary that, when implemented into a linked graph database, overcomes some of the main challenges regarding data availability, accuracy and traceability.</terms:description>
+        <terms:title xml:lang="en">The Urban Simulation Ontology (UES)</terms:title>
+        <vann:preferredNamespacePrefix>ues</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://ja98.github.io/ues</vann:preferredNamespaceUri>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
     
 
 
