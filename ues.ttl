@@ -165,6 +165,11 @@ ues:hasFloor rdf:type owl:ObjectProperty ;
              rdfs:comment "external floor in contact with the ground" .
 
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#hasGlazingRatioRange
+ues:hasGlazingRatioRange rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf ues:hasParameter .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#hasInternalCeiling
 ues:hasInternalCeiling rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf ues:hasSurface ;
@@ -235,15 +240,34 @@ ues:meetsRegulation rdf:type owl:ObjectProperty ;
                     rdfs:comment "specifies adherence to a regulation" .
 
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#minRequirement
+ues:minRequirement rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf ues:retrofittingProperties .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#retrofitOf
 ues:retrofitOf rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf ues:retrofittingProperties ;
                rdfs:comment "Used to link retrofit versions of constructions" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#retrofittingProperties
+ues:retrofittingProperties rdf:type owl:ObjectProperty .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#simulatedUsing
+ues:simulatedUsing rdf:type owl:ObjectProperty .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#spaceHeatingFuel
 ues:spaceHeatingFuel rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf ues:hasParameter ;
                      rdfs:comment "the fuel used for space heating" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#targetRequirement
+ues:targetRequirement rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf ues:retrofittingProperties .
 
 
 #################################################################
@@ -408,6 +432,31 @@ ues:AgeOfConstructionRange rdf:type owl:Class ;
                            rdfs:comment "The age range that applies to an archetype" .
 
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#AnnualAppliancesDemand
+ues:AnnualAppliancesDemand rdf:type owl:Class ;
+                           rdfs:subClassOf ues:EnergyDemand .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#AnnualCoolingDemand
+ues:AnnualCoolingDemand rdf:type owl:Class ;
+                        rdfs:subClassOf ues:EnergyDemand .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#AnnualHotWaterDemand
+ues:AnnualHotWaterDemand rdf:type owl:Class ;
+                         rdfs:subClassOf ues:EnergyDemand .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#AnnualLightingDemand
+ues:AnnualLightingDemand rdf:type owl:Class ;
+                         rdfs:subClassOf ues:EnergyDemand .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#AnnualSpaceHeatingDemand
+ues:AnnualSpaceHeatingDemand rdf:type owl:Class ;
+                             rdfs:subClassOf ues:EnergyDemand .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Archetype
 ues:Archetype rdf:type owl:Class ;
               rdfs:comment "an archetype object with categories and parameters for building simulation" .
@@ -445,6 +494,10 @@ ues:Distribution rdf:type owl:Class ;
                  rdfs:comment "Distibution class used to generate time series and profiles" .
 
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#EnergyDemand
+ues:EnergyDemand rdf:type owl:Class .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#ExternalWall
 ues:ExternalWall rdf:type owl:Class ;
                  rdfs:subClassOf ues:BuildingSurface ;
@@ -468,6 +521,11 @@ ues:Gas rdf:type owl:Class ;
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#GlazingRatio
 ues:GlazingRatio rdf:type owl:Class ;
                  rdfs:subClassOf ues:SimulationParameter .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#GlazingRatioRange
+ues:GlazingRatioRange rdf:type owl:Class ;
+                      rdfs:subClassOf ues:SimulationParameter .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#GroundFloor
