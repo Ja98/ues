@@ -141,6 +141,10 @@
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#hasFloor> <http://www.w3.org/2000/01/rdf-schema#range> <https://ja98.github.io/ues/release/0.0.1/index-en.html#GroundFloor> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#hasFloor> <http://www.w3.org/2000/01/rdf-schema#comment> "external floor in contact with the ground" .
 # 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#hasGlazingRatioRange
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#hasGlazingRatioRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#hasGlazingRatioRange> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter> .
+# 
 # https://ja98.github.io/ues/release/0.0.1/index-en.html#hasInternalCeiling
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#hasInternalCeiling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#hasInternalCeiling> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#hasSurface> .
@@ -201,14 +205,29 @@
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#meetsRegulation> <http://www.w3.org/2000/01/rdf-schema#range> <https://ja98.github.io/ues/release/0.0.1/index-en.html#Regulation> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#meetsRegulation> <http://www.w3.org/2000/01/rdf-schema#comment> "specifies adherence to a regulation" .
 # 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#minRequirement
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#minRequirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#minRequirement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#retrofittingProperties> .
+# 
 # https://ja98.github.io/ues/release/0.0.1/index-en.html#retrofitOf
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#retrofitOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#retrofitOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#retrofittingProperties> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#retrofitOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to link retrofit versions of constructions" .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#retrofittingProperties
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#retrofittingProperties> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#simulatedUsing
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#simulatedUsing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
 # https://ja98.github.io/ues/release/0.0.1/index-en.html#spaceHeatingFuel
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#spaceHeatingFuel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#spaceHeatingFuel> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#spaceHeatingFuel> <http://www.w3.org/2000/01/rdf-schema#comment> "the fuel used for space heating" .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#targetRequirement
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#targetRequirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#targetRequirement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#retrofittingProperties> .
 # 
 # 
 # 
@@ -358,6 +377,26 @@
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#AgeOfConstructionRange> <http://www.w3.org/2002/07/owl#disjointWith> <https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingUse> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#AgeOfConstructionRange> <http://www.w3.org/2000/01/rdf-schema#comment> "The age range that applies to an archetype" .
 # 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#AnnualAppliancesDemand
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#AnnualAppliancesDemand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#AnnualAppliancesDemand> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#EnergyDemand> .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#AnnualCoolingDemand
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#AnnualCoolingDemand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#AnnualCoolingDemand> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#EnergyDemand> .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#AnnualHotWaterDemand
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#AnnualHotWaterDemand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#AnnualHotWaterDemand> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#EnergyDemand> .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#AnnualLightingDemand
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#AnnualLightingDemand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#AnnualLightingDemand> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#EnergyDemand> .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#AnnualSpaceHeatingDemand
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#AnnualSpaceHeatingDemand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#AnnualSpaceHeatingDemand> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#EnergyDemand> .
+# 
 # https://ja98.github.io/ues/release/0.0.1/index-en.html#Archetype
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#Archetype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#Archetype> <http://www.w3.org/2000/01/rdf-schema#comment> "an archetype object with categories and parameters for building simulation" .
@@ -388,6 +427,9 @@
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#Distribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#Distribution> <http://www.w3.org/2000/01/rdf-schema#comment> "Distibution class used to generate time series and profiles" .
 # 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#EnergyDemand
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#EnergyDemand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
 # https://ja98.github.io/ues/release/0.0.1/index-en.html#ExternalWall
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#ExternalWall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#ExternalWall> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface> .
@@ -408,6 +450,10 @@
 # https://ja98.github.io/ues/release/0.0.1/index-en.html#GlazingRatio
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#GlazingRatio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#GlazingRatio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParameter> .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#GlazingRatioRange
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#GlazingRatioRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#GlazingRatioRange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParameter> .
 # 
 # https://ja98.github.io/ues/release/0.0.1/index-en.html#GroundFloor
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#GroundFloor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

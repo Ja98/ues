@@ -272,6 +272,15 @@
     
 
 
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#hasGlazingRatioRange -->
+
+
+    <owl:ObjectProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasGlazingRatioRange">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#hasInternalCeiling -->
 
 
@@ -382,12 +391,36 @@
     
 
 
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#minRequirement -->
+
+
+    <owl:ObjectProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#minRequirement">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#retrofittingProperties"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#retrofitOf -->
 
 
     <owl:ObjectProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#retrofitOf">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#retrofittingProperties"/>
         <rdfs:comment>Used to link retrofit versions of constructions</rdfs:comment>
     </owl:ObjectProperty>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#retrofittingProperties -->
+
+
+    <owl:ObjectProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#retrofittingProperties"/>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#simulatedUsing -->
+
+
+    <owl:ObjectProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#simulatedUsing"/>
     
 
 
@@ -397,6 +430,15 @@
     <owl:ObjectProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#spaceHeatingFuel">
         <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter"/>
         <rdfs:comment>the fuel used for space heating</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#targetRequirement -->
+
+
+    <owl:ObjectProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#targetRequirement">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#retrofittingProperties"/>
     </owl:ObjectProperty>
     
 
@@ -674,6 +716,51 @@
     
 
 
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#AnnualAppliancesDemand -->
+
+
+    <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#AnnualAppliancesDemand">
+        <rdfs:subClassOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#EnergyDemand"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#AnnualCoolingDemand -->
+
+
+    <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#AnnualCoolingDemand">
+        <rdfs:subClassOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#EnergyDemand"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#AnnualHotWaterDemand -->
+
+
+    <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#AnnualHotWaterDemand">
+        <rdfs:subClassOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#EnergyDemand"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#AnnualLightingDemand -->
+
+
+    <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#AnnualLightingDemand">
+        <rdfs:subClassOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#EnergyDemand"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#AnnualSpaceHeatingDemand -->
+
+
+    <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#AnnualSpaceHeatingDemand">
+        <rdfs:subClassOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#EnergyDemand"/>
+    </owl:Class>
+    
+
+
     <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#Archetype -->
 
 
@@ -739,6 +826,13 @@
     
 
 
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#EnergyDemand -->
+
+
+    <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#EnergyDemand"/>
+    
+
+
     <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#ExternalWall -->
 
 
@@ -775,6 +869,15 @@
 
 
     <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#GlazingRatio">
+        <rdfs:subClassOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParameter"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#GlazingRatioRange -->
+
+
+    <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#GlazingRatioRange">
         <rdfs:subClassOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParameter"/>
     </owl:Class>
     

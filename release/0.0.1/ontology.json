@@ -109,6 +109,36 @@
     "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingUse"
   } ]
 }, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#AnnualAppliancesDemand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#EnergyDemand"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#AnnualCoolingDemand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#EnergyDemand"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#AnnualHotWaterDemand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#EnergyDemand"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#AnnualLightingDemand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#EnergyDemand"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#AnnualSpaceHeatingDemand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#EnergyDemand"
+  } ]
+}, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Archetype",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -169,6 +199,9 @@
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Electricity",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#Fuel" ]
 }, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#EnergyDemand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#EnergyPlus",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationApplication" ]
 }, {
@@ -207,6 +240,12 @@
 }, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#GlazingRatio",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParameter" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParameter"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#GlazingRatioRange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParameter"
   } ]
@@ -559,6 +598,12 @@
     "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasSurface"
   } ]
 }, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasGlazingRatioRange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter"
+  } ]
+}, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasInternalCeiling",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -745,6 +790,12 @@
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#minRequirement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#retrofittingProperties"
+  } ]
+}, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#parameterDataProperty",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -773,7 +824,13 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Used to link retrofit versions of constructions"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#retrofittingProperties"
   } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#retrofittingProperties",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#roughness",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
@@ -789,6 +846,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
   } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#simulatedUsing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#solarAbsorptance",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
@@ -821,6 +881,12 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#targetRequirement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#retrofittingProperties"
   } ]
 }, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#themalConductivity",

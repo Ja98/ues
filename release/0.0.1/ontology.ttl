@@ -158,6 +158,11 @@ xsd:gYear rdf:type rdfs:Datatype .
           rdfs:comment "external floor in contact with the ground" .
 
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#hasGlazingRatioRange
+:hasGlazingRatioRange rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :hasParameter .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#hasInternalCeiling
 :hasInternalCeiling rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf :hasSurface ;
@@ -228,15 +233,34 @@ xsd:gYear rdf:type rdfs:Datatype .
                  rdfs:comment "specifies adherence to a regulation" .
 
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#minRequirement
+:minRequirement rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :retrofittingProperties .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#retrofitOf
 :retrofitOf rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :retrofittingProperties ;
             rdfs:comment "Used to link retrofit versions of constructions" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#retrofittingProperties
+:retrofittingProperties rdf:type owl:ObjectProperty .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#simulatedUsing
+:simulatedUsing rdf:type owl:ObjectProperty .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#spaceHeatingFuel
 :spaceHeatingFuel rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf :hasParameter ;
                   rdfs:comment "the fuel used for space heating" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#targetRequirement
+:targetRequirement rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf :retrofittingProperties .
 
 
 #################################################################
@@ -401,6 +425,31 @@ xsd:gYear rdf:type rdfs:Datatype .
                         rdfs:comment "The age range that applies to an archetype" .
 
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#AnnualAppliancesDemand
+:AnnualAppliancesDemand rdf:type owl:Class ;
+                        rdfs:subClassOf :EnergyDemand .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#AnnualCoolingDemand
+:AnnualCoolingDemand rdf:type owl:Class ;
+                     rdfs:subClassOf :EnergyDemand .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#AnnualHotWaterDemand
+:AnnualHotWaterDemand rdf:type owl:Class ;
+                      rdfs:subClassOf :EnergyDemand .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#AnnualLightingDemand
+:AnnualLightingDemand rdf:type owl:Class ;
+                      rdfs:subClassOf :EnergyDemand .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#AnnualSpaceHeatingDemand
+:AnnualSpaceHeatingDemand rdf:type owl:Class ;
+                          rdfs:subClassOf :EnergyDemand .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Archetype
 :Archetype rdf:type owl:Class ;
            rdfs:comment "an archetype object with categories and parameters for building simulation" .
@@ -438,6 +487,10 @@ xsd:gYear rdf:type rdfs:Datatype .
               rdfs:comment "Distibution class used to generate time series and profiles" .
 
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#EnergyDemand
+:EnergyDemand rdf:type owl:Class .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#ExternalWall
 :ExternalWall rdf:type owl:Class ;
               rdfs:subClassOf :BuildingSurface ;
@@ -461,6 +514,11 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#GlazingRatio
 :GlazingRatio rdf:type owl:Class ;
               rdfs:subClassOf :SimulationParameter .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#GlazingRatioRange
+:GlazingRatioRange rdf:type owl:Class ;
+                   rdfs:subClassOf :SimulationParameter .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#GroundFloor
