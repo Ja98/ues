@@ -175,6 +175,9 @@
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#CESAR",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationApplication" ]
 }, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Coal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#Fuel" ]
+}, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#ConstructionArchetype",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -265,6 +268,12 @@
   }, {
     "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof"
   } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#HeatPump",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#HeatingOil",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#Fuel" ]
 }, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#HeatingSetPoint",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries" ]
@@ -388,6 +397,9 @@
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#SingleFamilyHome",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingUsage" ]
 }, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#SolarPanel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Solid",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -415,6 +427,9 @@
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Ventilation",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries" ]
 }, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Wood",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#Fuel" ]
+}, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#absoluteTimeSeries",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -425,6 +440,33 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "indicates the range of values the archetype category applies to"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#backSideInfraredHemisphericalEmissivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#backSideSolarReflectance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#backSideVisibleReflectance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
   } ]
 }, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#buildingInstance",
@@ -449,6 +491,15 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasCategory"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#co2Emission",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
   } ]
 }, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#constructedIn",
@@ -493,6 +544,15 @@
     "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
   } ]
 }, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#dirtCorrectionFactor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
+  } ]
+}, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#dist",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -515,6 +575,33 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#frontSideInfraredHemisphericalEmissivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#frontSideSolarReflectance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#frontSideVisibleReflectance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
   } ]
 }, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#glazingRatio",
@@ -602,6 +689,15 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasInfiltrationRate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The infiltration rate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasInternalCeiling",
@@ -751,6 +847,15 @@
     "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter"
   } ]
 }, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#infraredTransmittance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
+  } ]
+}, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#inputFor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -760,6 +865,21 @@
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#layerOrder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The order of the layer in the construction. \"1\" is facing outside."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#layerProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#layerProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#layerThickness",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -767,6 +887,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#layerProperty"
   } ]
 }, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty",
@@ -794,6 +917,15 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#retrofittingProperties"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#nonRenewablePrimaryEnergy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
   } ]
 }, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#parameterDataProperty",
@@ -862,6 +994,15 @@
     "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
   } ]
 }, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#solarTransmittance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
+  } ]
+}, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#spaceHeatingFuel",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -901,11 +1042,32 @@
     "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
   } ]
 }, {
-  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#visualAbsorptance",
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#thermalAbsorptance",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "the fraction of the visual spectrum absorbed by the material"
+    "@value" : "the fraction of thermal radiation absorbed by the material"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#visibleAbsoptance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "the fraction of the visible spectrum absorbed by the material"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#visibleTransmittance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
   } ],

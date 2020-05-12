@@ -290,6 +290,30 @@ ues:appliesTo rdf:type owl:DatatypeProperty ;
               rdfs:comment "indicates the range of values the archetype category applies to" .
 
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#backSideInfraredHemisphericalEmissivity
+ues:backSideInfraredHemisphericalEmissivity rdf:type owl:DatatypeProperty ;
+                                            rdfs:subPropertyOf ues:materialProperty ;
+                                            rdfs:range cdt:ucum .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#backSideSolarReflectance
+ues:backSideSolarReflectance rdf:type owl:DatatypeProperty ;
+                             rdfs:subPropertyOf ues:materialProperty ;
+                             rdfs:range cdt:ucum .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#backSideVisibleReflectance
+ues:backSideVisibleReflectance rdf:type owl:DatatypeProperty ;
+                               rdfs:subPropertyOf ues:materialProperty ;
+                               rdfs:range cdt:ucum .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#co2Emission
+ues:co2Emission rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf ues:materialProperty ;
+                rdfs:range cdt:ucum .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#density
 ues:density rdf:type owl:DatatypeProperty ;
             rdfs:subPropertyOf ues:materialProperty ;
@@ -297,10 +321,34 @@ ues:density rdf:type owl:DatatypeProperty ;
             rdfs:comment "density of the material" .
 
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#dirtCorrectionFactor
+ues:dirtCorrectionFactor rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf ues:materialProperty ;
+                         rdfs:range cdt:ucum .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#dist
 ues:dist rdf:type owl:DatatypeProperty ;
          rdfs:subPropertyOf ues:parameterDataProperty ;
          rdfs:comment "distribution of the parameter"^^xsd:string .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#frontSideInfraredHemisphericalEmissivity
+ues:frontSideInfraredHemisphericalEmissivity rdf:type owl:DatatypeProperty ;
+                                             rdfs:subPropertyOf ues:materialProperty ;
+                                             rdfs:range cdt:ucum .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#frontSideSolarReflectance
+ues:frontSideSolarReflectance rdf:type owl:DatatypeProperty ;
+                              rdfs:subPropertyOf ues:materialProperty ;
+                              rdfs:range cdt:ucum .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#frontSideVisibleReflectance
+ues:frontSideVisibleReflectance rdf:type owl:DatatypeProperty ;
+                                rdfs:subPropertyOf ues:materialProperty ;
+                                rdfs:range cdt:ucum .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#hasBaseValue
@@ -315,6 +363,12 @@ ues:hasCRS rdf:type owl:DatatypeProperty ;
            rdfs:subPropertyOf ues:GeometricDataProperties ;
            rdfs:range ues:crs ;
            rdfs:comment "The coordinate reference system used to define the property"^^xsd:string .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#hasInfiltrationRate
+ues:hasInfiltrationRate rdf:type owl:DatatypeProperty ;
+                        rdfs:range xsd:float ;
+                        rdfs:comment "The infiltration rate"^^xsd:string .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#hasMaxValue
@@ -345,8 +399,26 @@ ues:hasVertices rdf:type owl:DatatypeProperty ;
                 rdfs:comment "A list of coordinates defining the surface boundary. Detailed in the GML schema." .
 
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#infraredTransmittance
+ues:infraredTransmittance rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf ues:materialProperty ;
+                          rdfs:range cdt:ucum .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#layerOrder
+ues:layerOrder rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf ues:layerProperty ;
+               rdfs:range xsd:int ;
+               rdfs:comment "The order of the layer in the construction. \"1\" is facing outside."^^xsd:string .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#layerProperty
+ues:layerProperty rdf:type owl:DatatypeProperty .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#layerThickness
 ues:layerThickness rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf ues:layerProperty ;
                    rdfs:range cdt:ucum ;
                    rdfs:comment "The thickness of a material layer" .
 
@@ -355,6 +427,12 @@ ues:layerThickness rdf:type owl:DatatypeProperty ;
 ues:materialProperty rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf owl:topDataProperty ;
                      rdfs:domain ues:Material .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#nonRenewablePrimaryEnergy
+ues:nonRenewablePrimaryEnergy rdf:type owl:DatatypeProperty ;
+                              rdfs:subPropertyOf ues:materialProperty ;
+                              rdfs:range cdt:ucum .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#parameterDataProperty
@@ -384,6 +462,12 @@ ues:solarAbsorptance rdf:type owl:DatatypeProperty ;
                      rdfs:comment "the fraction of solar radiation absorbed by the material"^^xsd:string .
 
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#solarTransmittance
+ues:solarTransmittance rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf ues:materialProperty ;
+                       rdfs:range cdt:ucum .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#specificHeat
 ues:specificHeat rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf ues:materialProperty ;
@@ -398,11 +482,24 @@ ues:themalConductivity rdf:type owl:DatatypeProperty ;
                        rdfs:comment "the thermal conductivity of the material"^^xsd:string .
 
 
-###  https://ja98.github.io/ues/release/0.0.1/index-en.html#visualAbsorptance
-ues:visualAbsorptance rdf:type owl:DatatypeProperty ;
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#thermalAbsorptance
+ues:thermalAbsorptance rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf ues:materialProperty ;
+                       rdfs:range cdt:ucum ;
+                       rdfs:comment "the fraction of thermal radiation absorbed by the material"^^xsd:string .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#visibleAbsoptance
+ues:visibleAbsoptance rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf ues:materialProperty ;
                       rdfs:range cdt:ucum ;
-                      rdfs:comment "the fraction of the visual spectrum absorbed by the material"^^xsd:string .
+                      rdfs:comment "the fraction of the visible spectrum absorbed by the material"^^xsd:string .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#visibleTransmittance
+ues:visibleTransmittance rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf ues:materialProperty ;
+                         rdfs:range cdt:ucum .
 
 
 #################################################################
@@ -649,6 +746,11 @@ ues:CESAR rdf:type owl:NamedIndividual ,
                    ues:SimulationApplication .
 
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Coal
+ues:Coal rdf:type owl:NamedIndividual ,
+                  ues:Fuel .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#CoolingSetPoint
 ues:CoolingSetPoint rdf:type owl:NamedIndividual ,
                              ues:TimeSeries .
@@ -678,6 +780,15 @@ ues:GlazingRatio rdf:type owl:NamedIndividual ,
                           ues:SimulationParameter .
 
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#HeatPump
+ues:HeatPump rdf:type owl:NamedIndividual .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#HeatingOil
+ues:HeatingOil rdf:type owl:NamedIndividual ,
+                        ues:Fuel .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#HeatingSetPoint
 ues:HeatingSetPoint rdf:type owl:NamedIndividual ,
                              ues:TimeSeries .
@@ -703,9 +814,18 @@ ues:SingleFamilyHome rdf:type owl:NamedIndividual ,
                               ues:BuildingUsage .
 
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#SolarPanel
+ues:SolarPanel rdf:type owl:NamedIndividual .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Ventilation
 ues:Ventilation rdf:type owl:NamedIndividual ,
                          ues:TimeSeries .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Wood
+ues:Wood rdf:type owl:NamedIndividual ,
+                  ues:Fuel .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

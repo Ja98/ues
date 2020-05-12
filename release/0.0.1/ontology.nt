@@ -251,16 +251,56 @@
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#appliesTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#appliesTo> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates the range of values the archetype category applies to" .
 # 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#backSideInfraredHemisphericalEmissivity
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#backSideInfraredHemisphericalEmissivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#backSideInfraredHemisphericalEmissivity> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#backSideInfraredHemisphericalEmissivity> <http://www.w3.org/2000/01/rdf-schema#range> <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#backSideSolarReflectance
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#backSideSolarReflectance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#backSideSolarReflectance> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#backSideSolarReflectance> <http://www.w3.org/2000/01/rdf-schema#range> <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#backSideVisibleReflectance
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#backSideVisibleReflectance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#backSideVisibleReflectance> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#backSideVisibleReflectance> <http://www.w3.org/2000/01/rdf-schema#range> <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#co2Emission
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#co2Emission> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#co2Emission> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#co2Emission> <http://www.w3.org/2000/01/rdf-schema#range> <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> .
+# 
 # https://ja98.github.io/ues/release/0.0.1/index-en.html#density
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#density> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#density> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#density> <http://www.w3.org/2000/01/rdf-schema#range> <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#density> <http://www.w3.org/2000/01/rdf-schema#comment> "density of the material" .
 # 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#dirtCorrectionFactor
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#dirtCorrectionFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#dirtCorrectionFactor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#dirtCorrectionFactor> <http://www.w3.org/2000/01/rdf-schema#range> <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> .
+# 
 # https://ja98.github.io/ues/release/0.0.1/index-en.html#dist
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#dist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#dist> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#parameterDataProperty> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#dist> <http://www.w3.org/2000/01/rdf-schema#comment> "distribution of the parameter" .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#frontSideInfraredHemisphericalEmissivity
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#frontSideInfraredHemisphericalEmissivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#frontSideInfraredHemisphericalEmissivity> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#frontSideInfraredHemisphericalEmissivity> <http://www.w3.org/2000/01/rdf-schema#range> <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#frontSideSolarReflectance
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#frontSideSolarReflectance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#frontSideSolarReflectance> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#frontSideSolarReflectance> <http://www.w3.org/2000/01/rdf-schema#range> <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#frontSideVisibleReflectance
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#frontSideVisibleReflectance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#frontSideVisibleReflectance> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#frontSideVisibleReflectance> <http://www.w3.org/2000/01/rdf-schema#range> <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> .
 # 
 # https://ja98.github.io/ues/release/0.0.1/index-en.html#hasBaseValue
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#hasBaseValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -273,6 +313,11 @@
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#hasCRS> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#GeometricDataProperties> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#hasCRS> <http://www.w3.org/2000/01/rdf-schema#range> <https://ja98.github.io/ues/release/0.0.1/index-en.html#crs> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#hasCRS> <http://www.w3.org/2000/01/rdf-schema#comment> "The coordinate reference system used to define the property" .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#hasInfiltrationRate
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#hasInfiltrationRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#hasInfiltrationRate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#hasInfiltrationRate> <http://www.w3.org/2000/01/rdf-schema#comment> "The infiltration rate" .
 # 
 # https://ja98.github.io/ues/release/0.0.1/index-en.html#hasMaxValue
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#hasMaxValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -298,8 +343,23 @@
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#hasVertices> <http://www.w3.org/2000/01/rdf-schema#range> <http://schemas.opengis.net/gml/3.2.1/geometryBasic0d1d.xsd#posLis> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#hasVertices> <http://www.w3.org/2000/01/rdf-schema#comment> "A list of coordinates defining the surface boundary. Detailed in the GML schema." .
 # 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#infraredTransmittance
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#infraredTransmittance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#infraredTransmittance> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#infraredTransmittance> <http://www.w3.org/2000/01/rdf-schema#range> <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#layerOrder
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#layerOrder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#layerOrder> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#layerProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#layerOrder> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#layerOrder> <http://www.w3.org/2000/01/rdf-schema#comment> "The order of the layer in the construction. \"1\" is facing outside." .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#layerProperty
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#layerProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
 # https://ja98.github.io/ues/release/0.0.1/index-en.html#layerThickness
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#layerThickness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#layerThickness> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#layerProperty> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#layerThickness> <http://www.w3.org/2000/01/rdf-schema#range> <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#layerThickness> <http://www.w3.org/2000/01/rdf-schema#comment> "The thickness of a material layer" .
 # 
@@ -307,6 +367,11 @@
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ja98.github.io/ues/release/0.0.1/index-en.html#Material> .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#nonRenewablePrimaryEnergy
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#nonRenewablePrimaryEnergy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#nonRenewablePrimaryEnergy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#nonRenewablePrimaryEnergy> <http://www.w3.org/2000/01/rdf-schema#range> <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> .
 # 
 # https://ja98.github.io/ues/release/0.0.1/index-en.html#parameterDataProperty
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#parameterDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -331,6 +396,11 @@
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#solarAbsorptance> <http://www.w3.org/2000/01/rdf-schema#range> <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#solarAbsorptance> <http://www.w3.org/2000/01/rdf-schema#comment> "the fraction of solar radiation absorbed by the material" .
 # 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#solarTransmittance
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#solarTransmittance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#solarTransmittance> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#solarTransmittance> <http://www.w3.org/2000/01/rdf-schema#range> <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> .
+# 
 # https://ja98.github.io/ues/release/0.0.1/index-en.html#specificHeat
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#specificHeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#specificHeat> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty> .
@@ -343,11 +413,22 @@
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#themalConductivity> <http://www.w3.org/2000/01/rdf-schema#range> <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#themalConductivity> <http://www.w3.org/2000/01/rdf-schema#comment> "the thermal conductivity of the material" .
 # 
-# https://ja98.github.io/ues/release/0.0.1/index-en.html#visualAbsorptance
-<https://ja98.github.io/ues/release/0.0.1/index-en.html#visualAbsorptance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://ja98.github.io/ues/release/0.0.1/index-en.html#visualAbsorptance> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty> .
-<https://ja98.github.io/ues/release/0.0.1/index-en.html#visualAbsorptance> <http://www.w3.org/2000/01/rdf-schema#range> <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> .
-<https://ja98.github.io/ues/release/0.0.1/index-en.html#visualAbsorptance> <http://www.w3.org/2000/01/rdf-schema#comment> "the fraction of the visual spectrum absorbed by the material" .
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#thermalAbsorptance
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#thermalAbsorptance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#thermalAbsorptance> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#thermalAbsorptance> <http://www.w3.org/2000/01/rdf-schema#range> <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#thermalAbsorptance> <http://www.w3.org/2000/01/rdf-schema#comment> "the fraction of thermal radiation absorbed by the material" .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#visibleAbsoptance
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#visibleAbsoptance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#visibleAbsoptance> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#visibleAbsoptance> <http://www.w3.org/2000/01/rdf-schema#range> <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#visibleAbsoptance> <http://www.w3.org/2000/01/rdf-schema#comment> "the fraction of the visible spectrum absorbed by the material" .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#visibleTransmittance
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#visibleTransmittance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#visibleTransmittance> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#visibleTransmittance> <http://www.w3.org/2000/01/rdf-schema#range> <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> .
 # 
 # 
 # 
@@ -560,6 +641,10 @@
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#CESAR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#CESAR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationApplication> .
 # 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#Coal
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#Coal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#Coal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ja98.github.io/ues/release/0.0.1/index-en.html#Fuel> .
+# 
 # https://ja98.github.io/ues/release/0.0.1/index-en.html#CoolingSetPoint
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#CoolingSetPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#CoolingSetPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries> .
@@ -583,6 +668,13 @@
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#GlazingRatio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#GlazingRatio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParameter> .
 # 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#HeatPump
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#HeatPump> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#HeatingOil
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#HeatingOil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#HeatingOil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ja98.github.io/ues/release/0.0.1/index-en.html#Fuel> .
+# 
 # https://ja98.github.io/ues/release/0.0.1/index-en.html#HeatingSetPoint
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#HeatingSetPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#HeatingSetPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries> .
@@ -603,8 +695,15 @@
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#SingleFamilyHome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#SingleFamilyHome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingUsage> .
 # 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#SolarPanel
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#SolarPanel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
 # https://ja98.github.io/ues/release/0.0.1/index-en.html#Ventilation
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#Ventilation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#Ventilation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries> .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#Wood
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#Wood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#Wood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ja98.github.io/ues/release/0.0.1/index-en.html#Fuel> .
 # 
 # Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
