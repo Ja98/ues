@@ -1199,6 +1199,15 @@
     
 
 
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#Source -->
+
+
+    <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#Source">
+        <rdfs:comment>An energy source</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries -->
 
 
@@ -1320,7 +1329,9 @@
     <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#HeatPump -->
 
 
-    <owl:NamedIndividual rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#HeatPump"/>
+    <owl:NamedIndividual rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#HeatPump">
+        <rdf:type rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Source"/>
+    </owl:NamedIndividual>
     
 
 
@@ -1381,7 +1392,9 @@
     <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#SolarPanel -->
 
 
-    <owl:NamedIndividual rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#SolarPanel"/>
+    <owl:NamedIndividual rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#SolarPanel">
+        <rdf:type rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Source"/>
+    </owl:NamedIndividual>
     
 
 

@@ -270,7 +270,7 @@
   } ]
 }, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#HeatPump",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#Source" ]
 }, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#HeatingOil",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#Fuel" ]
@@ -398,12 +398,18 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingUsage" ]
 }, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#SolarPanel",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#Source" ]
 }, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Solid",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Material"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An energy source"
   } ]
 }, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries",

@@ -710,6 +710,11 @@ xsd:gYear rdf:type rdfs:Datatype .
        rdfs:subClassOf :Material .
 
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Source
+:Source rdf:type owl:Class ;
+        rdfs:comment "An energy source" .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries
 :TimeSeries rdf:type owl:Class ;
             rdfs:subClassOf :SimulationParameter .
@@ -774,7 +779,8 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#HeatPump
-:HeatPump rdf:type owl:NamedIndividual .
+:HeatPump rdf:type owl:NamedIndividual ,
+                   :Source .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#HeatingOil
@@ -808,7 +814,8 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#SolarPanel
-:SolarPanel rdf:type owl:NamedIndividual .
+:SolarPanel rdf:type owl:NamedIndividual ,
+                     :Source .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Ventilation

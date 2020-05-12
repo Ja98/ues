@@ -717,6 +717,11 @@ ues:Solid rdf:type owl:Class ;
           rdfs:subClassOf ues:Material .
 
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Source
+ues:Source rdf:type owl:Class ;
+           rdfs:comment "An energy source"^^xsd:string .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries
 ues:TimeSeries rdf:type owl:Class ;
                rdfs:subClassOf ues:SimulationParameter .
@@ -781,7 +786,8 @@ ues:GlazingRatio rdf:type owl:NamedIndividual ,
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#HeatPump
-ues:HeatPump rdf:type owl:NamedIndividual .
+ues:HeatPump rdf:type owl:NamedIndividual ,
+                      ues:Source .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#HeatingOil
@@ -815,7 +821,8 @@ ues:SingleFamilyHome rdf:type owl:NamedIndividual ,
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#SolarPanel
-ues:SolarPanel rdf:type owl:NamedIndividual .
+ues:SolarPanel rdf:type owl:NamedIndividual ,
+                        ues:Source .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Ventilation

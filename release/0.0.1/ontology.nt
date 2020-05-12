@@ -612,6 +612,10 @@
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#Solid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#Solid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#Material> .
 # 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#Source
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#Source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#Source> <http://www.w3.org/2000/01/rdf-schema#comment> "An energy source" .
+# 
 # https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParameter> .
@@ -670,6 +674,7 @@
 # 
 # https://ja98.github.io/ues/release/0.0.1/index-en.html#HeatPump
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#HeatPump> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#HeatPump> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ja98.github.io/ues/release/0.0.1/index-en.html#Source> .
 # 
 # https://ja98.github.io/ues/release/0.0.1/index-en.html#HeatingOil
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#HeatingOil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -697,6 +702,7 @@
 # 
 # https://ja98.github.io/ues/release/0.0.1/index-en.html#SolarPanel
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#SolarPanel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#SolarPanel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://ja98.github.io/ues/release/0.0.1/index-en.html#Source> .
 # 
 # https://ja98.github.io/ues/release/0.0.1/index-en.html#Ventilation
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#Ventilation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
