@@ -220,6 +220,12 @@ ues:hasSurface rdf:type owl:ObjectProperty ;
                rdfs:comment "presence of building surfaces used to define the building model" .
 
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#hasWindow
+ues:hasWindow rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf ues:hasSurface ;
+              rdfs:range ues:Window .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#hotWaterFuel
 ues:hotWaterFuel rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf ues:hasParameter ;
@@ -312,6 +318,16 @@ ues:backSideVisibleReflectance rdf:type owl:DatatypeProperty ;
 ues:co2Emission rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf ues:materialProperty ;
                 rdfs:range cdt:ucum .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#constructionProperty
+ues:constructionProperty rdf:type owl:DatatypeProperty .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#constructionUValue
+ues:constructionUValue rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf ues:constructionProperty ;
+                       rdfs:range cdt:ucum .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#density
@@ -601,7 +617,8 @@ ues:ExternalWall rdf:type owl:Class ;
                  owl:disjointWith ues:GroundFloor ,
                                   ues:InternalCeiling ,
                                   ues:InternalWall ,
-                                  ues:Roof ;
+                                  ues:Roof ,
+                                  ues:Window ;
                  rdfs:comment "A vertical surface of a building in contact with the external environment" .
 
 
@@ -630,7 +647,8 @@ ues:GroundFloor rdf:type owl:Class ;
                 rdfs:subClassOf ues:BuildingSurface ;
                 owl:disjointWith ues:InternalCeiling ,
                                  ues:InternalWall ,
-                                 ues:Roof ;
+                                 ues:Roof ,
+                                 ues:Window ;
                 rdfs:comment "A building surface in contact with the ground" .
 
 
@@ -638,14 +656,16 @@ ues:GroundFloor rdf:type owl:Class ;
 ues:InternalCeiling rdf:type owl:Class ;
                     rdfs:subClassOf ues:BuildingSurface ;
                     owl:disjointWith ues:InternalWall ,
-                                     ues:Roof ;
+                                     ues:Roof ,
+                                     ues:Window ;
                     rdfs:comment "A horizontal surface separating two conditioned spaces or buildings" .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall
 ues:InternalWall rdf:type owl:Class ;
                  rdfs:subClassOf ues:BuildingSurface ;
-                 owl:disjointWith ues:Roof ;
+                 owl:disjointWith ues:Roof ,
+                                  ues:Window ;
                  rdfs:comment "A vertical surface separating two conditioned spaces or buildings" .
 
 
@@ -693,6 +713,7 @@ ues:RelativeTimeSeries rdf:type owl:Class ;
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof
 ues:Roof rdf:type owl:Class ;
          rdfs:subClassOf ues:BuildingSurface ;
+         owl:disjointWith ues:Window ;
          rdfs:comment "An inclined or horizontal surface of a building in contact with the external environment" .
 
 
@@ -735,6 +756,11 @@ ues:TransparentLiquid rdf:type owl:Class ;
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#TransparentSolid
 ues:TransparentSolid rdf:type owl:Class ;
                      rdfs:subClassOf ues:Solid .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Window
+ues:Window rdf:type owl:Class ;
+           rdfs:subClassOf ues:BuildingSurface .
 
 
 ###  https://w3id.org/bot#Zone

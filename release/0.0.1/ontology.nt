@@ -188,6 +188,11 @@
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#hasSurface> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#hasSurface> <http://www.w3.org/2000/01/rdf-schema#comment> "presence of building surfaces used to define the building model" .
 # 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#hasWindow
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#hasWindow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#hasWindow> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#hasSurface> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#hasWindow> <http://www.w3.org/2000/01/rdf-schema#range> <https://ja98.github.io/ues/release/0.0.1/index-en.html#Window> .
+# 
 # https://ja98.github.io/ues/release/0.0.1/index-en.html#hotWaterFuel
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#hotWaterFuel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#hotWaterFuel> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter> .
@@ -270,6 +275,14 @@
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#co2Emission> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#co2Emission> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#co2Emission> <http://www.w3.org/2000/01/rdf-schema#range> <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#constructionProperty
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#constructionProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#constructionUValue
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#constructionUValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#constructionUValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#constructionProperty> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#constructionUValue> <http://www.w3.org/2000/01/rdf-schema#range> <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> .
 # 
 # https://ja98.github.io/ues/release/0.0.1/index-en.html#density
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#density> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -518,6 +531,7 @@
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#ExternalWall> <http://www.w3.org/2002/07/owl#disjointWith> <https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#ExternalWall> <http://www.w3.org/2002/07/owl#disjointWith> <https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#ExternalWall> <http://www.w3.org/2002/07/owl#disjointWith> <https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#ExternalWall> <http://www.w3.org/2002/07/owl#disjointWith> <https://ja98.github.io/ues/release/0.0.1/index-en.html#Window> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#ExternalWall> <http://www.w3.org/2000/01/rdf-schema#comment> "A vertical surface of a building in contact with the external environment" .
 # 
 # https://ja98.github.io/ues/release/0.0.1/index-en.html#Fuel
@@ -542,6 +556,7 @@
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#GroundFloor> <http://www.w3.org/2002/07/owl#disjointWith> <https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#GroundFloor> <http://www.w3.org/2002/07/owl#disjointWith> <https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#GroundFloor> <http://www.w3.org/2002/07/owl#disjointWith> <https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#GroundFloor> <http://www.w3.org/2002/07/owl#disjointWith> <https://ja98.github.io/ues/release/0.0.1/index-en.html#Window> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#GroundFloor> <http://www.w3.org/2000/01/rdf-schema#comment> "A building surface in contact with the ground" .
 # 
 # https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling
@@ -549,12 +564,14 @@
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling> <http://www.w3.org/2002/07/owl#disjointWith> <https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling> <http://www.w3.org/2002/07/owl#disjointWith> <https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling> <http://www.w3.org/2002/07/owl#disjointWith> <https://ja98.github.io/ues/release/0.0.1/index-en.html#Window> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling> <http://www.w3.org/2000/01/rdf-schema#comment> "A horizontal surface separating two conditioned spaces or buildings" .
 # 
 # https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall> <http://www.w3.org/2002/07/owl#disjointWith> <https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall> <http://www.w3.org/2002/07/owl#disjointWith> <https://ja98.github.io/ues/release/0.0.1/index-en.html#Window> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall> <http://www.w3.org/2000/01/rdf-schema#comment> "A vertical surface separating two conditioned spaces or buildings" .
 # 
 # https://ja98.github.io/ues/release/0.0.1/index-en.html#Liquid
@@ -593,6 +610,7 @@
 # https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof> <http://www.w3.org/2002/07/owl#disjointWith> <https://ja98.github.io/ues/release/0.0.1/index-en.html#Window> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof> <http://www.w3.org/2000/01/rdf-schema#comment> "An inclined or horizontal surface of a building in contact with the external environment" .
 # 
 # https://ja98.github.io/ues/release/0.0.1/index-en.html#SchedulingArchetype
@@ -627,6 +645,10 @@
 # https://ja98.github.io/ues/release/0.0.1/index-en.html#TransparentSolid
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#TransparentSolid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://ja98.github.io/ues/release/0.0.1/index-en.html#TransparentSolid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#Solid> .
+# 
+# https://ja98.github.io/ues/release/0.0.1/index-en.html#Window
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#Window> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ja98.github.io/ues/release/0.0.1/index-en.html#Window> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface> .
 # 
 # https://w3id.org/bot#Zone
 <https://w3id.org/bot#Zone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

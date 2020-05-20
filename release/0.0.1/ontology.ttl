@@ -213,6 +213,12 @@ xsd:gYear rdf:type rdfs:Datatype .
             rdfs:comment "presence of building surfaces used to define the building model" .
 
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#hasWindow
+:hasWindow rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :hasSurface ;
+           rdfs:range :Window .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#hotWaterFuel
 :hotWaterFuel rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :hasParameter ;
@@ -305,6 +311,16 @@ xsd:gYear rdf:type rdfs:Datatype .
 :co2Emission rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf :materialProperty ;
              rdfs:range <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#constructionProperty
+:constructionProperty rdf:type owl:DatatypeProperty .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#constructionUValue
+:constructionUValue rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :constructionProperty ;
+                    rdfs:range <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#density
@@ -594,7 +610,8 @@ xsd:gYear rdf:type rdfs:Datatype .
               owl:disjointWith :GroundFloor ,
                                :InternalCeiling ,
                                :InternalWall ,
-                               :Roof ;
+                               :Roof ,
+                               :Window ;
               rdfs:comment "A vertical surface of a building in contact with the external environment" .
 
 
@@ -623,7 +640,8 @@ xsd:gYear rdf:type rdfs:Datatype .
              rdfs:subClassOf :BuildingSurface ;
              owl:disjointWith :InternalCeiling ,
                               :InternalWall ,
-                              :Roof ;
+                              :Roof ,
+                              :Window ;
              rdfs:comment "A building surface in contact with the ground" .
 
 
@@ -631,14 +649,16 @@ xsd:gYear rdf:type rdfs:Datatype .
 :InternalCeiling rdf:type owl:Class ;
                  rdfs:subClassOf :BuildingSurface ;
                  owl:disjointWith :InternalWall ,
-                                  :Roof ;
+                                  :Roof ,
+                                  :Window ;
                  rdfs:comment "A horizontal surface separating two conditioned spaces or buildings" .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall
 :InternalWall rdf:type owl:Class ;
               rdfs:subClassOf :BuildingSurface ;
-              owl:disjointWith :Roof ;
+              owl:disjointWith :Roof ,
+                               :Window ;
               rdfs:comment "A vertical surface separating two conditioned spaces or buildings" .
 
 
@@ -686,6 +706,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof
 :Roof rdf:type owl:Class ;
       rdfs:subClassOf :BuildingSurface ;
+      owl:disjointWith :Window ;
       rdfs:comment "An inclined or horizontal surface of a building in contact with the external environment" .
 
 
@@ -728,6 +749,11 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#TransparentSolid
 :TransparentSolid rdf:type owl:Class ;
                   rdfs:subClassOf :Solid .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Window
+:Window rdf:type owl:Class ;
+        rdfs:subClassOf :BuildingSurface .
 
 
 ###  https://w3id.org/bot#Zone

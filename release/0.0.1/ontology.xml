@@ -359,6 +359,16 @@
     
 
 
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#hasWindow -->
+
+
+    <owl:ObjectProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasWindow">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasSurface"/>
+        <rdfs:range rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Window"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#hotWaterFuel -->
 
 
@@ -517,6 +527,23 @@
 
     <owl:DatatypeProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#co2Emission">
         <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"/>
+        <rdfs:range rdf:resource="https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#constructionProperty -->
+
+
+    <owl:DatatypeProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#constructionProperty"/>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#constructionUValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#constructionUValue">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#constructionProperty"/>
         <rdfs:range rdf:resource="https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"/>
     </owl:DatatypeProperty>
     
@@ -1002,6 +1029,7 @@
         <owl:disjointWith rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling"/>
         <owl:disjointWith rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall"/>
         <owl:disjointWith rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof"/>
+        <owl:disjointWith rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Window"/>
         <rdfs:comment>A vertical surface of a building in contact with the external environment</rdfs:comment>
     </owl:Class>
     
@@ -1051,6 +1079,7 @@
         <owl:disjointWith rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling"/>
         <owl:disjointWith rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall"/>
         <owl:disjointWith rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof"/>
+        <owl:disjointWith rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Window"/>
         <rdfs:comment>A building surface in contact with the ground</rdfs:comment>
     </owl:Class>
     
@@ -1063,6 +1092,7 @@
         <rdfs:subClassOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface"/>
         <owl:disjointWith rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall"/>
         <owl:disjointWith rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof"/>
+        <owl:disjointWith rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Window"/>
         <rdfs:comment>A horizontal surface separating two conditioned spaces or buildings</rdfs:comment>
     </owl:Class>
     
@@ -1074,6 +1104,7 @@
     <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall">
         <rdfs:subClassOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface"/>
         <owl:disjointWith rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof"/>
+        <owl:disjointWith rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Window"/>
         <rdfs:comment>A vertical surface separating two conditioned spaces or buildings</rdfs:comment>
     </owl:Class>
     
@@ -1157,6 +1188,7 @@
 
     <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof">
         <rdfs:subClassOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface"/>
+        <owl:disjointWith rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Window"/>
         <rdfs:comment>An inclined or horizontal surface of a building in contact with the external environment</rdfs:comment>
     </owl:Class>
     
@@ -1231,6 +1263,15 @@
 
     <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#TransparentSolid">
         <rdfs:subClassOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Solid"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#Window -->
+
+
+    <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#Window">
+        <rdfs:subClassOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface"/>
     </owl:Class>
     
 

@@ -224,6 +224,8 @@
     "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall"
   }, {
     "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof"
+  }, {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Window"
   } ]
 }, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Fuel",
@@ -267,6 +269,8 @@
     "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall"
   }, {
     "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof"
+  }, {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Window"
   } ]
 }, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#HeatPump",
@@ -290,6 +294,8 @@
     "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall"
   }, {
     "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof"
+  }, {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Window"
   } ]
 }, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall",
@@ -302,6 +308,8 @@
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof"
+  }, {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Window"
   } ]
 }, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Lighting",
@@ -371,6 +379,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Window"
   } ]
 }, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#SchedulingArchetype",
@@ -432,6 +443,12 @@
 }, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Ventilation",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries" ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Window",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface"
+  } ]
 }, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Wood",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#Fuel" ]
@@ -515,6 +532,18 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#constructionProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#constructionUValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#constructionProperty"
   } ]
 }, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#constructionYearRange",
@@ -839,6 +868,15 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasWindow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Window"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasSurface"
   } ]
 }, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hotWaterFuel",
