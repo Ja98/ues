@@ -226,6 +226,11 @@ ues:hasWindow rdf:type owl:ObjectProperty ;
               rdfs:range ues:Window .
 
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#hasWindowShadingMaterial
+ues:hasWindowShadingMaterial rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf ues:hasParameter .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#hotWaterFuel
 ues:hotWaterFuel rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf ues:hasParameter ;
@@ -291,6 +296,12 @@ citygml:measuredHeight rdf:type owl:DatatypeProperty ;
 ues:GeometricDataProperties rdf:type owl:DatatypeProperty .
 
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#airflowPermeability
+ues:airflowPermeability rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf ues:shadingProperty ;
+                        rdfs:range xsd:float .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#appliesTo
 ues:appliesTo rdf:type owl:DatatypeProperty ;
               rdfs:comment "indicates the range of values the archetype category applies to" .
@@ -314,10 +325,21 @@ ues:backSideVisibleReflectance rdf:type owl:DatatypeProperty ;
                                rdfs:range cdt:ucum .
 
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#bottomOpeningMultiplier
+ues:bottomOpeningMultiplier rdf:type owl:DatatypeProperty ;
+                            rdfs:subPropertyOf ues:shadingProperty ;
+                            rdfs:range xsd:float .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#co2Emission
 ues:co2Emission rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf ues:materialProperty ;
                 rdfs:range cdt:ucum .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#conductivity
+ues:conductivity rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf ues:materialProperty .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#constructionProperty
@@ -415,10 +437,22 @@ ues:hasVertices rdf:type owl:DatatypeProperty ;
                 rdfs:comment "A list of coordinates defining the surface boundary. Detailed in the GML schema." .
 
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#infraredHemisphericalEmissivity
+ues:infraredHemisphericalEmissivity rdf:type owl:DatatypeProperty ;
+                                    rdfs:subPropertyOf ues:materialProperty ;
+                                    rdfs:range cdt:ucum .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#infraredTransmittance
 ues:infraredTransmittance rdf:type owl:DatatypeProperty ;
                           rdfs:subPropertyOf ues:materialProperty ;
                           rdfs:range cdt:ucum .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#isShadingAvailable
+ues:isShadingAvailable rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf ues:shadingProperty ;
+                       rdfs:range xsd:boolean .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#layerOrder
@@ -437,6 +471,12 @@ ues:layerThickness rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf ues:layerProperty ;
                    rdfs:range cdt:ucum ;
                    rdfs:comment "The thickness of a material layer" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#leftsideOpeningMultiplier
+ues:leftsideOpeningMultiplier rdf:type owl:DatatypeProperty ;
+                              rdfs:subPropertyOf ues:shadingProperty ;
+                              rdfs:range xsd:float .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty
@@ -463,6 +503,12 @@ ues:probOccur rdf:type owl:DatatypeProperty ;
               rdfs:comment "probability of occurrence of the parameter"^^xsd:string .
 
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#rightsideOpeningMultiplier
+ues:rightsideOpeningMultiplier rdf:type owl:DatatypeProperty ;
+                               rdfs:subPropertyOf ues:shadingProperty ;
+                               rdfs:range xsd:float .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#roughness
 ues:roughness rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf ues:materialProperty ;
@@ -471,11 +517,27 @@ ues:roughness rdf:type owl:DatatypeProperty ;
               rdfs:comment "the surface roughness of the material"^^xsd:string .
 
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#shadeToGlassDistance
+ues:shadeToGlassDistance rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf ues:shadingProperty ;
+                         rdfs:range cdt:ucum .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#shadingProperty
+ues:shadingProperty rdf:type owl:DatatypeProperty .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#solarAbsorptance
 ues:solarAbsorptance rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf ues:materialProperty ;
                      rdfs:range cdt:ucum ;
                      rdfs:comment "the fraction of solar radiation absorbed by the material"^^xsd:string .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#solarReflectance
+ues:solarReflectance rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf ues:materialProperty ;
+                     rdfs:range cdt:ucum .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#solarTransmittance
@@ -491,13 +553,6 @@ ues:specificHeat rdf:type owl:DatatypeProperty ;
                  rdfs:comment "specific heat of the material" .
 
 
-###  https://ja98.github.io/ues/release/0.0.1/index-en.html#themalConductivity
-ues:themalConductivity rdf:type owl:DatatypeProperty ;
-                       rdfs:subPropertyOf ues:materialProperty ;
-                       rdfs:range cdt:ucum ;
-                       rdfs:comment "the thermal conductivity of the material"^^xsd:string .
-
-
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#thermalAbsorptance
 ues:thermalAbsorptance rdf:type owl:DatatypeProperty ;
                        rdfs:subPropertyOf ues:materialProperty ;
@@ -505,11 +560,30 @@ ues:thermalAbsorptance rdf:type owl:DatatypeProperty ;
                        rdfs:comment "the fraction of thermal radiation absorbed by the material"^^xsd:string .
 
 
-###  https://ja98.github.io/ues/release/0.0.1/index-en.html#visibleAbsoptance
-ues:visibleAbsoptance rdf:type owl:DatatypeProperty ;
-                      rdfs:subPropertyOf ues:materialProperty ;
-                      rdfs:range cdt:ucum ;
-                      rdfs:comment "the fraction of the visible spectrum absorbed by the material"^^xsd:string .
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#thermalConductivity
+ues:thermalConductivity rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf ues:materialProperty ;
+                        rdfs:range cdt:ucum ;
+                        rdfs:comment "the thermal conductivity of the material"^^xsd:string .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#topOpeningMultiplier
+ues:topOpeningMultiplier rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf ues:shadingProperty ;
+                         rdfs:range xsd:float .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#visibleAbsorptance
+ues:visibleAbsorptance rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf ues:materialProperty ;
+                       rdfs:range cdt:ucum ;
+                       rdfs:comment "the fraction of the visible spectrum absorbed by the material"^^xsd:string .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#visibleReflectance
+ues:visibleReflectance rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf ues:materialProperty ;
+                       rdfs:range cdt:ucum .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#visibleTransmittance
@@ -761,6 +835,11 @@ ues:TransparentSolid rdf:type owl:Class ;
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Window
 ues:Window rdf:type owl:Class ;
            rdfs:subClassOf ues:BuildingSurface .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#WindowShadingMaterial
+ues:WindowShadingMaterial rdf:type owl:Class ;
+                          rdfs:subClassOf ues:Material .
 
 
 ###  https://w3id.org/bot#Zone
