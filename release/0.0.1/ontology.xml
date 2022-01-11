@@ -369,6 +369,15 @@
     
 
 
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#hasWindowShadingMaterial -->
+
+
+    <owl:ObjectProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasWindowShadingMaterial">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#hotWaterFuel -->
 
 
@@ -483,6 +492,16 @@
     
 
 
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#airflowPermeability -->
+
+
+    <owl:DatatypeProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#airflowPermeability">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#shadingProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#appliesTo -->
 
 
@@ -522,12 +541,31 @@
     
 
 
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#bottomOpeningMultiplier -->
+
+
+    <owl:DatatypeProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#bottomOpeningMultiplier">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#shadingProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#co2Emission -->
 
 
     <owl:DatatypeProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#co2Emission">
         <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"/>
         <rdfs:range rdf:resource="https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#conductivity -->
+
+
+    <owl:DatatypeProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#conductivity">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"/>
     </owl:DatatypeProperty>
     
 
@@ -686,12 +724,32 @@
     
 
 
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#infraredHemisphericalEmissivity -->
+
+
+    <owl:DatatypeProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#infraredHemisphericalEmissivity">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"/>
+        <rdfs:range rdf:resource="https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#infraredTransmittance -->
 
 
     <owl:DatatypeProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#infraredTransmittance">
         <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"/>
         <rdfs:range rdf:resource="https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#isShadingAvailable -->
+
+
+    <owl:DatatypeProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#isShadingAvailable">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#shadingProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
 
@@ -721,6 +779,16 @@
         <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#layerProperty"/>
         <rdfs:range rdf:resource="https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"/>
         <rdfs:comment>The thickness of a material layer</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#leftsideOpeningMultiplier -->
+
+
+    <owl:DatatypeProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#leftsideOpeningMultiplier">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#shadingProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
 
@@ -765,6 +833,16 @@
     
 
 
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#rightsideOpeningMultiplier -->
+
+
+    <owl:DatatypeProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#rightsideOpeningMultiplier">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#shadingProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#roughness -->
 
 
@@ -777,6 +855,23 @@
     
 
 
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#shadeToGlassDistance -->
+
+
+    <owl:DatatypeProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#shadeToGlassDistance">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#shadingProperty"/>
+        <rdfs:range rdf:resource="https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#shadingProperty -->
+
+
+    <owl:DatatypeProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#shadingProperty"/>
+    
+
+
     <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#solarAbsorptance -->
 
 
@@ -784,6 +879,16 @@
         <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"/>
         <rdfs:range rdf:resource="https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"/>
         <rdfs:comment>the fraction of solar radiation absorbed by the material</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#solarReflectance -->
+
+
+    <owl:DatatypeProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#solarReflectance">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"/>
+        <rdfs:range rdf:resource="https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"/>
     </owl:DatatypeProperty>
     
 
@@ -809,17 +914,6 @@
     
 
 
-    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#themalConductivity -->
-
-
-    <owl:DatatypeProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#themalConductivity">
-        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"/>
-        <rdfs:range rdf:resource="https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"/>
-        <rdfs:comment>the thermal conductivity of the material</rdfs:comment>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#thermalAbsorptance -->
 
 
@@ -831,13 +925,44 @@
     
 
 
-    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#visibleAbsoptance -->
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#thermalConductivity -->
 
 
-    <owl:DatatypeProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#visibleAbsoptance">
+    <owl:DatatypeProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#thermalConductivity">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"/>
+        <rdfs:range rdf:resource="https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"/>
+        <rdfs:comment>the thermal conductivity of the material</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#topOpeningMultiplier -->
+
+
+    <owl:DatatypeProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#topOpeningMultiplier">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#shadingProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#visibleAbsorptance -->
+
+
+    <owl:DatatypeProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#visibleAbsorptance">
         <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"/>
         <rdfs:range rdf:resource="https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"/>
         <rdfs:comment>the fraction of the visible spectrum absorbed by the material</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#visibleReflectance -->
+
+
+    <owl:DatatypeProperty rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#visibleReflectance">
+        <rdfs:subPropertyOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"/>
+        <rdfs:range rdf:resource="https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"/>
     </owl:DatatypeProperty>
     
 
@@ -1272,6 +1397,15 @@
 
     <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#Window">
         <rdfs:subClassOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ja98.github.io/ues/release/0.0.1/index-en.html#WindowShadingMaterial -->
+
+
+    <owl:Class rdf:about="https://ja98.github.io/ues/release/0.0.1/index-en.html#WindowShadingMaterial">
+        <rdfs:subClassOf rdf:resource="https://ja98.github.io/ues/release/0.0.1/index-en.html#Material"/>
     </owl:Class>
     
 

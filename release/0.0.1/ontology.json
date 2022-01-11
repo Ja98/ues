@@ -450,6 +450,12 @@
     "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface"
   } ]
 }, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#WindowShadingMaterial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Material"
+  } ]
+}, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Wood",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#Fuel" ]
 }, {
@@ -457,6 +463,15 @@
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A time series with absolute values at each timestep"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#airflowPermeability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#shadingProperty"
   } ]
 }, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#appliesTo",
@@ -492,6 +507,15 @@
     "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
   } ]
 }, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#bottomOpeningMultiplier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#shadingProperty"
+  } ]
+}, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#buildingInstance",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -521,6 +545,12 @@
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#conductivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
   } ]
@@ -879,6 +909,12 @@
     "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasSurface"
   } ]
 }, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasWindowShadingMaterial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter"
+  } ]
+}, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hotWaterFuel",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -889,6 +925,15 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#infraredHemisphericalEmissivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
   } ]
 }, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#infraredTransmittance",
@@ -907,6 +952,15 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#isShadingAvailable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#shadingProperty"
   } ]
 }, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#layerOrder",
@@ -934,6 +988,15 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#layerProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#leftsideOpeningMultiplier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#shadingProperty"
   } ]
 }, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty",
@@ -1008,6 +1071,15 @@
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#retrofittingProperties",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#rightsideOpeningMultiplier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#shadingProperty"
+  } ]
+}, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#roughness",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1023,6 +1095,18 @@
     "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
   } ]
 }, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#shadeToGlassDistance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#shadingProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#shadingProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#simulatedUsing",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
@@ -1031,6 +1115,15 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "the fraction of solar radiation absorbed by the material"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#solarReflectance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
   } ],
@@ -1074,18 +1167,6 @@
     "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#retrofittingProperties"
   } ]
 }, {
-  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#themalConductivity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "the thermal conductivity of the material"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
-  } ]
-}, {
   "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#thermalAbsorptance",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1098,11 +1179,41 @@
     "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
   } ]
 }, {
-  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#visibleAbsoptance",
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#thermalConductivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "the thermal conductivity of the material"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#topOpeningMultiplier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#shadingProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#visibleAbsorptance",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "the fraction of the visible spectrum absorbed by the material"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#visibleReflectance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
   } ],

@@ -219,6 +219,11 @@ xsd:gYear rdf:type rdfs:Datatype .
            rdfs:range :Window .
 
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#hasWindowShadingMaterial
+:hasWindowShadingMaterial rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf :hasParameter .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#hotWaterFuel
 :hotWaterFuel rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :hasParameter ;
@@ -284,6 +289,12 @@ xsd:gYear rdf:type rdfs:Datatype .
 :GeometricDataProperties rdf:type owl:DatatypeProperty .
 
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#airflowPermeability
+:airflowPermeability rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf :shadingProperty ;
+                     rdfs:range xsd:float .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#appliesTo
 :appliesTo rdf:type owl:DatatypeProperty ;
            rdfs:comment "indicates the range of values the archetype category applies to" .
@@ -307,10 +318,21 @@ xsd:gYear rdf:type rdfs:Datatype .
                             rdfs:range <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> .
 
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#bottomOpeningMultiplier
+:bottomOpeningMultiplier rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf :shadingProperty ;
+                         rdfs:range xsd:float .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#co2Emission
 :co2Emission rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf :materialProperty ;
              rdfs:range <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#conductivity
+:conductivity rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf :materialProperty .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#constructionProperty
@@ -408,10 +430,22 @@ xsd:gYear rdf:type rdfs:Datatype .
              rdfs:comment "A list of coordinates defining the surface boundary. Detailed in the GML schema." .
 
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#infraredHemisphericalEmissivity
+:infraredHemisphericalEmissivity rdf:type owl:DatatypeProperty ;
+                                 rdfs:subPropertyOf :materialProperty ;
+                                 rdfs:range <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#infraredTransmittance
 :infraredTransmittance rdf:type owl:DatatypeProperty ;
                        rdfs:subPropertyOf :materialProperty ;
                        rdfs:range <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#isShadingAvailable
+:isShadingAvailable rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :shadingProperty ;
+                    rdfs:range xsd:boolean .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#layerOrder
@@ -430,6 +464,12 @@ xsd:gYear rdf:type rdfs:Datatype .
                 rdfs:subPropertyOf :layerProperty ;
                 rdfs:range <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> ;
                 rdfs:comment "The thickness of a material layer" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#leftsideOpeningMultiplier
+:leftsideOpeningMultiplier rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf :shadingProperty ;
+                           rdfs:range xsd:float .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty
@@ -456,6 +496,12 @@ xsd:gYear rdf:type rdfs:Datatype .
            rdfs:comment "probability of occurrence of the parameter" .
 
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#rightsideOpeningMultiplier
+:rightsideOpeningMultiplier rdf:type owl:DatatypeProperty ;
+                            rdfs:subPropertyOf :shadingProperty ;
+                            rdfs:range xsd:float .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#roughness
 :roughness rdf:type owl:DatatypeProperty ;
            rdfs:subPropertyOf :materialProperty ;
@@ -464,11 +510,27 @@ xsd:gYear rdf:type rdfs:Datatype .
            rdfs:comment "the surface roughness of the material" .
 
 
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#shadeToGlassDistance
+:shadeToGlassDistance rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf :shadingProperty ;
+                      rdfs:range <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#shadingProperty
+:shadingProperty rdf:type owl:DatatypeProperty .
+
+
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#solarAbsorptance
 :solarAbsorptance rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf :materialProperty ;
                   rdfs:range <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> ;
                   rdfs:comment "the fraction of solar radiation absorbed by the material" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#solarReflectance
+:solarReflectance rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :materialProperty ;
+                  rdfs:range <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#solarTransmittance
@@ -484,13 +546,6 @@ xsd:gYear rdf:type rdfs:Datatype .
               rdfs:comment "specific heat of the material" .
 
 
-###  https://ja98.github.io/ues/release/0.0.1/index-en.html#themalConductivity
-:themalConductivity rdf:type owl:DatatypeProperty ;
-                    rdfs:subPropertyOf :materialProperty ;
-                    rdfs:range <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> ;
-                    rdfs:comment "the thermal conductivity of the material" .
-
-
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#thermalAbsorptance
 :thermalAbsorptance rdf:type owl:DatatypeProperty ;
                     rdfs:subPropertyOf :materialProperty ;
@@ -498,11 +553,30 @@ xsd:gYear rdf:type rdfs:Datatype .
                     rdfs:comment "the fraction of thermal radiation absorbed by the material" .
 
 
-###  https://ja98.github.io/ues/release/0.0.1/index-en.html#visibleAbsoptance
-:visibleAbsoptance rdf:type owl:DatatypeProperty ;
-                   rdfs:subPropertyOf :materialProperty ;
-                   rdfs:range <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> ;
-                   rdfs:comment "the fraction of the visible spectrum absorbed by the material" .
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#thermalConductivity
+:thermalConductivity rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf :materialProperty ;
+                     rdfs:range <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> ;
+                     rdfs:comment "the thermal conductivity of the material" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#topOpeningMultiplier
+:topOpeningMultiplier rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf :shadingProperty ;
+                      rdfs:range xsd:float .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#visibleAbsorptance
+:visibleAbsorptance rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :materialProperty ;
+                    rdfs:range <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> ;
+                    rdfs:comment "the fraction of the visible spectrum absorbed by the material" .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#visibleReflectance
+:visibleReflectance rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :materialProperty ;
+                    rdfs:range <https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum> .
 
 
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#visibleTransmittance
@@ -754,6 +828,11 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  https://ja98.github.io/ues/release/0.0.1/index-en.html#Window
 :Window rdf:type owl:Class ;
         rdfs:subClassOf :BuildingSurface .
+
+
+###  https://ja98.github.io/ues/release/0.0.1/index-en.html#WindowShadingMaterial
+:WindowShadingMaterial rdf:type owl:Class ;
+                       rdfs:subClassOf :Material .
 
 
 ###  https://w3id.org/bot#Zone
