@@ -1,0 +1,1244 @@
+[ {
+  "@id" : "http://cui.unige.ch/citygml/2.0/measuredHeight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "the meaured height as detailed in CityGML"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#GeometricDataProperties"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schemas.opengis.net/gml/3.2.1/geometryBasic0d1d.xsd#posLis",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Defines the vertices that make up a building surface."
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#gYear",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a string following the unified code for units of measure"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "Aaron Bojarski"
+  }, {
+    "@value" : "Andrew Bollinger"
+  }, {
+    "@value" : "Kristina Orehounig"
+  }, {
+    "@value" : "Leonie Fierz"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "James Allan"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "The Urban Energy Simulation ontology is designed to facilitate the handling and organisation of heterogeneous data used in urban building energy modelling. The ontology contains a standardised vocabulary that, when implemented into a linked graph database, overcomes some of the main challenges regarding data availability, accuracy and traceability."
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "The Urban Energy Simulation Ontology (UES)"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "ues"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "https://ja98.github.io/ues"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://github.com/Ja98/ues/tree/master/release/0.0.1/ontology.ttl"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#AbsoluteTimeSeries",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An absolute time series"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#AbstractBuilding",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An abstract building indicating the instance of a building with no attached or assumed information"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#AgeOfConstruction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The age of construction of a building"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#AgeOfConstructionRange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The age range that applies to an archetype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#ArchetypeCategory"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingUse"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#AnnualAppliancesDemand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#EnergyDemand"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#AnnualCoolingDemand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#EnergyDemand"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#AnnualHotWaterDemand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#EnergyDemand"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#AnnualLightingDemand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#EnergyDemand"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#AnnualSpaceHeatingDemand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#EnergyDemand"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Archetype",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "an archetype object with categories and parameters for building simulation"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#ArchetypeCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "categories that can be used to represent the dataset using archetypes"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "building surfaces that define a building"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingUsage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The specific usage of a building or zone"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingUse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates the building use. As there are multiple ways to express this, it is dataset dependent and up to the user to define usage categories that best represent the data."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#ArchetypeCategory"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#CESAR",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationApplication" ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Coal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#Fuel" ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#ConstructionArchetype",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An archetype specific to construction attributes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Archetype"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#CoolingSetPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries" ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Distribution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Distibution class used to generate time series and profiles"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#DomesticHotWater",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Electricity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#Fuel" ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#EnergyDemand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#EnergyPlus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationApplication" ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#ExternalWall",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A vertical surface of a building in contact with the external environment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#GroundFloor"
+  }, {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling"
+  }, {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall"
+  }, {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof"
+  }, {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Window"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Fuel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An energy carrier used to supply heat or electricity"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Gas",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#Fuel" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Material"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#GeometricDataProperties",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#GlazingRatio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParameter" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParameter"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#GlazingRatioRange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParameter"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#GroundFloor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A building surface in contact with the ground"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling"
+  }, {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall"
+  }, {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof"
+  }, {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Window"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#HeatPump",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#Source" ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#HeatingOil",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#Fuel" ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#HeatingSetPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries" ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A horizontal surface separating two conditioned spaces or buildings"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall"
+  }, {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof"
+  }, {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Window"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A vertical surface separating two conditioned spaces or buildings"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof"
+  }, {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Window"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Lighting",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries" ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Liquid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Material"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Material",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A material"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#MaterialLayer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A material layer of a construction"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#MeasuredData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A measured or monitored data record"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#MultiFamilyHome",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingUsage" ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Occupancy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries" ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#OpaqueLiquid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Liquid"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#OpaqueSolid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Solid"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Regulation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "anything that requires a particular construction performance"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#RelativeTimeSeries",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A relative time series"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An inclined or horizontal surface of a building in contact with the external environment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Window"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#SchedulingArchetype",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An archetype specific to internal scheduling"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Archetype"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationApplication",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An application used to simulate building energy performance"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A parameter used as an input for a Simulation Application"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#SingleFamilyHome",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingUsage" ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#SolarPanel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#Source" ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Solid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Material"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An energy source"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#SimulationParameter"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#TransparentLiquid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Liquid"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#TransparentSolid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Solid"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Ventilation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#TimeSeries" ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Window",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#WindowShadingMaterial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Material"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Wood",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://ja98.github.io/ues/release/0.0.1/index-en.html#Fuel" ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#absoluteTimeSeries",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A time series with absolute values at each timestep"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#airflowPermeability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#shadingProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#appliesTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "indicates the range of values the archetype category applies to"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#backSideInfraredHemisphericalEmissivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#backSideSolarReflectance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#backSideVisibleReflectance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#bottomOpeningMultiplier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#shadingProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#buildingInstance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links the instance of a building record to an abstract building"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#AbstractBuilding"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#buildingUse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "the building use represented by an archetype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Archetype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingUse"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasCategory"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#co2Emission",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#conductivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#constructedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The year a building or archetype was constructed in"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#constructionProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#constructionUValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#constructionProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#constructionYearRange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "the range of years represented by an archetype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Archetype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#AgeOfConstructionRange"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasCategory"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#crs",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "the coordinate system used to define a geometry"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#density",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "density of the material"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#dirtCorrectionFactor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#dist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "distribution of the parameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#parameterDataProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#enclosedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "identifies the surfaces that enclose an instance of a zone"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Zone"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#BuildingSurface"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#frontSideInfraredHemisphericalEmissivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#frontSideSolarReflectance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#frontSideVisibleReflectance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#glazingRatio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "the glazing ratio of a building or wall"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasBaseValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "the base value is multiplied by the relative values in a relative timeseries to determine the absolute values at each timestep"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#parameterDataProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasCRS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The coordinate reference system used to define the property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#crs"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#GeometricDataProperties"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "categorical assignment either to a data record or archetype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasDistributionObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "distribution object to be used to generate a time series"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasExternalWall",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "external wall"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Archetype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#ExternalWall"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasSurface"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasFloor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "external floor in contact with the ground"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Archetype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#GroundFloor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasSurface"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasGlazingRatioRange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasInfiltrationRate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The infiltration rate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasInternalCeiling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "an internal ceiling separating two conditioned zones"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Archetype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalCeiling"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasSurface"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasInternalWall",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "an internal wall separating two conditioned spaces"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Archetype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#InternalWall"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasSurface"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasLayer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "defines the layer of a wall"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasMaterial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "defines the material of a construction layer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#MaterialLayer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Material"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasMaxValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "the maximum value of the parameter represented by the archetype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#parameterDataProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasMinValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "the minimum value of the parameter represented by the archetype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#parameterDataProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "parameters for simulation either in a data record or from an archetype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasRoof",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "an exterior roof"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Archetype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Roof"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasSurface"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasSurface",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "presence of building surfaces used to define the building model"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A value that can be used directly by the simulation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#parameterDataProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasVertices",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A list of coordinates defining the surface boundary. Detailed in the GML schema."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://schemas.opengis.net/gml/3.2.1/geometryBasic0d1d.xsd#posLis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasWindow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Window"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasSurface"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasWindowShadingMaterial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hotWaterFuel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "the fuel used to supply hot water"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Fuel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#infraredHemisphericalEmissivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#infraredTransmittance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#inputFor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "indicates the application the parameter can be used with"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#isShadingAvailable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#shadingProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#layerOrder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The order of the layer in the construction. \"1\" is facing outside."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#layerProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#layerProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#layerThickness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The thickness of a material layer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#layerProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#leftsideOpeningMultiplier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#shadingProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Material"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#meetsRegulation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "specifies adherence to a regulation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Regulation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#minRequirement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#retrofittingProperties"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#nonRenewablePrimaryEnergy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#parameterDataProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "attributes used to define the usage of a simulation parameter defined in an archetype"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#probOccur",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "probability of occurrence of the parameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#parameterDataProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#relativeTimeSeries",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A time series of relative values that, when multiplied by a base value, gives the absolute value for each timestep"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#retrofitOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Used to link retrofit versions of constructions"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#retrofittingProperties"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#retrofittingProperties",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#rightsideOpeningMultiplier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#shadingProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#roughness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "the surface roughness of the material"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#Material"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#shadeToGlassDistance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#shadingProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#shadingProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#simulatedUsing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#solarAbsorptance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "the fraction of solar radiation absorbed by the material"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#solarReflectance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#solarTransmittance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#spaceHeatingFuel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "the fuel used for space heating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#hasParameter"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#specificHeat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "specific heat of the material"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#targetRequirement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#retrofittingProperties"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#thermalAbsorptance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "the fraction of thermal radiation absorbed by the material"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#thermalConductivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "the thermal conductivity of the material"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#topOpeningMultiplier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#shadingProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#visibleAbsorptance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "the fraction of the visible spectrum absorbed by the material"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#visibleReflectance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#visibleTransmittance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html#ucum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#materialProperty"
+  } ]
+}, {
+  "@id" : "https://ja98.github.io/ues/release/0.0.1/index-en.html#yearRange",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A range of years, format: YYYY-YYYY"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bot#Zone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a bot zone as detailed in the BOT ontology"
+  } ]
+} ]

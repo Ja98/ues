@@ -2,11 +2,11 @@
 <html>
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
- <link rel="stylesheet" href="resources/primer.css" media="screen" />    <link rel="stylesheet" href="resources/rec.css" media="screen" />    <link rel="stylesheet" href="resources/extra.css" media="screen" />    <link rel="stylesheet" href="resources/owl.css" media="screen" />    <title>The Urban Simulation Ontology (UES)</title>
+ <link rel="stylesheet" href="resources/primer.css" media="screen" />    <link rel="stylesheet" href="resources/rec.css" media="screen" />    <link rel="stylesheet" href="resources/extra.css" media="screen" />    <link rel="stylesheet" href="resources/owl.css" media="screen" />    <title>The Urban Energy Simulation Ontology (UES)</title>
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://ja98.github.io/ues/release/0.0.1/index-en.html","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://ja98.github.io/ues/release/0.0.1/index-en.html","name":"The Urban Simulation Ontology (UES)", "headline":"The Urban Energy Simulation ontology is designed to facilitate the handling and organisation of heterogeneous data used in urban building energy modelling. The ontology contains a standardised vocabulary that, when implemented into a linked graph database, overcomes some of the main challenges regarding data availability, accuracy and traceability.", "datePublished":"Tue Jan 11 16:42:45 CET 2022", "author":[{"@type":"Person","name":"James Allan"}], "contributor":[{"@type":"Person","name":"Aaron Bojarski"},{"@type":"Person","name":"Andrew Bollinger"},{"@type":"Person","name":"Kristina Orehounig"},{"@type":"Person","name":"Leonie Fierz"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://ja98.github.io/ues","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://ja98.github.io/ues","name":"The Urban Energy Simulation Ontology (UES)", "headline":"The Urban Energy Simulation ontology is designed to facilitate the handling and organisation of heterogeneous data used in urban building energy modelling. The ontology contains a standardised vocabulary that, when implemented into a linked graph database, overcomes some of the main challenges regarding data availability, accuracy and traceability.", "datePublished":"Fri Jan 14 14:38:39 CET 2022", "author":[{"@type":"Person","name":"James Allan"}], "contributor":[{"@type":"Person","name":"Aaron Bojarski"},{"@type":"Person","name":"Andrew Bollinger"},{"@type":"Person","name":"Kristina Orehounig"},{"@type":"Person","name":"Leonie Fierz"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -57,22 +57,24 @@ function loadTOC(){
 <div class="container">
 <div class="head">
 <div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
-<h1>The Urban Simulation Ontology (UES)</h1>
+<h1>The Urban Energy Simulation Ontology (UES)</h1>
 
 
 <dl>
 <dt>This version:</dt>
 <dd><a href="https://github.com/Ja98/ues/tree/master/release/0.0.1/ontology.ttl">https://github.com/Ja98/ues/tree/master/release/0.0.1/ontology.ttl</a></dd>
+<dt>Latest version:</dt>
+<dd><a href="https://ja98.github.io/ues">https://ja98.github.io/ues</a></dd>
 <dt>Authors:</dt>
 <dd>James Allan</dd>
 
 <dt>Contributors:</dt>
 <dd>Aaron Bojarski</dd><dd>Andrew Bollinger</dd><dd>Kristina Orehounig</dd><dd>Leonie Fierz</dd>
 
-<dt>Download serialization:</dt><dd><span><a href="ontology.json" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.xml" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License: </dt><dd><a href="http://insertlicenseURIhere.org" target="_blank"><img src="https://img.shields.io/badge/License-license%20name%20goes%20here-blue.svg" alt="http://insertlicenseURIhere.org" /></a>
+<dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.rdf" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License: </dt><dd><a href="http://insertlicenseURIhere.org" target="_blank"><img src="https://img.shields.io/badge/License-license%20name%20goes%20here-blue.svg" alt="http://insertlicenseURIhere.org" /></a>
 </dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
-<!-- <dt>Evaluation:</dt><dd><a href="OOPSEvaluation/OOPSeval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
-<dd>James Allan. The Urban Simulation Ontology (UES). Retrieved from: https://github.com/Ja98/ues/tree/master/release/0.0.1/ontology.ttl</dd>
+<!-- <dt>Evaluation:</dt><dd><a href="OOPSEvaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
+<dd>James Allan. The Urban Energy Simulation Ontology (UES). Retrieved from: https://github.com/Ja98/ues/tree/master/release/0.0.1/ontology.ttl</dd>
 </dl>
 
 <hr/>
@@ -85,8 +87,8 @@ function loadTOC(){
 <div id="toc"></div>     <div id="overview"></div>
      <div id="crossref"></div>
      <div id="references"></div>
-<div id="acknowledgements">
-<h2 id="ack" class="list">Acknowledgements <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div id="acknowledgments">
+<h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <p>
 The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
 </div>
