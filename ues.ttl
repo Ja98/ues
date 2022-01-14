@@ -21,7 +21,7 @@
                                                                               "Leonie Fierz" ;
                                                           dcterms:creator "James Allan" ;
                                                           dcterms:description "The Urban Energy Simulation ontology is designed to facilitate the handling and organisation of heterogeneous data used in urban building energy modelling. The ontology contains a standardised vocabulary that, when implemented into a linked graph database, overcomes some of the main challenges regarding data availability, accuracy and traceability."@en ;
-                                                          dcterms:title "The Urban Simulation Ontology (UES)"@en ;
+                                                          dcterms:title "The Urban Energy Simulation Ontology (UES)"@en ;
                                                           vann:preferredNamespacePrefix "ues" ;
                                                           vann:preferredNamespaceUri "https://ja98.github.io/ues" .
 
